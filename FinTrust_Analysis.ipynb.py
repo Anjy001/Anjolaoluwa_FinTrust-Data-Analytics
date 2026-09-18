@@ -1,0 +1,2221 @@
+# ============================================================
+# FINTRUST DIGITAL BANK
+# WEEK 1 DATA ANALYSIS
+# ============================================================
+
+
+# ============================================================
+# 1. IMPORT LIBRARIES
+# ============================================================
+
+import pandas as pd
+import numpy as np
+import json
+
+import matplotlib.pyplot as plt
+
+from scipy import stats
+
+from sklearn.linear_model import LogisticRegression
+from sklearn.model_selection import train_test_split
+
+from sklearn.metrics import roc_auc_score
+from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
+
+from sklearn.preprocessing import StandardScaler
+
+
+# ============================================================
+# 2. DISPLAY SETTINGS
+# ============================================================
+
+pd.set_option("display.width", 200)
+pd.set_option("display.max_columns", 100)
+
+plt.rcParams["font.size"] = 10
+
+
+# ============================================================
+# 3. FILE NAMES
+# ============================================================
+
+customer_file = "FinTrust_Customer_Data.xlsx"
+
+transaction_file = "FinTrust_Transaction_Data.xlsx"
+
+dictionary_file = "FinTrust_Data_Dictionary.xlsx"
+
+
+# ============================================================
+# 4. LOAD THE DATA
+# ============================================================
+
+customer_data = pd.read_excel(customer_file)
+
+transaction_data = pd.read_excel(transaction_file)
+
+data_dictionary = pd.read_excel(dictionary_file)
+
+
+# ============================================================
+# 5. CHECK THE SIZE OF EACH DATASET
+# ============================================================
+
+print("Customer data:", customer_data.shape)
+
+print("Transaction data:", transaction_data.shape)
+
+print("Data dictionary:", data_dictionary.shape)
+
+
+# Look at the first 12 rows of the data dictionary
+
+print("\nDATA DICTIONARY")
+print(data_dictionary.head(12))
+
+
+# ============================================================
+# 6. BASIC DATA PROFILING
+# ============================================================
+
+def profile_data(data, name, key_column):
+
+    print("\n")
+    print("=" * 60)
+
+    print(name)
+
+    print("=" * 60)
+
+    # Number of rows
+    number_of_records = len(data)
+
+    print("Number of records:", number_of_records)
+
+    # Number of columns
+    number_of_columns = data.shape[1]
+
+    print("Number of columns:", number_of_columns)
+
+    # Number of missing values
+    missing_values = data.isna().sum().sum()
+
+    print("Missing values:", missing_values)
+
+    # Number of duplicate rows
+    duplicate_rows = data.duplicated().sum()
+
+    print("Duplicate rows:", duplicate_rows)
+
+    # Number of unique values in the key column
+    unique_keys = data[key_column].nunique()
+
+    print("Key column:", key_column)
+
+    print("Unique keys:", unique_keys)
+
+    # Data types
+    print("\nData types:")
+
+    print(data.dtypes)
+
+    # Missing values by column
+    print("\nMissing values by column:")
+
+    missing_by_column = data.isna().sum()
+
+    for column in data.columns:
+
+        if missing_by_column[column] > 0:
+
+            print(
+                column,
+                ":",
+                missing_by_column[column]
+            )
+
+
+# ============================================================
+# 7. PROFILE CUSTOMER DATA
+# ============================================================
+
+profile_data(
+    customer_data,
+    "CUSTOMER DATA",
+    "Customer_ID"
+)
+
+
+# ============================================================
+# 8. PROFILE TRANSACTION DATA
+# ============================================================
+
+profile_data(
+    transaction_data,
+    "TRANSACTION DATA",
+    "Transaction_ID"
+)
+
+
+# ============================================================
+# 9. CHECK CATEGORICAL COLUMNS IN CUSTOMER DATA
+# ============================================================
+
+print("\n")
+print("=" * 60)
+print("CUSTOMER CATEGORICAL COLUMNS")
+print("=" * 60)
+
+
+for column in customer_data.columns:
+
+    # Check whether the column contains text
+    if customer_data[column].dtype == "object":
+
+        # Get unique values
+        unique_values = (
+            customer_data[column]
+            .dropna()
+            .unique()
+        )
+
+        # Count unique values
+        number_of_unique_values = (
+            customer_data[column]
+            .nunique()
+        )
+
+        print("\nColumn:", column)
+
+        print(
+            "Number of unique values:",
+            number_of_unique_values
+        )
+
+        print(
+            "Some values:",
+            sorted(unique_values)[:6]
+        )
+
+
+# ============================================================
+# 10. CHECK CATEGORICAL COLUMNS IN TRANSACTION DATA
+# ============================================================
+
+print("\n")
+print("=" * 60)
+print("TRANSACTION CATEGORICAL COLUMNS")
+print("=" * 60)
+
+
+for column in transaction_data.columns:
+
+    if transaction_data[column].dtype == "object":
+
+        unique_values = (
+            transaction_data[column]
+            .dropna()
+            .unique()
+        )
+
+        number_of_unique_values = (
+            transaction_data[column]
+            .nunique()
+        )
+
+        print("\nColumn:", column)
+
+        print(
+            "Number of unique values:",
+            number_of_unique_values
+        )
+
+        print(
+            "Some values:",
+            sorted(unique_values)[:6]
+        )
+
+
+# ============================================================
+# 11. CHECK RELATIONSHIP BETWEEN THE TWO DATASETS
+# ============================================================
+
+print("\n")
+print("=" * 60)
+print("DATASET RELATIONSHIP CHECK")
+print("=" * 60)
+
+
+# Number of customers in customer data
+
+number_of_customers = (
+    customer_data["Customer_ID"]
+    .nunique()
+)
+
+print(
+    "Customers in customer data:",
+    number_of_customers
+)
+
+
+# Number of customers appearing in transactions
+
+transaction_customers = (
+    transaction_data["Customer_ID"]
+    .nunique()
+)
+
+print(
+    "Customers in transaction data:",
+    transaction_customers
+)
+
+
+# ============================================================
+# 12. CHECK FOR ORPHAN TRANSACTIONS
+# ============================================================
+
+customer_ids = set(
+    customer_data["Customer_ID"]
+)
+
+transaction_customer_ids = set(
+    transaction_data["Customer_ID"]
+)
+
+
+# Customers in transaction data
+# that are NOT in customer data
+
+orphan_customers = (
+    transaction_customer_ids
+    - customer_ids
+)
+
+
+print(
+    "Orphan transactions:",
+    len(orphan_customers)
+)
+
+
+# ============================================================
+# 13. CHECK FOR CUSTOMERS WITH ZERO TRANSACTIONS
+# ============================================================
+
+customers_without_transactions = (
+    customer_ids
+    - transaction_customer_ids
+)
+
+
+print(
+    "Customers with zero transactions:",
+    len(customers_without_transactions)
+)
+
+
+# ============================================================
+# 14. TRANSACTIONS PER CUSTOMER
+# ============================================================
+
+transactions_per_customer = (
+    transaction_data["Customer_ID"]
+    .value_counts()
+)
+
+
+average_transactions = (
+    transactions_per_customer.mean()
+)
+
+minimum_transactions = (
+    transactions_per_customer.min()
+)
+
+maximum_transactions = (
+    transactions_per_customer.max()
+)
+
+
+print(
+    "Average transactions per customer:",
+    round(average_transactions, 2)
+)
+
+print(
+    "Minimum transactions per customer:",
+    minimum_transactions
+)
+
+print(
+    "Maximum transactions per customer:",
+    maximum_transactions
+)
+
+
+# ============================================================
+# 15. CHECK DATE COVERAGE
+# ============================================================
+
+earliest_transaction = (
+    transaction_data["Transaction_DateTime"]
+    .min()
+)
+
+latest_transaction = (
+    transaction_data["Transaction_DateTime"]
+    .max()
+)
+
+
+print(
+    "Earliest transaction:",
+    earliest_transaction
+)
+
+print(
+    "Latest transaction:",
+    latest_transaction
+)
+
+
+# ============================================================
+# 16. MERGE CUSTOMER AND TRANSACTION DATA
+# ============================================================
+
+merged_data = transaction_data.merge(
+    customer_data,
+    on="Customer_ID",
+    how="left"
+)
+
+
+print(
+    "\nNumber of rows after merging:",
+    len(merged_data)
+)
+
+
+# ============================================================
+# 17. DATA QUALITY CHECK
+# ============================================================
+
+print("\n")
+print("=" * 60)
+print("DATA QUALITY CHECK")
+print("=" * 60)
+
+
+# Display transaction locations
+
+print(
+    "Location values:",
+    sorted(
+        transaction_data["Location"]
+        .dropna()
+        .unique()
+    )
+)
+
+
+# Display customer cities
+
+print(
+    "City values:",
+    sorted(
+        customer_data["City"]
+        .unique()
+    )
+)
+
+
+# ============================================================
+# 18. COMPARE TRANSACTION LOCATION WITH CUSTOMER CITY
+# ============================================================
+
+location_matches = (
+    merged_data["Location"]
+    == merged_data["City"]
+)
+
+
+location_match_rate = (
+    location_matches.mean()
+    * 100
+)
+
+
+print(
+    "Location and City match rate:",
+    round(location_match_rate, 1),
+    "%"
+)
+
+
+# ============================================================
+# 19. CHECK CUSTOMER NAME UNIQUENESS
+# ============================================================
+
+number_of_unique_names = (
+    customer_data["Customer_Name"]
+    .nunique()
+)
+
+number_of_customers = len(customer_data)
+
+
+print(
+    "Unique customer names:",
+    number_of_unique_names
+)
+
+print(
+    "Total customers:",
+    number_of_customers
+)
+
+
+# ============================================================
+# 20. CHECK DATA DICTIONARY
+# ============================================================
+
+print("\n")
+print("DATA DICTIONARY INFORMATION")
+
+
+dictionary_check = data_dictionary[
+    data_dictionary["Field_Name"].isin(
+        [
+            "Customer_Name",
+            "Customer_ID"
+        ]
+    )
+]
+
+
+print(
+    dictionary_check[
+        [
+            "Field_Name",
+            "Modelling_Use"
+        ]
+    ]
+)
+
+
+# ============================================================
+# 21. CORE METRICS / KPIs
+# ============================================================
+
+print("\n")
+print("=" * 60)
+print("CORE BANK KPIs")
+print("=" * 60)
+
+
+# Transaction amounts
+
+amount = transaction_data["Amount_NGN"]
+
+
+# Total transactions
+
+total_transactions = len(
+    transaction_data
+)
+
+
+# Total transaction value
+
+total_value = amount.sum()
+
+
+# Average transaction amount
+
+average_amount = amount.mean()
+
+
+# Median transaction amount
+
+median_amount = amount.median()
+
+
+# 95th percentile
+
+percentile_95 = amount.quantile(0.95)
+
+
+# Maximum transaction amount
+
+maximum_amount = amount.max()
+
+
+# Skewness
+
+amount_skewness = amount.skew()
+
+
+# ============================================================
+# 22. TRANSACTION STATUS RATES
+# ============================================================
+
+successful_rate = (
+    transaction_data["Transaction_Status"]
+    == "Successful"
+).mean() * 100
+
+
+failed_rate = (
+    transaction_data["Transaction_Status"]
+    == "Failed"
+).mean() * 100
+
+
+reversed_rate = (
+    transaction_data["Transaction_Status"]
+    == "Reversed"
+).mean() * 100
+
+
+pending_rate = (
+    transaction_data["Transaction_Status"]
+    == "Pending"
+).mean() * 100
+
+
+# ============================================================
+# 23. RISK REVIEW RATE
+# ============================================================
+
+risk_review_rate = (
+    transaction_data["Risk_Review_Flag"]
+    == "Yes"
+).mean() * 100
+
+
+# ============================================================
+# 24. VALUE UNDER RISK
+# ============================================================
+
+risk_transactions = transaction_data[
+    transaction_data["Risk_Review_Flag"]
+    == "Yes"
+]
+
+
+value_under_risk = (
+    risk_transactions["Amount_NGN"]
+    .sum()
+)
+
+
+# ============================================================
+# 25. INTERNATIONAL TRANSACTION RATE
+# ============================================================
+
+international_rate = (
+    transaction_data[
+        "International_Transaction"
+    ] == "Yes"
+).mean() * 100
+
+
+# ============================================================
+# 26. ACCOUNT STATUS RATES
+# ============================================================
+
+active_account_rate = (
+    customer_data["Account_Status"]
+    == "Active"
+).mean() * 100
+
+
+dormant_account_rate = (
+    customer_data["Account_Status"]
+    == "Dormant"
+).mean() * 100
+
+
+restricted_account_rate = (
+    customer_data["Account_Status"]
+    == "Restricted"
+).mean() * 100
+
+
+# ============================================================
+# 27. CUSTOMER AVERAGES
+# ============================================================
+
+average_age = (
+    customer_data["Age"]
+    .mean()
+)
+
+
+average_tenure = (
+    customer_data["Tenure_Months"]
+    .mean()
+)
+
+
+average_engagement = (
+    customer_data[
+        "Digital_Engagement_Score"
+    ].mean()
+)
+
+
+# ============================================================
+# 28. PRINT ALL KPIs
+# ============================================================
+
+print(
+    "Total transactions:",
+    total_transactions
+)
+
+print(
+    "Total transaction value:",
+    round(total_value, 2)
+)
+
+print(
+    "Average transaction amount:",
+    round(average_amount, 2)
+)
+
+print(
+    "Median transaction amount:",
+    round(median_amount, 2)
+)
+
+print(
+    "95th percentile transaction amount:",
+    round(percentile_95, 2)
+)
+
+print(
+    "Maximum transaction amount:",
+    round(maximum_amount, 2)
+)
+
+print(
+    "Amount skewness:",
+    round(amount_skewness, 2)
+)
+
+print(
+    "Successful rate:",
+    round(successful_rate, 2),
+    "%"
+)
+
+print(
+    "Failed rate:",
+    round(failed_rate, 2),
+    "%"
+)
+
+print(
+    "Reversed rate:",
+    round(reversed_rate, 2),
+    "%"
+)
+
+print(
+    "Pending rate:",
+    round(pending_rate, 2),
+    "%"
+)
+
+print(
+    "Risk review rate:",
+    round(risk_review_rate, 2),
+    "%"
+)
+
+print(
+    "Value under risk:",
+    round(value_under_risk, 2)
+)
+
+print(
+    "International transaction rate:",
+    round(international_rate, 2),
+    "%"
+)
+
+print(
+    "Active account rate:",
+    round(active_account_rate, 2),
+    "%"
+)
+
+print(
+    "Dormant account rate:",
+    round(dormant_account_rate, 2),
+    "%"
+)
+
+print(
+    "Restricted account rate:",
+    round(restricted_account_rate, 2),
+    "%"
+)
+
+print(
+    "Average age:",
+    round(average_age, 1)
+)
+
+print(
+    "Average tenure:",
+    round(average_tenure, 1)
+)
+
+print(
+    "Average digital engagement:",
+    round(average_engagement, 1)
+)
+
+
+# ============================================================
+# 29. SAVE KPI RESULTS
+# ============================================================
+
+kpi_data = {
+
+    "total_transactions": total_transactions,
+
+    "total_value_NGN": round(
+        total_value,
+        2
+    ),
+
+    "average_amount_NGN": round(
+        average_amount,
+        2
+    ),
+
+    "median_amount_NGN": round(
+        median_amount,
+        2
+    ),
+
+    "p95_amount_NGN": round(
+        percentile_95,
+        2
+    ),
+
+    "max_amount_NGN": round(
+        maximum_amount,
+        2
+    ),
+
+    "amount_skew": round(
+        amount_skewness,
+        2
+    ),
+
+    "success_rate_%": round(
+        successful_rate,
+        2
+    ),
+
+    "failed_rate_%": round(
+        failed_rate,
+        2
+    ),
+
+    "reversed_rate_%": round(
+        reversed_rate,
+        2
+    ),
+
+    "pending_rate_%": round(
+        pending_rate,
+        2
+    ),
+
+    "risk_review_rate_%": round(
+        risk_review_rate,
+        2
+    ),
+
+    "value_under_risk_NGN": round(
+        value_under_risk,
+        2
+    ),
+
+    "international_share_%": round(
+        international_rate,
+        2
+    ),
+
+    "active_account_rate_%": round(
+        active_account_rate,
+        2
+    ),
+
+    "dormant_rate_%": round(
+        dormant_account_rate,
+        2
+    ),
+
+    "restricted_rate_%": round(
+        restricted_account_rate,
+        2
+    ),
+
+    "avg_age": round(
+        average_age,
+        1
+    ),
+
+    "avg_tenure_months": round(
+        average_tenure,
+        1
+    ),
+
+    "avg_digital_engagement": round(
+        average_engagement,
+        1
+    )
+}
+
+
+kpi_table = pd.Series(
+    kpi_data
+)
+
+
+kpi_table.to_csv(
+    "kpi_metrics.csv",
+    header=["value"]
+)
+
+
+print("\nKPI file saved as kpi_metrics.csv")
+
+
+# ============================================================
+# 30. FUNCTION TO ANALYZE RISK BY CATEGORY
+# ============================================================
+
+def risk_by_category(column_name):
+
+    # Count all transactions in each category
+
+    transaction_count = (
+        merged_data
+        .groupby(column_name)
+        ["Transaction_ID"]
+        .count()
+    )
+
+
+    # Keep only transactions that were flagged
+
+    risk_data = merged_data[
+        merged_data["Risk_Review_Flag"]
+        == "Yes"
+    ]
+
+
+    # Count flagged transactions
+
+    risk_count = (
+        risk_data
+        .groupby(column_name)
+        ["Transaction_ID"]
+        .count()
+    )
+
+
+    # Calculate average transaction amount
+
+    average_amount = (
+        merged_data
+        .groupby(column_name)
+        ["Amount_NGN"]
+        .mean()
+    )
+
+
+    # Calculate risk rate
+
+    risk_rate = (
+        risk_count
+        / transaction_count
+        * 100
+    )
+
+
+    # Create result table
+
+    result = pd.DataFrame()
+
+
+    result["transactions"] = (
+        transaction_count
+    )
+
+    result["risk_yes"] = (
+        risk_count
+    )
+
+    result["avg_amount"] = (
+        average_amount
+    )
+
+    result["risk_rate_%"] = (
+        risk_rate
+    )
+
+
+    # Round the values
+
+    result["avg_amount"] = (
+        result["avg_amount"]
+        .round(2)
+    )
+
+    result["risk_rate_%"] = (
+        result["risk_rate_%"]
+        .round(2)
+    )
+
+
+    # Sort from highest risk rate
+    # to lowest risk rate
+
+    result = result.sort_values(
+        "risk_rate_%",
+        ascending=False
+    )
+
+
+    return result
+
+
+# ============================================================
+# 31. RISK BY CHANNEL
+# ============================================================
+
+print("\n")
+print("=" * 60)
+print("RISK BY CHANNEL")
+print("=" * 60)
+
+channel_risk = risk_by_category(
+    "Channel"
+)
+
+print(channel_risk)
+
+
+# ============================================================
+# 32. RISK BY TRANSACTION TYPE
+# ============================================================
+
+print("\n")
+print("=" * 60)
+print("RISK BY TRANSACTION TYPE")
+print("=" * 60)
+
+transaction_type_risk = (
+    risk_by_category(
+        "Transaction_Type"
+    )
+)
+
+print(transaction_type_risk)
+
+
+# ============================================================
+# 33. RISK BY TRANSACTION STATUS
+# ============================================================
+
+print("\n")
+print("=" * 60)
+print("RISK BY TRANSACTION STATUS")
+print("=" * 60)
+
+status_risk = risk_by_category(
+    "Transaction_Status"
+)
+
+print(status_risk)
+
+
+# ============================================================
+# 34. RISK BY DEVICE TYPE
+# ============================================================
+
+print("\n")
+print("=" * 60)
+print("RISK BY DEVICE TYPE")
+print("=" * 60)
+
+device_risk = risk_by_category(
+    "Device_Type"
+)
+
+print(device_risk)
+
+
+# ============================================================
+# 35. RISK BY INTERNATIONAL TRANSACTION
+# ============================================================
+
+print("\n")
+print("=" * 60)
+print("RISK BY INTERNATIONAL TRANSACTION")
+print("=" * 60)
+
+international_risk = risk_by_category(
+    "International_Transaction"
+)
+
+print(international_risk)
+
+
+# ============================================================
+# 36. RISK BY CUSTOMER SEGMENT
+# ============================================================
+
+print("\n")
+print("=" * 60)
+print("RISK BY CUSTOMER SEGMENT")
+print("=" * 60)
+
+segment_risk = risk_by_category(
+    "Customer_Segment"
+)
+
+print(segment_risk)
+
+
+# ============================================================
+# 37. TRANSACTION TYPE AVERAGE VALUE
+# ============================================================
+
+print("\n")
+print("=" * 60)
+print("TRANSACTION TYPE: AVERAGE VALUE")
+print("=" * 60)
+
+
+transaction_type_summary = (
+    merged_data
+    .groupby("Transaction_Type")
+    ["Amount_NGN"]
+    .agg(
+        [
+            "count",
+            "mean",
+            "sum"
+        ]
+    )
+)
+
+
+transaction_type_summary = (
+    transaction_type_summary
+    .round(2)
+    .sort_values(
+        "mean",
+        ascending=False
+    )
+)
+
+
+print(transaction_type_summary)
+
+
+# ============================================================
+# 38. MONTHLY TREND
+# ============================================================
+
+print("\n")
+print("=" * 60)
+print("MONTHLY TREND")
+print("=" * 60)
+
+
+# Create a month column
+
+merged_data["Month"] = (
+    merged_data[
+        "Transaction_DateTime"
+    ].dt.to_period("M")
+)
+
+
+# Number of transactions per month
+
+monthly_transactions = (
+    merged_data
+    .groupby("Month")
+    ["Transaction_ID"]
+    .count()
+)
+
+
+# Total transaction value per month
+
+monthly_value = (
+    merged_data
+    .groupby("Month")
+    ["Amount_NGN"]
+    .sum()
+)
+
+
+# Successful transactions
+
+successful_data = merged_data[
+    merged_data["Transaction_Status"]
+    == "Successful"
+]
+
+
+monthly_successful = (
+    successful_data
+    .groupby("Month")
+    ["Transaction_ID"]
+    .count()
+)
+
+
+# Monthly success rate
+
+monthly_success_rate = (
+    monthly_successful
+    / monthly_transactions
+    * 100
+)
+
+
+# Create monthly table
+
+monthly_analysis = pd.DataFrame()
+
+
+monthly_analysis["transactions"] = (
+    monthly_transactions
+)
+
+monthly_analysis["value_NGN"] = (
+    monthly_value
+)
+
+monthly_analysis["success_rate"] = (
+    monthly_success_rate
+)
+
+
+print(
+    monthly_analysis
+)
+
+
+# ============================================================
+# 39. HYPOTHESIS 1
+# INTERNATIONAL TRANSACTIONS AND RISK REVIEW
+# ============================================================
+
+print("\n")
+print("=" * 60)
+
+print(
+    "H1: International transactions "
+    "are more likely to be flagged"
+)
+
+print("=" * 60)
+
+
+# Create a cross-tabulation
+
+international_table = pd.crosstab(
+    merged_data[
+        "International_Transaction"
+    ],
+    merged_data[
+        "Risk_Review_Flag"
+    ]
+)
+
+
+print("\nCross-tabulation:")
+
+print(international_table)
+
+
+# Perform chi-square test
+
+international_test = (
+    stats.chi2_contingency(
+        international_table
+    )
+)
+
+
+international_chi_square = (
+    international_test[0]
+)
+
+international_p_value = (
+    international_test[1]
+)
+
+international_degrees_of_freedom = (
+    international_test[2]
+)
+
+
+print(
+    "\nChi-square:",
+    round(
+        international_chi_square,
+        2
+    )
+)
+
+print(
+    "Degrees of freedom:",
+    international_degrees_of_freedom
+)
+
+print(
+    "P-value:",
+    international_p_value
+)
+
+
+# Risk rates
+
+print(
+    "\nRisk rates:"
+)
+
+print(
+    international_risk[
+        "risk_rate_%"
+    ]
+)
+
+
+# ============================================================
+# 40. HYPOTHESIS 2
+# HIGHER VALUE TRANSACTIONS AND RISK
+# ============================================================
+
+print("\n")
+print("=" * 60)
+
+print(
+    "H2: Higher-value transactions "
+    "are more likely to be flagged"
+)
+
+print("=" * 60)
+
+
+# Transaction amounts for risk = Yes
+
+risk_yes_amounts = merged_data[
+    merged_data["Risk_Review_Flag"]
+    == "Yes"
+]["Amount_NGN"]
+
+
+# Transaction amounts for risk = No
+
+risk_no_amounts = merged_data[
+    merged_data["Risk_Review_Flag"]
+    == "No"
+]["Amount_NGN"]
+
+
+# Perform t-test
+
+amount_test = stats.ttest_ind(
+    risk_yes_amounts,
+    risk_no_amounts,
+    equal_var=False
+)
+
+
+t_value = amount_test.statistic
+
+amount_p_value = amount_test.pvalue
+
+
+print(
+    "Average amount when risk = Yes:",
+    round(
+        risk_yes_amounts.mean(),
+        2
+    )
+)
+
+
+print(
+    "Average amount when risk = No:",
+    round(
+        risk_no_amounts.mean(),
+        2
+    )
+)
+
+
+print(
+    "T-value:",
+    round(
+        t_value,
+        2
+    )
+)
+
+
+print(
+    "P-value:",
+    amount_p_value
+)
+
+
+# ============================================================
+# 41. HYPOTHESIS 3
+# FAILED TRANSACTIONS AND RISK
+# ============================================================
+
+print("\n")
+print("=" * 60)
+
+print(
+    "H3: Failed transactions "
+    "are more likely to be flagged"
+)
+
+print("=" * 60)
+
+
+status_table = pd.crosstab(
+    merged_data[
+        "Transaction_Status"
+    ],
+    merged_data[
+        "Risk_Review_Flag"
+    ]
+)
+
+
+print("\nCross-tabulation:")
+
+print(status_table)
+
+
+status_test = stats.chi2_contingency(
+    status_table
+)
+
+
+status_chi_square = status_test[0]
+
+status_p_value = status_test[1]
+
+status_degrees_of_freedom = status_test[2]
+
+
+print(
+    "\nChi-square:",
+    round(
+        status_chi_square,
+        2
+    )
+)
+
+print(
+    "Degrees of freedom:",
+    status_degrees_of_freedom
+)
+
+print(
+    "P-value:",
+    status_p_value
+)
+
+
+print("\nRisk rates:")
+
+print(
+    status_risk[
+        "risk_rate_%"
+    ]
+)
+
+
+# ============================================================
+# 42. HYPOTHESIS 4
+# NIGHT-TIME TRANSACTIONS AND RISK
+# ============================================================
+
+print("\n")
+print("=" * 60)
+
+print(
+    "H4: Night-time transactions "
+    "are more likely to be flagged"
+)
+
+print("=" * 60)
+
+
+# Extract the hour from transaction datetime
+
+merged_data["Hour"] = (
+    merged_data[
+        "Transaction_DateTime"
+    ].dt.hour
+)
+
+
+# Create IsNight column
+
+merged_data["IsNight"] = False
+
+
+# Transactions from midnight
+# through 5 AM are night transactions
+
+merged_data.loc[
+    merged_data["Hour"] <= 5,
+    "IsNight"
+] = True
+
+
+# Create cross-tabulation
+
+night_table = pd.crosstab(
+    merged_data["IsNight"],
+    merged_data["Risk_Review_Flag"]
+)
+
+
+print("\nCross-tabulation:")
+
+print(night_table)
+
+
+# Perform chi-square test
+
+night_test = stats.chi2_contingency(
+    night_table
+)
+
+
+night_chi_square = night_test[0]
+
+night_p_value = night_test[1]
+
+night_degrees_of_freedom = night_test[2]
+
+
+print(
+    "\nChi-square:",
+    round(
+        night_chi_square,
+        2
+    )
+)
+
+print(
+    "Degrees of freedom:",
+    night_degrees_of_freedom
+)
+
+print(
+    "P-value:",
+    night_p_value
+)
+
+
+# Calculate night-time risk rates
+
+night_risk = risk_by_category(
+    "IsNight"
+)
+
+
+print("\nRisk rates:")
+
+print(
+    night_risk[
+        "risk_rate_%"
+    ]
+)
+
+
+# ============================================================
+# 43. MACHINE LEARNING
+# BASELINE LOGISTIC REGRESSION MODEL
+# ============================================================
+
+print("\n")
+print("=" * 60)
+
+print(
+    "BASELINE LOGISTIC REGRESSION MODEL"
+)
+
+print("=" * 60)
+
+
+# ============================================================
+# 44. SELECT FEATURES
+# ============================================================
+
+features = [
+
+    "Amount_NGN",
+
+    "International_Transaction",
+
+    "Transaction_Status",
+
+    "Transaction_Type",
+
+    "Channel",
+
+    "Device_Type",
+
+    "Customer_Segment",
+
+    "Account_Status",
+
+    "Age",
+
+    "Tenure_Months",
+
+    "Digital_Engagement_Score",
+
+    "Hour"
+]
+
+
+# Create X
+
+X = merged_data[
+    features
+].copy()
+
+
+# ============================================================
+# 45. CONVERT INTERNATIONAL TRANSACTION TO NUMBERS
+# ============================================================
+
+X["International_Transaction"] = (
+    X["International_Transaction"]
+    .replace(
+        {
+            "Yes": 1,
+            "No": 0
+        }
+    )
+)
+
+
+# ============================================================
+# 46. CONVERT CATEGORICAL VARIABLES
+# ============================================================
+
+X = pd.get_dummies(
+    X,
+
+    columns=[
+
+        "Transaction_Status",
+
+        "Transaction_Type",
+
+        "Channel",
+
+        "Device_Type",
+
+        "Customer_Segment",
+
+        "Account_Status"
+
+    ],
+
+    drop_first=True
+)
+
+
+# ============================================================
+# 47. HANDLE MISSING VALUES
+# ============================================================
+
+X = X.fillna(0)
+
+
+# Convert everything to numbers
+
+X = X.astype(float)
+
+
+# ============================================================
+# 48. CREATE THE TARGET VARIABLE
+# ============================================================
+
+y = merged_data[
+    "Risk_Review_Flag"
+].replace(
+    {
+        "Yes": 1,
+        "No": 0
+    }
+)
+
+
+# Make sure y is numeric
+
+y = y.astype(int)
+
+
+# ============================================================
+# 49. CHECK TARGET BALANCE
+# ============================================================
+
+positive_rate = y.mean() * 100
+
+
+imbalance_ratio = (
+    (1 - y.mean())
+    / y.mean()
+)
+
+
+print(
+    "Target positive rate:",
+    round(
+        positive_rate,
+        2
+    ),
+    "%"
+)
+
+
+print(
+    "Imbalance ratio:",
+    round(
+        imbalance_ratio,
+        1
+    ),
+    ":1"
+)
+
+
+# ============================================================
+# 50. SPLIT DATA INTO TRAINING AND TESTING
+# ============================================================
+
+X_train, X_test, y_train, y_test = (
+    train_test_split(
+        X,
+        y,
+        test_size=0.25,
+        random_state=42,
+        stratify=y
+    )
+)
+
+
+print(
+    "\nTraining rows:",
+    len(X_train)
+)
+
+print(
+    "Testing rows:",
+    len(X_test)
+)
+
+
+# ============================================================
+# 51. STANDARDIZE NUMERIC FEATURES
+# ============================================================
+
+numeric_columns = [
+
+    "Amount_NGN",
+
+    "Age",
+
+    "Tenure_Months",
+
+    "Digital_Engagement_Score",
+
+    "Hour"
+]
+
+
+# Create scaler
+
+scaler = StandardScaler()
+
+
+# Learn scaling from training data
+
+scaler.fit(
+    X_train[numeric_columns]
+)
+
+
+# Transform training data
+
+X_train[numeric_columns] = (
+    scaler.transform(
+        X_train[numeric_columns]
+    )
+)
+
+
+# Transform testing data
+
+X_test[numeric_columns] = (
+    scaler.transform(
+        X_test[numeric_columns]
+    )
+)
+
+
+# ============================================================
+# 52. CREATE LOGISTIC REGRESSION MODEL
+# ============================================================
+
+model = LogisticRegression(
+    max_iter=2000
+)
+
+
+# Train the model
+
+model.fit(
+    X_train,
+    y_train
+)
+
+
+# ============================================================
+# 53. MAKE PREDICTIONS
+# ============================================================
+
+probabilities = (
+    model.predict_proba(
+        X_test
+    )
+)
+
+
+# Get probability of risk = Yes
+
+risk_probability = (
+    probabilities[:, 1]
+)
+
+
+# ============================================================
+# 54. CONVERT PROBABILITIES INTO PREDICTIONS
+# ============================================================
+
+predictions = []
+
+
+for probability in risk_probability:
+
+    if probability >= 0.5:
+
+        predictions.append(1)
+
+    else:
+
+        predictions.append(0)
+
+
+# ============================================================
+# 55. ROC-AUC
+# ============================================================
+
+roc_auc = roc_auc_score(
+    y_test,
+    risk_probability
+)
+
+
+print(
+    "\nROC-AUC:",
+    round(
+        roc_auc,
+        3
+    )
+)
+
+
+# ============================================================
+# 56. MAJORITY CLASS BASELINE
+# ============================================================
+
+majority_baseline = (
+    1 - y_test.mean()
+)
+
+
+print(
+    "Majority baseline:",
+    round(
+        majority_baseline,
+        3
+    )
+)
+
+
+# ============================================================
+# 57. CONFUSION MATRIX
+# ============================================================
+
+matrix = confusion_matrix(
+    y_test,
+    predictions
+)
+
+
+print(
+    "\nConfusion Matrix:"
+)
+
+print(matrix)
+
+
+# ============================================================
+# 58. CLASSIFICATION REPORT
+# ============================================================
+
+print(
+    "\nClassification Report:"
+)
+
+
+print(
+    classification_report(
+        y_test,
+        predictions,
+        digits=3
+    )
+)
+
+
+# ============================================================
+# 59. MODEL COEFFICIENTS
+# ============================================================
+
+coefficients = (
+    model.coef_[0]
+)
+
+
+feature_names = (
+    X.columns
+)
+
+
+# Create coefficient table
+
+coefficient_table = pd.DataFrame()
+
+
+coefficient_table[
+    "Feature"
+] = feature_names
+
+
+coefficient_table[
+    "Coefficient"
+] = coefficients
+
+
+# Absolute coefficient
+
+coefficient_table[
+    "Absolute_Value"
+] = (
+    coefficient_table[
+        "Coefficient"
+    ].abs()
+)
+
+
+# Sort by absolute coefficient
+
+coefficient_table = (
+    coefficient_table
+    .sort_values(
+        "Absolute_Value",
+        ascending=False
+    )
+)
+
+
+print(
+    "\nTop 12 model coefficients:"
+)
+
+
+print(
+    coefficient_table
+    .head(12)
+)
+
+
+# ============================================================
+# 60. CHART 1
+# RISK RATE BY CHANNEL
+# ============================================================
+
+channel_risk_chart = (
+    merged_data
+    .groupby("Channel")
+    ["Risk_Review_Flag"]
+    .apply(
+        lambda values:
+        (
+            values == "Yes"
+        ).mean() * 100
+    )
+)
+
+
+channel_risk_chart.plot(
+    kind="bar"
+)
+
+
+plt.title(
+    "Risk Review Rate by Channel"
+)
+
+plt.xlabel(
+    "Channel"
+)
+
+plt.ylabel(
+    "Risk Review Rate (%)"
+)
+
+plt.xticks(
+    rotation=20
+)
+
+plt.tight_layout()
+
+plt.show()
+
+
+# ============================================================
+# 61. CHART 2
+# RISK RATE BY TRANSACTION TYPE
+# ============================================================
+
+transaction_type_risk_chart = (
+    merged_data
+    .groupby("Transaction_Type")
+    ["Risk_Review_Flag"]
+    .apply(
+        lambda values:
+        (
+            values == "Yes"
+        ).mean() * 100
+    )
+)
+
+
+transaction_type_risk_chart.plot(
+    kind="bar"
+)
+
+
+plt.title(
+    "Risk Review Rate by Transaction Type"
+)
+
+plt.xlabel(
+    "Transaction Type"
+)
+
+plt.ylabel(
+    "Risk Review Rate (%)"
+)
+
+plt.xticks(
+    rotation=20
+)
+
+plt.tight_layout()
+
+plt.show()
+
+
+# ============================================================
+# 62. CHART 3
+# DOMESTIC VS INTERNATIONAL
+# ============================================================
+
+international_risk_chart = (
+    merged_data
+    .groupby(
+        "International_Transaction"
+    )
+    ["Risk_Review_Flag"]
+    .apply(
+        lambda values:
+        (
+            values == "Yes"
+        ).mean() * 100
+    )
+)
+
+
+international_risk_chart.plot(
+    kind="bar"
+)
+
+
+plt.title(
+    "Risk Review Rate: Domestic vs International"
+)
+
+plt.xlabel(
+    "International Transaction"
+)
+
+plt.ylabel(
+    "Risk Review Rate (%)"
+)
+
+plt.tight_layout()
+
+plt.show()
+
+
+# ============================================================
+# 63. CHART 4
+# TRANSACTION AMOUNT DISTRIBUTION
+# ============================================================
+
+log_amount = np.log10(
+    merged_data["Amount_NGN"]
+)
+
+
+plt.hist(
+    log_amount,
+    bins=50
+)
+
+
+plt.title(
+    "Transaction Amount Distribution"
+)
+
+plt.xlabel(
+    "log10(Transaction Amount)"
+)
+
+plt.ylabel(
+    "Number of Transactions"
+)
+
+plt.tight_layout()
+
+plt.show()
+
+
+# ============================================================
+# END OF WEEK 1 ANALYSIS
+# ============================================================
+
+print("\n")
+print("=" * 60)
+
+print(
+    "WEEK 1 ANALYSIS COMPLETE"
+)
+
+print("=" * 60)
+
+print(
+    "The analysis included:"
+)
+
+print(
+    "1. Data loading"
+)
+
+print(
+    "2. Data profiling"
+)
+
+print(
+    "3. Missing-value checks"
+)
+
+print(
+    "4. Duplicate checks"
+)
+
+print(
+    "5. Join integrity checks"
+)
+
+print(
+    "6. Data-quality checks"
+)
+
+print(
+    "7. KPI calculations"
+)
+
+print(
+    "8. Risk analysis"
+)
+
+print(
+    "9. Monthly analysis"
+)
+
+print(
+    "10. Hypothesis testing"
+)
+
+print(
+    "11. Logistic regression"
+)
+
+print(
+    "12. Model evaluation"
+)
+
+print(
+    "13. Data visualizations"
+)
+
+print(
+    "14. KPI export"
+)
+
+print("=" * 60)
