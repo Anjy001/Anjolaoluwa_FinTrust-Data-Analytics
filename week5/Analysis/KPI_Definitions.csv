@@ -1,0 +1,48 @@
+Measure,DAX,Format,BusinessDefinition
+Total Orders,COUNTROWS(Orders),"#,0",Order volume within the selected order cohort.
+Total Customers,COUNTROWS(Customers),"#,0",Customer catalogue size.
+Active Customers,DISTINCTCOUNT(Orders[CustomerID]),"#,0",Customers with selected orders.
+Total Products,COUNTROWS(Products),"#,0",Product catalogue size.
+Total Shipments,COUNTROWS(Shipments),"#,0",Shipments linked to selected orders.
+Total Revenue,SUM(OrderItems[DeliveredValue]),"#,0.00",Delivered order value at supplied catalogue prices. Currency and revenue recognition are unspecified.
+All Order Value,SUM(OrderItems[LineValue]),"#,0.00",Catalogue value across all order statuses.
+Delivered Orders,"CALCULATE([Total Orders],KEEPFILTERS(Orders[Status]=""Delivered""))","#,0",Delivered status order count.
+Priced Delivered Orders,"CALCULATE([Total Orders],KEEPFILTERS(Orders[Status]=""Delivered""),KEEPFILTERS(Orders[HasItems]=1))","#,0",Delivered orders represented in order items.
+Average Order Value,"DIVIDE([Total Revenue],[Priced Delivered Orders])","#,0.00",Delivered catalogue value per priced delivered order.
+Orders Without Items,"CALCULATE([Total Orders],KEEPFILTERS(Orders[HasItems]=0))","#,0",Source coverage exception count.
+Delivered Units,SUM(OrderItems[DeliveredUnits]),"#,0",Units in delivered status orders.
+Recorded On-Time Shipments,SUM(Shipments[RecordedOnTime]),"#,0","Source On Time status, consistently associated with delay of 0-2 days."
+On-Time Delivery Rate,"DIVIDE([Recorded On-Time Shipments],[Total Shipments])",0.00%,"Recorded status rate, not the zero-delay share."
+Delayed Shipments,[Total Shipments]-[Recorded On-Time Shipments],"#,0",Source Delayed status.
+Delayed Shipment Rate,"DIVIDE([Delayed Shipments],[Total Shipments])",0.00%,Recorded delayed share.
+Average Delivery Delay,AVERAGE(Shipments[DelayDays]),0.00,Mean recorded delay in days.
+Average Delivery Time,BLANK(),0.00,Not estimable: dispatch and arrival timestamps are absent.
+Zero-Delay Share,"DIVIDE(CALCULATE([Total Shipments],KEEPFILTERS(Shipments[DelayDays]=0)),[Total Shipments])",0.00%,Share with exactly zero recorded delay.
+Inventory Stock Level,SUM(Inventory[Stock]),"#,0",Sum of all supplied stock movement quantities. Not a current on-hand balance.
+Inventory Turnover,BLANK(),0.00,Standard turnover cannot be estimated without dated inventory balances and a consistent cost or quantity basis.
+Throughput to Stock Proxy,"DIVIDE([Delivered Units],[Inventory Stock Level])",0.0000,Period delivered units divided by undated aggregate stock. Does not estimate standard turnover.
+Return Events,COUNTROWS(Returns),"#,0",Return event count.
+Returned Orders,DISTINCTCOUNT(Returns[OrderID]),"#,0",Distinct orders with a return record.
+Return Rate,"DIVIDE([Returned Orders],[Total Orders])",0.00%,Order-level return association. Product-level returned items are not identified.
+Product Order Count,DISTINCTCOUNT(OrderItems[OrderID]),"#,0",Distinct orders containing selected products.
+Product Return-Associated Orders,"VAR P=VALUES(OrderItems[OrderID]) RETURN CALCULATE(DISTINCTCOUNT(Returns[OrderID]),TREATAS(P,Returns[OrderID]))","#,0",Orders containing a selected product and carrying any return event.
+Product Return Association Rate,"DIVIDE([Product Return-Associated Orders],[Product Order Count])",0.00%,"Association with a returned order, not the actual product return rate."
+Supplier Count,COUNTROWS(Suppliers),"#,0",Standalone supplier reference count.
+Supplier Performance Score,BLANK(),0.00,Not estimable: no supplier relationship or performance observations.
+Supplier Measurement Coverage,"""Unavailable: no supplier-to-product relationship""",,Supplier measurement boundary.
+Warehouse Utilization,BLANK(),0.00%,Physical utilisation is not estimable without capacity.
+Warehouse Inventory Share Proxy,"DIVIDE([Inventory Stock Level],CALCULATE([Inventory Stock Level],REMOVEFILTERS(Warehouses)))",0.00%,Share of aggregate stock held by selected warehouse. Not capacity utilisation.
+Warehouse Employees,COUNTROWS(Employees),"#,0",Employee count for selected warehouse.
+Shipments per Employee,"DIVIDE([Total Shipments],[Warehouse Employees])",0.0,"Shipment workload proxy, without employee hours or costs."
+Low Stock Threshold,"SELECTEDVALUE(LowStockParameter[Threshold],100)","#,0","Illustrative planning threshold, adjustable from 0 to 500 units."
+Low Stock Pairs,"COUNTROWS(FILTER(Inventory,Inventory[Stock]<[Low Stock Threshold]))","#,0",Observed warehouse-product aggregates below the selected threshold.
+Observed Inventory Pairs,COUNTROWS(Inventory),"#,0",Warehouse-product combinations present in the source.
+Repeat Customers,"COUNTROWS(FILTER(VALUES(Orders[CustomerID]),CALCULATE(COUNTROWS(Orders))>1))","#,0",Customers with at least two selected orders.
+Repeat Customer Rate,"DIVIDE([Repeat Customers],[Active Customers])",0.00%,"Repeat purchasing indicator, not a longitudinal retention estimate."
+First Observed Customers,"CALCULATE(DISTINCTCOUNT(Orders[CustomerID]),Orders[IsFirstObservedOrder]=1)","#,0",First observed order within the supplied history.
+Dynamic Report Title,"""SwiftLog | ""&COALESCE(SELECTEDVALUE(Dates[Month]),""All order months"")&"" | ""&COALESCE(SELECTEDVALUE(Customers[City]),""All customer cities"")",,Title follows date and customer-city selections.
+Selected Product Title,"""Product ""&COALESCE(SELECTEDVALUE(Products[ProductID]),""overview"")",,Context-sensitive tooltip and drill-through title.
+Delivery Colour,"IF([Delayed Shipment Rate]>=0.65,""#BF4A3C"",""#137D7B"")",,Conditional colour at an illustrative 65% delayed-rate monitoring threshold.
+Top Customer Value,"IF(RANKX(ALLSELECTED(Customers[CustomerID]),[Total Revenue],,DESC,DENSE)<=10,[Total Revenue],BLANK())","#,0.00",Delivered catalogue value for the ten highest ranked customers in the selection.
+Top Product Value,"IF(RANKX(ALLSELECTED(Products[ProductID]),[Total Revenue],,DESC,DENSE)<=10,[Total Revenue],BLANK())","#,0.00",Delivered catalogue value for the ten highest ranked products in the selection.
+Top Customer Orders,"IF(RANKX(ALLSELECTED(Customers[CustomerID]),[Total Orders],,DESC,DENSE)<=10,[Total Orders],BLANK())","#,0",Highest observed customer order frequencies within the selection.

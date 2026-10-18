@@ -1,0 +1,637 @@
+{
+  "recommendations": [
+    {
+      "title": "Delivery optimisation",
+      "evidence": "Kano has 845 delayed records among 1,287 shipments (65.66%), compared with 61.04% in Lagos. Review Kano routes, dispatch cut-offs and last-mile handoffs, then test a targeted service intervention.",
+      "owner": "Logistics lead",
+      "measure": "Recorded delayed rate by city, with a confirmed SLA."
+    },
+    {
+      "title": "Logistics optimisation",
+      "evidence": "W05 has a 32.04% recorded on-time rate, while W01 reaches 41.27%. Compare route mix and dispatch processes before transferring operating practices between sites.",
+      "owner": "Operations manager",
+      "measure": "Warehouse on-time rate adjusted for route mix."
+    },
+    {
+      "title": "Inventory management",
+      "evidence": "264 of 2,455 observed warehouse-product aggregates are below the illustrative 100-unit threshold. Validate current balances and demand before setting product-specific replenishment points.",
+      "owner": "Inventory manager",
+      "measure": "Validated low-stock exceptions and stockout events."
+    },
+    {
+      "title": "Warehouse efficiency",
+      "evidence": "Shipment workload ranges from 19.93 per employee at W13 to 37.78 at W14. Pilot cross-training or shift balancing after collecting handling hours and service workload.",
+      "owner": "Warehouse manager",
+      "measure": "Shipments per handling hour and service quality."
+    },
+    {
+      "title": "Supplier improvement",
+      "evidence": "All 150 suppliers lack a product or shipment relationship. Capture supplier-to-product and purchase-order mappings, receipt dates, promised dates and defect outcomes before introducing a supplier scorecard.",
+      "owner": "Procurement lead",
+      "measure": "Supplier mapping coverage and receipt performance."
+    },
+    {
+      "title": "Customer retention",
+      "evidence": "951 of 991 active customers place more than one observed order. Prioritise delivery communications for repeat purchasers and measure subsequent purchasing with cohorts rather than treating repeat activity as retention.",
+      "owner": "Customer service lead",
+      "measure": "Cohort repeat purchasing and delivery complaints."
+    },
+    {
+      "title": "Operational cost control",
+      "evidence": "1,626 orders carry Cancelled status, yet every order has a shipment record. Reconcile lifecycle timing and enforce cancellation checks before release to picking or dispatch. Cost savings require a measured handling-cost baseline.",
+      "owner": "Fulfilment manager",
+      "measure": "Verified avoidable dispatches and handling cost."
+    },
+    {
+      "title": "Return reduction",
+      "evidence": "Late Delivery accounts for 185 of 500 return events (37.0%), followed by Wrong Item at 163 (32.6%). Combine delay communication with item scans and packing verification.",
+      "owner": "Quality and service leads",
+      "measure": "Return reasons and confirmed item-level return rates."
+    },
+    {
+      "title": "Performance monitoring",
+      "evidence": "236 orders have no item records, and 315 of 473 return-associated orders are currently Pending or Cancelled. Introduce completeness checks and timestamped status history. Retain all inventory movement records.",
+      "owner": "Data owner",
+      "measure": "Order-item coverage and lifecycle reconciliation."
+    },
+    {
+      "title": "Business growth",
+      "evidence": "P203 contributes 85,977.99 catalogue price units of delivered value, and customer C0223 contributes 57,592.36. Protect availability for high-value demand and test relevant offers only after checking margin and service capacity.",
+      "owner": "Commercial lead",
+      "measure": "Delivered value, contribution margin and service performance."
+    }
+  ],
+  "metrics": {
+    "Orders": 5000,
+    "Customers": 1000,
+    "ActiveCustomers": 991,
+    "Products": 250,
+    "Shipments": 5000,
+    "DeliveredOrders": 1658,
+    "PricedDeliveredOrders": 1578,
+    "PricedOrders": 4764,
+    "OrdersWithoutItems": 236,
+    "AllOrderValue": 21668065.85,
+    "DeliveredOrderValue": 7107470.53,
+    "AveragePricedDeliveredOrderValue": 4504.1004626109,
+    "DeliveredUnits": 27171,
+    "RecordedOnTime": 1814,
+    "RecordedOnTimeRate": 0.3628,
+    "RecordedDelayed": 3186,
+    "PositiveDelayRate": 0.8778,
+    "AverageDelayDays": 3.5696,
+    "ZeroDelayShipments": 611,
+    "ReturnEvents": 500,
+    "ReturnedOrders": 473,
+    "ReturnOrderRate": 0.0946,
+    "ReturnOrdersNotDelivered": 315,
+    "AggregateInventoryQuantity": 1007764,
+    "InventoryRows": 4000,
+    "ObservedWarehouseProductPairs": 2455,
+    "UnobservedWarehouseProductPairs": 1295,
+    "RepeatedInventoryPairs": 1545,
+    "ExactRepeatedInventoryRows": 3,
+    "LowStockPairs100": 264,
+    "Employees": 200,
+    "Suppliers": 150,
+    "RepeatActiveCustomers": 951,
+    "RepeatCustomerRate": 0.9596367305751766,
+    "StartDate": "2026-01-01",
+    "EndDate": "2026-09-08",
+    "TopProduct": {
+      "ProductID": "P203",
+      "Category": "Fashion",
+      "DeliveredValue": 85977.99,
+      "DeliveredUnits": 189,
+      "OrderedUnits": 355,
+      "ProductOrders": 61,
+      "ReturnAssociatedOrders": 4,
+      "ReturnAssociatedOrderRate": 0.06557377049180328
+    },
+    "TopCustomer": {
+      "CustomerID": "C0223",
+      "City": "Kano",
+      "Orders": 8,
+      "DeliveredValue": 57592.36,
+      "FirstOrder": "2026-01-02 00:00:00",
+      "LastOrder": "2026-07-24 00:00:00"
+    },
+    "PeakMonth": {
+      "Month": "2026-08",
+      "Orders": 654,
+      "DeliveredValue": 997020.9,
+      "PricedOrders": 626,
+      "FirstObservedCustomers": 9,
+      "ReturnedOrders": 51,
+      "ObservedDays": 31,
+      "OrdersPerObservedDay": 21.096774193548388
+    },
+    "PythonVersion": "3.12.14",
+    "PandasVersion": "2.2.3",
+    "NumPyVersion": "2.3.5",
+    "ChecksPassed": 43
+  },
+  "monthly": [
+    {
+      "Month": "2026-01",
+      "Orders": 594,
+      "DeliveredValue": 767461.36,
+      "PricedOrders": 567,
+      "FirstObservedCustomers": 439,
+      "ReturnedOrders": 62,
+      "ObservedDays": 31,
+      "OrdersPerObservedDay": 19.161290322580644
+    },
+    {
+      "Month": "2026-02",
+      "Orders": 577,
+      "DeliveredValue": 856272.96,
+      "PricedOrders": 552,
+      "FirstObservedCustomers": 243,
+      "ReturnedOrders": 55,
+      "ObservedDays": 28,
+      "OrdersPerObservedDay": 20.607142857142858
+    },
+    {
+      "Month": "2026-03",
+      "Orders": 597,
+      "DeliveredValue": 806194.02,
+      "PricedOrders": 563,
+      "FirstObservedCustomers": 131,
+      "ReturnedOrders": 49,
+      "ObservedDays": 31,
+      "OrdersPerObservedDay": 19.258064516129032
+    },
+    {
+      "Month": "2026-04",
+      "Orders": 638,
+      "DeliveredValue": 893164.56,
+      "PricedOrders": 597,
+      "FirstObservedCustomers": 86,
+      "ReturnedOrders": 66,
+      "ObservedDays": 30,
+      "OrdersPerObservedDay": 21.266666666666666
+    },
+    {
+      "Month": "2026-05",
+      "Orders": 612,
+      "DeliveredValue": 878605.95,
+      "PricedOrders": 593,
+      "FirstObservedCustomers": 38,
+      "ReturnedOrders": 65,
+      "ObservedDays": 31,
+      "OrdersPerObservedDay": 19.741935483870968
+    },
+    {
+      "Month": "2026-06",
+      "Orders": 579,
+      "DeliveredValue": 914799.38,
+      "PricedOrders": 557,
+      "FirstObservedCustomers": 26,
+      "ReturnedOrders": 58,
+      "ObservedDays": 30,
+      "OrdersPerObservedDay": 19.3
+    },
+    {
+      "Month": "2026-07",
+      "Orders": 595,
+      "DeliveredValue": 741706.27,
+      "PricedOrders": 562,
+      "FirstObservedCustomers": 18,
+      "ReturnedOrders": 54,
+      "ObservedDays": 31,
+      "OrdersPerObservedDay": 19.193548387096776
+    },
+    {
+      "Month": "2026-08",
+      "Orders": 654,
+      "DeliveredValue": 997020.9,
+      "PricedOrders": 626,
+      "FirstObservedCustomers": 9,
+      "ReturnedOrders": 51,
+      "ObservedDays": 31,
+      "OrdersPerObservedDay": 21.096774193548388
+    },
+    {
+      "Month": "2026-09",
+      "Orders": 154,
+      "DeliveredValue": 252245.13,
+      "PricedOrders": 147,
+      "FirstObservedCustomers": 1,
+      "ReturnedOrders": 13,
+      "ObservedDays": 8,
+      "OrdersPerObservedDay": 19.25
+    }
+  ],
+  "regions": [
+    {
+      "City": "Abuja",
+      "Shipments": 1205,
+      "RecordedOnTime": 429,
+      "AverageDelayDays": 3.585062240663901,
+      "Delayed": 776,
+      "DelayedRate": 0.6439834024896266
+    },
+    {
+      "City": "Ibadan",
+      "Shipments": 1240,
+      "RecordedOnTime": 449,
+      "AverageDelayDays": 3.583064516129032,
+      "Delayed": 791,
+      "DelayedRate": 0.6379032258064516
+    },
+    {
+      "City": "Kano",
+      "Shipments": 1287,
+      "RecordedOnTime": 442,
+      "AverageDelayDays": 3.64024864024864,
+      "Delayed": 845,
+      "DelayedRate": 0.6565656565656566
+    },
+    {
+      "City": "Lagos",
+      "Shipments": 1268,
+      "RecordedOnTime": 494,
+      "AverageDelayDays": 3.470031545741325,
+      "Delayed": 774,
+      "DelayedRate": 0.610410094637224
+    }
+  ],
+  "warehouses": [
+    {
+      "WarehouseID": "W01",
+      "WarehouseLocation": "Abuja",
+      "Shipments": 332,
+      "RecordedOnTime": 137,
+      "AverageDelayDays": 3.460843373493976,
+      "RecordedOnTimeRate": 0.4126506024096386,
+      "AggregateStock": 56539,
+      "ObservedProducts": 154,
+      "LowStockPairs": 20,
+      "Employees": 15,
+      "ShipmentsPerEmployee": 22.133333333333333,
+      "InventoryShareProxy": 0.0561034131006862
+    },
+    {
+      "WarehouseID": "W02",
+      "WarehouseLocation": "Abuja",
+      "Shipments": 322,
+      "RecordedOnTime": 116,
+      "AverageDelayDays": 3.437888198757764,
+      "RecordedOnTimeRate": 0.3602484472049689,
+      "AggregateStock": 73012,
+      "ObservedProducts": 169,
+      "LowStockPairs": 20,
+      "Employees": 12,
+      "ShipmentsPerEmployee": 26.83333333333333,
+      "InventoryShareProxy": 0.0724495020659598
+    },
+    {
+      "WarehouseID": "W03",
+      "WarehouseLocation": "Abuja",
+      "Shipments": 344,
+      "RecordedOnTime": 112,
+      "AverageDelayDays": 3.680232558139535,
+      "RecordedOnTimeRate": 0.3255813953488372,
+      "AggregateStock": 66559,
+      "ObservedProducts": 170,
+      "LowStockPairs": 21,
+      "Employees": 17,
+      "ShipmentsPerEmployee": 20.235294117647054,
+      "InventoryShareProxy": 0.0660462171698929
+    },
+    {
+      "WarehouseID": "W04",
+      "WarehouseLocation": "Lagos",
+      "Shipments": 354,
+      "RecordedOnTime": 130,
+      "AverageDelayDays": 3.519774011299435,
+      "RecordedOnTimeRate": 0.3672316384180791,
+      "AggregateStock": 69696,
+      "ObservedProducts": 167,
+      "LowStockPairs": 18,
+      "Employees": 15,
+      "ShipmentsPerEmployee": 23.6,
+      "InventoryShareProxy": 0.0691590491424579
+    },
+    {
+      "WarehouseID": "W05",
+      "WarehouseLocation": "Lagos",
+      "Shipments": 334,
+      "RecordedOnTime": 107,
+      "AverageDelayDays": 3.787425149700599,
+      "RecordedOnTimeRate": 0.3203592814371258,
+      "AggregateStock": 63125,
+      "ObservedProducts": 163,
+      "LowStockPairs": 18,
+      "Employees": 14,
+      "ShipmentsPerEmployee": 23.857142857142858,
+      "InventoryShareProxy": 0.0626386733401867
+    },
+    {
+      "WarehouseID": "W06",
+      "WarehouseLocation": "Lagos",
+      "Shipments": 319,
+      "RecordedOnTime": 109,
+      "AverageDelayDays": 3.605015673981191,
+      "RecordedOnTimeRate": 0.341692789968652,
+      "AggregateStock": 69177,
+      "ObservedProducts": 164,
+      "LowStockPairs": 16,
+      "Employees": 14,
+      "ShipmentsPerEmployee": 22.785714285714285,
+      "InventoryShareProxy": 0.0686440476143224
+    },
+    {
+      "WarehouseID": "W07",
+      "WarehouseLocation": "Lagos",
+      "Shipments": 371,
+      "RecordedOnTime": 147,
+      "AverageDelayDays": 3.4716981132075477,
+      "RecordedOnTimeRate": 0.3962264150943396,
+      "AggregateStock": 68338,
+      "ObservedProducts": 170,
+      "LowStockPairs": 13,
+      "Employees": 17,
+      "ShipmentsPerEmployee": 21.823529411764707,
+      "InventoryShareProxy": 0.067811511425294
+    },
+    {
+      "WarehouseID": "W08",
+      "WarehouseLocation": "Kano",
+      "Shipments": 332,
+      "RecordedOnTime": 120,
+      "AverageDelayDays": 3.6656626506024095,
+      "RecordedOnTimeRate": 0.3614457831325301,
+      "AggregateStock": 66971,
+      "ObservedProducts": 159,
+      "LowStockPairs": 15,
+      "Employees": 13,
+      "ShipmentsPerEmployee": 25.53846153846154,
+      "InventoryShareProxy": 0.0664550430457924
+    },
+    {
+      "WarehouseID": "W09",
+      "WarehouseLocation": "Lagos",
+      "Shipments": 332,
+      "RecordedOnTime": 108,
+      "AverageDelayDays": 3.680722891566265,
+      "RecordedOnTimeRate": 0.3253012048192771,
+      "AggregateStock": 63604,
+      "ObservedProducts": 157,
+      "LowStockPairs": 11,
+      "Employees": 14,
+      "ShipmentsPerEmployee": 23.714285714285715,
+      "InventoryShareProxy": 0.0631139830357107
+    },
+    {
+      "WarehouseID": "W10",
+      "WarehouseLocation": "Kano",
+      "Shipments": 334,
+      "RecordedOnTime": 134,
+      "AverageDelayDays": 3.4850299401197606,
+      "RecordedOnTimeRate": 0.4011976047904191,
+      "AggregateStock": 67169,
+      "ObservedProducts": 157,
+      "LowStockPairs": 20,
+      "Employees": 15,
+      "ShipmentsPerEmployee": 22.266666666666666,
+      "InventoryShareProxy": 0.0666515176172199
+    },
+    {
+      "WarehouseID": "W11",
+      "WarehouseLocation": "Lagos",
+      "Shipments": 318,
+      "RecordedOnTime": 116,
+      "AverageDelayDays": 3.443396226415094,
+      "RecordedOnTimeRate": 0.3647798742138364,
+      "AggregateStock": 71439,
+      "ObservedProducts": 163,
+      "LowStockPairs": 18,
+      "Employees": 11,
+      "ShipmentsPerEmployee": 28.90909090909091,
+      "InventoryShareProxy": 0.0708886207485085
+    },
+    {
+      "WarehouseID": "W12",
+      "WarehouseLocation": "Abuja",
+      "Shipments": 337,
+      "RecordedOnTime": 121,
+      "AverageDelayDays": 3.593471810089021,
+      "RecordedOnTimeRate": 0.3590504451038576,
+      "AggregateStock": 77517,
+      "ObservedProducts": 174,
+      "LowStockPairs": 13,
+      "Employees": 10,
+      "ShipmentsPerEmployee": 33.7,
+      "InventoryShareProxy": 0.0769197947138417
+    },
+    {
+      "WarehouseID": "W13",
+      "WarehouseLocation": "Lagos",
+      "Shipments": 279,
+      "RecordedOnTime": 98,
+      "AverageDelayDays": 3.6057347670250897,
+      "RecordedOnTimeRate": 0.3512544802867383,
+      "AggregateStock": 63211,
+      "ObservedProducts": 162,
+      "LowStockPairs": 22,
+      "Employees": 14,
+      "ShipmentsPerEmployee": 19.928571428571427,
+      "InventoryShareProxy": 0.0627240107803017
+    },
+    {
+      "WarehouseID": "W14",
+      "WarehouseLocation": "Lagos",
+      "Shipments": 340,
+      "RecordedOnTime": 131,
+      "AverageDelayDays": 3.626470588235294,
+      "RecordedOnTimeRate": 0.3852941176470588,
+      "AggregateStock": 69883,
+      "ObservedProducts": 164,
+      "LowStockPairs": 19,
+      "Employees": 9,
+      "ShipmentsPerEmployee": 37.77777777777778,
+      "InventoryShareProxy": 0.0693446084599172
+    },
+    {
+      "WarehouseID": "W15",
+      "WarehouseLocation": "Kano",
+      "Shipments": 352,
+      "RecordedOnTime": 128,
+      "AverageDelayDays": 3.491477272727273,
+      "RecordedOnTimeRate": 0.3636363636363636,
+      "AggregateStock": 61524,
+      "ObservedProducts": 162,
+      "LowStockPairs": 20,
+      "Employees": 10,
+      "ShipmentsPerEmployee": 35.2,
+      "InventoryShareProxy": 0.0610500077399073
+    }
+  ],
+  "top_products": [
+    {
+      "ProductID": "P203",
+      "Category": "Fashion",
+      "DeliveredValue": 85977.99,
+      "DeliveredUnits": 189,
+      "OrderedUnits": 355,
+      "ProductOrders": 61,
+      "ReturnAssociatedOrders": 4,
+      "ReturnAssociatedOrderRate": 0.0655737704918032
+    },
+    {
+      "ProductID": "P085",
+      "Category": "Food",
+      "DeliveredValue": 83844.0,
+      "DeliveredUnits": 170,
+      "OrderedUnits": 380,
+      "ProductOrders": 62,
+      "ReturnAssociatedOrders": 1,
+      "ReturnAssociatedOrderRate": 0.0161290322580645
+    },
+    {
+      "ProductID": "P229",
+      "Category": "Food",
+      "DeliveredValue": 79260.8,
+      "DeliveredUnits": 160,
+      "OrderedUnits": 327,
+      "ProductOrders": 60,
+      "ReturnAssociatedOrders": 8,
+      "ReturnAssociatedOrderRate": 0.1333333333333333
+    },
+    {
+      "ProductID": "P006",
+      "Category": "Fashion",
+      "DeliveredValue": 72848.16,
+      "DeliveredUnits": 162,
+      "OrderedUnits": 357,
+      "ProductOrders": 62,
+      "ReturnAssociatedOrders": 5,
+      "ReturnAssociatedOrderRate": 0.0806451612903225
+    },
+    {
+      "ProductID": "P159",
+      "Category": "Fashion",
+      "DeliveredValue": 65588.75,
+      "DeliveredUnits": 137,
+      "OrderedUnits": 347,
+      "ProductOrders": 56,
+      "ReturnAssociatedOrders": 4,
+      "ReturnAssociatedOrderRate": 0.0714285714285714
+    },
+    {
+      "ProductID": "P220",
+      "Category": "Food",
+      "DeliveredValue": 65358.72,
+      "DeliveredUnits": 144,
+      "OrderedUnits": 372,
+      "ProductOrders": 57,
+      "ReturnAssociatedOrders": 5,
+      "ReturnAssociatedOrderRate": 0.087719298245614
+    },
+    {
+      "ProductID": "P156",
+      "Category": "Food",
+      "DeliveredValue": 62814.49,
+      "DeliveredUnits": 151,
+      "OrderedUnits": 359,
+      "ProductOrders": 65,
+      "ReturnAssociatedOrders": 3,
+      "ReturnAssociatedOrderRate": 0.0461538461538461
+    },
+    {
+      "ProductID": "P217",
+      "Category": "Electronics",
+      "DeliveredValue": 62346.84,
+      "DeliveredUnits": 127,
+      "OrderedUnits": 318,
+      "ProductOrders": 62,
+      "ReturnAssociatedOrders": 2,
+      "ReturnAssociatedOrderRate": 0.032258064516129
+    }
+  ],
+  "top_customers": [
+    {
+      "CustomerID": "C0223",
+      "City": "Kano",
+      "Orders": 8,
+      "DeliveredValue": 57592.36,
+      "FirstOrder": "2026-01-02",
+      "LastOrder": "2026-07-24"
+    },
+    {
+      "CustomerID": "C0773",
+      "City": "Kano",
+      "Orders": 12,
+      "DeliveredValue": 52251.67,
+      "FirstOrder": "2026-01-02",
+      "LastOrder": "2026-09-06"
+    },
+    {
+      "CustomerID": "C0599",
+      "City": "Ibadan",
+      "Orders": 8,
+      "DeliveredValue": 40996.2,
+      "FirstOrder": "2026-01-03",
+      "LastOrder": "2026-08-06"
+    },
+    {
+      "CustomerID": "C0520",
+      "City": "Kano",
+      "Orders": 10,
+      "DeliveredValue": 32240.31,
+      "FirstOrder": "2026-02-19",
+      "LastOrder": "2026-09-02"
+    },
+    {
+      "CustomerID": "C0030",
+      "City": "Kano",
+      "Orders": 10,
+      "DeliveredValue": 31817.68,
+      "FirstOrder": "2026-02-05",
+      "LastOrder": "2026-08-26"
+    },
+    {
+      "CustomerID": "C0681",
+      "City": "Ibadan",
+      "Orders": 6,
+      "DeliveredValue": 30586.2,
+      "FirstOrder": "2026-02-08",
+      "LastOrder": "2026-06-12"
+    },
+    {
+      "CustomerID": "C0071",
+      "City": "Abuja",
+      "Orders": 5,
+      "DeliveredValue": 28724.09,
+      "FirstOrder": "2026-02-22",
+      "LastOrder": "2026-08-08"
+    },
+    {
+      "CustomerID": "C0417",
+      "City": "Lagos",
+      "Orders": 8,
+      "DeliveredValue": 28633.74,
+      "FirstOrder": "2026-02-24",
+      "LastOrder": "2026-08-30"
+    }
+  ],
+  "return_reasons": [
+    {
+      "Reason": "Damaged",
+      "ReturnEvents": 152,
+      "Orders": 151
+    },
+    {
+      "Reason": "Late Delivery",
+      "ReturnEvents": 185,
+      "Orders": 182
+    },
+    {
+      "Reason": "Wrong Item",
+      "ReturnEvents": 163,
+      "Orders": 162
+    }
+  ]
+}

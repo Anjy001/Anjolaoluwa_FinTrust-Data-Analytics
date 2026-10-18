@@ -1,0 +1,44 @@
+Check,Passed,Observed
+Customers primary key,True,1000
+Orders primary key,True,5000
+Order_Items primary key,True,15000
+Products primary key,True,250
+Shipments primary key,True,5000
+Delivery_Performance primary key,True,5000
+Returns primary key,True,500
+Warehouses primary key,True,15
+Employees primary key,True,200
+Suppliers primary key,True,150
+Orders.CustomerID relationship,True,0
+Order_Items.OrderID relationship,True,0
+Order_Items.ProductID relationship,True,0
+Inventory.ProductID relationship,True,0
+Inventory.WarehouseID relationship,True,0
+Shipments.OrderID relationship,True,0
+Shipments.WarehouseID relationship,True,0
+Delivery_Performance.ShipmentID relationship,True,0
+Employees.WarehouseID relationship,True,0
+Returns.OrderID relationship,True,0
+Order-item joins preserve grain,True,15000
+Shipment joins preserve grain,True,5000
+Inventory rows retained,True,4000
+Inventory aggregation preserves stock,True,1007764
+Recorded on-time status follows 0-2 day rule,True,All shipment rows
+Delivery delay copies agree,True,All shipment rows
+Non-negative quantities and prices,True,All item and product rows
+Monthly order reconciliation,True,5000
+Customer value reconciliation,True,7107470.53
+Product value reconciliation,True,7107470.53
+Return order rate bounded,True,0.0946
+SQL reconciliation: Orders,True,5000
+SQL reconciliation: DeliveredOrders,True,1658
+SQL reconciliation: ReturnedOrders,True,473
+SQL reconciliation: RecordedOnTime,True,1814
+SQL reconciliation: AverageDelayDays,True,3.5696
+SQL reconciliation: AggregateInventoryQuantity,True,1007764
+SQL reconciliation: DeliveredOrderValue,True,7107470.53
+SQL reconciliation: PricedDeliveredOrders,True,1578
+SQL reconciliation: AllOrderValue,True,21668065.85
+SQL reconciliation: DeliveredUnits,True,27171
+SQL reconciliation: ActiveCustomers,True,991
+SQL reconciliation: OrdersWithoutItems,True,236
