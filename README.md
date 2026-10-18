@@ -2,6 +2,11 @@
 **AnalystLab Africa — Experience Lab Internship Programme**
 Project: FinTrust Financial Intelligence & Digital Banking Support Solution
 
+## Weekly projects
+
+- [Week 4: FinTrust analysis](week4/)
+- [Week 5: SwiftLog logistics analytics](week5/) — logistics performance analysis, dashboards, executive report and presentation.
+
 ## Overview
 Week 1 deliverable: business understanding, resource/data review, track objectives,
 success criteria and a Weeks 2-4 plan for each of the five tracks.
