@@ -1,0 +1,140 @@
+// Order volume within the selected order cohort.
+Total Orders = COUNTROWS(Orders)
+
+// Customer catalogue size.
+Total Customers = COUNTROWS(Customers)
+
+// Customers with selected orders.
+Active Customers = DISTINCTCOUNT(Orders[CustomerID])
+
+// Product catalogue size.
+Total Products = COUNTROWS(Products)
+
+// Shipments linked to selected orders.
+Total Shipments = COUNTROWS(Shipments)
+
+// Delivered order value at supplied catalogue prices. Currency and revenue recognition are unspecified.
+Total Revenue = SUM(OrderItems[DeliveredValue])
+
+// Catalogue value across all order statuses.
+All Order Value = SUM(OrderItems[LineValue])
+
+// Delivered status order count.
+Delivered Orders = CALCULATE([Total Orders],KEEPFILTERS(Orders[Status]="Delivered"))
+
+// Delivered orders represented in order items.
+Priced Delivered Orders = CALCULATE([Total Orders],KEEPFILTERS(Orders[Status]="Delivered"),KEEPFILTERS(Orders[HasItems]=1))
+
+// Delivered catalogue value per priced delivered order.
+Average Order Value = DIVIDE([Total Revenue],[Priced Delivered Orders])
+
+// Source coverage exception count.
+Orders Without Items = CALCULATE([Total Orders],KEEPFILTERS(Orders[HasItems]=0))
+
+// Units in delivered status orders.
+Delivered Units = SUM(OrderItems[DeliveredUnits])
+
+// Source On Time status, consistently associated with delay of 0-2 days.
+Recorded On-Time Shipments = SUM(Shipments[RecordedOnTime])
+
+// Recorded status rate, not the zero-delay share.
+On-Time Delivery Rate = DIVIDE([Recorded On-Time Shipments],[Total Shipments])
+
+// Source Delayed status.
+Delayed Shipments = [Total Shipments]-[Recorded On-Time Shipments]
+
+// Recorded delayed share.
+Delayed Shipment Rate = DIVIDE([Delayed Shipments],[Total Shipments])
+
+// Mean recorded delay in days.
+Average Delivery Delay = AVERAGE(Shipments[DelayDays])
+
+// Not estimable: dispatch and arrival timestamps are absent.
+Average Delivery Time = BLANK()
+
+// Share with exactly zero recorded delay.
+Zero-Delay Share = DIVIDE(CALCULATE([Total Shipments],KEEPFILTERS(Shipments[DelayDays]=0)),[Total Shipments])
+
+// Sum of all supplied stock movement quantities. Not a current on-hand balance.
+Inventory Stock Level = SUM(Inventory[Stock])
+
+// Standard turnover cannot be estimated without dated inventory balances and a consistent cost or quantity basis.
+Inventory Turnover = BLANK()
+
+// Period delivered units divided by undated aggregate stock. Does not estimate standard turnover.
+Throughput to Stock Proxy = DIVIDE([Delivered Units],[Inventory Stock Level])
+
+// Return event count.
+Return Events = COUNTROWS(Returns)
+
+// Distinct orders with a return record.
+Returned Orders = DISTINCTCOUNT(Returns[OrderID])
+
+// Order-level return association. Product-level returned items are not identified.
+Return Rate = DIVIDE([Returned Orders],[Total Orders])
+
+// Distinct orders containing selected products.
+Product Order Count = DISTINCTCOUNT(OrderItems[OrderID])
+
+// Orders containing a selected product and carrying any return event.
+Product Return-Associated Orders = VAR P=VALUES(OrderItems[OrderID]) RETURN CALCULATE(DISTINCTCOUNT(Returns[OrderID]),TREATAS(P,Returns[OrderID]))
+
+// Association with a returned order, not the actual product return rate.
+Product Return Association Rate = DIVIDE([Product Return-Associated Orders],[Product Order Count])
+
+// Standalone supplier reference count.
+Supplier Count = COUNTROWS(Suppliers)
+
+// Not estimable: no supplier relationship or performance observations.
+Supplier Performance Score = BLANK()
+
+// Supplier measurement boundary.
+Supplier Measurement Coverage = "Unavailable: no supplier-to-product relationship"
+
+// Physical utilisation is not estimable without capacity.
+Warehouse Utilization = BLANK()
+
+// Share of aggregate stock held by selected warehouse. Not capacity utilisation.
+Warehouse Inventory Share Proxy = DIVIDE([Inventory Stock Level],CALCULATE([Inventory Stock Level],REMOVEFILTERS(Warehouses)))
+
+// Employee count for selected warehouse.
+Warehouse Employees = COUNTROWS(Employees)
+
+// Shipment workload proxy, without employee hours or costs.
+Shipments per Employee = DIVIDE([Total Shipments],[Warehouse Employees])
+
+// Illustrative planning threshold, adjustable from 0 to 500 units.
+Low Stock Threshold = SELECTEDVALUE(LowStockParameter[Threshold],100)
+
+// Observed warehouse-product aggregates below the selected threshold.
+Low Stock Pairs = COUNTROWS(FILTER(Inventory,Inventory[Stock]<[Low Stock Threshold]))
+
+// Warehouse-product combinations present in the source.
+Observed Inventory Pairs = COUNTROWS(Inventory)
+
+// Customers with at least two selected orders.
+Repeat Customers = COUNTROWS(FILTER(VALUES(Orders[CustomerID]),CALCULATE(COUNTROWS(Orders))>1))
+
+// Repeat purchasing indicator, not a longitudinal retention estimate.
+Repeat Customer Rate = DIVIDE([Repeat Customers],[Active Customers])
+
+// First observed order within the supplied history.
+First Observed Customers = CALCULATE(DISTINCTCOUNT(Orders[CustomerID]),Orders[IsFirstObservedOrder]=1)
+
+// Title follows date and customer-city selections.
+Dynamic Report Title = "SwiftLog | "&COALESCE(SELECTEDVALUE(Dates[Month]),"All order months")&" | "&COALESCE(SELECTEDVALUE(Customers[City]),"All customer cities")
+
+// Context-sensitive tooltip and drill-through title.
+Selected Product Title = "Product "&COALESCE(SELECTEDVALUE(Products[ProductID]),"overview")
+
+// Conditional colour at an illustrative 65% delayed-rate monitoring threshold.
+Delivery Colour = IF([Delayed Shipment Rate]>=0.65,"#BF4A3C","#137D7B")
+
+// Delivered catalogue value for the ten highest ranked customers in the selection.
+Top Customer Value = IF(RANKX(ALLSELECTED(Customers[CustomerID]),[Total Revenue],,DESC,DENSE)<=10,[Total Revenue],BLANK())
+
+// Delivered catalogue value for the ten highest ranked products in the selection.
+Top Product Value = IF(RANKX(ALLSELECTED(Products[ProductID]),[Total Revenue],,DESC,DENSE)<=10,[Total Revenue],BLANK())
+
+// Highest observed customer order frequencies within the selection.
+Top Customer Orders = IF(RANKX(ALLSELECTED(Customers[CustomerID]),[Total Orders],,DESC,DENSE)<=10,[Total Orders],BLANK())
