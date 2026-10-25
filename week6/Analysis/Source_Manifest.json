@@ -1,0 +1,191 @@
+[
+  {
+    "file": "HCCountries.csv",
+    "bytes": 89,
+    "sha256": "513d708d4b6e53c3b6cf8bab083bd2dc3552a544e75bac0e82e1ef677060b310",
+    "source_id": "1eLH8LMntRv4ZCxWmZegAcM4m02JD6IFn",
+    "source_url": "https://drive.google.com/file/d/1eLH8LMntRv4ZCxWmZegAcM4m02JD6IFn/view?usp=sharing"
+  },
+  {
+    "file": "HC_Provinces.csv",
+    "bytes": 149,
+    "sha256": "ac50b8c0dda7f3f49e216eb05c30d02d6ca3503fe02213686e177c56133e2e6d",
+    "source_id": "1LYlJLZOoCtdJOLnijggyPwWIlkv6CfJP",
+    "source_url": "https://drive.google.com/file/d/1LYlJLZOoCtdJOLnijggyPwWIlkv6CfJP/view?usp=sharing"
+  },
+  {
+    "file": "HC_Districts.csv",
+    "bytes": 747,
+    "sha256": "18cc052d8cf9de499b64648acc37c86006df22bb863314173e377c698a20dd55",
+    "source_id": "1HYXgBxx-K5ZZ49ZNd5HXeUCZxYyPlnN4",
+    "source_url": "https://drive.google.com/file/d/1HYXgBxx-K5ZZ49ZNd5HXeUCZxYyPlnN4/view?usp=sharing"
+  },
+  {
+    "file": "HC_Sectors.csv",
+    "bytes": 2567,
+    "sha256": "3bb98f5c7f88ebe2d6cbd88794734aa89675baa6770e85ac0dad5ed28210b7ab",
+    "source_id": "1u-y9dwV3UJBzW2U7MxZGNlxwLnvfhzvQ",
+    "source_url": "https://drive.google.com/file/d/1u-y9dwV3UJBzW2U7MxZGNlxwLnvfhzvQ/view?usp=sharing"
+  },
+  {
+    "file": "HC_Villages.csv",
+    "bytes": 11447,
+    "sha256": "b2f9f538f469715b5ed075d2ff0d25dd27a444dc71adfdaf8515dc6df3521782",
+    "source_id": "19R_E3_O9Hx8NQMz84OqiwN8BPg11QD3W",
+    "source_url": "https://drive.google.com/file/d/19R_E3_O9Hx8NQMz84OqiwN8BPg11QD3W/view?usp=sharing"
+  },
+  {
+    "file": "HC_Ownership_Types.csv",
+    "bytes": 93,
+    "sha256": "294b29ce226f52b348bba2c587fe799cbf318417e619b3164a37d16bbcb473c1",
+    "source_id": "1uxxK447ZiXq43ufJfkh127deLdOEabZO",
+    "source_url": "https://drive.google.com/file/d/1uxxK447ZiXq43ufJfkh127deLdOEabZO/view?usp=sharing"
+  },
+  {
+    "file": "HC_Facility_Master_Data.xlsx",
+    "bytes": 80959,
+    "sha256": "9c4196c6d38b629219f1dfdc853823e68d66890b6a5e3d5099a317a8c10e6e8d",
+    "source_id": "1QTUksqvCoUqyg6ruwj55dHzYqblOySQv",
+    "source_url": "https://docs.google.com/spreadsheets/d/1QTUksqvCoUqyg6ruwj55dHzYqblOySQv/edit?usp=sharing&ouid=112378631926353872056&rtpof=true&sd=true"
+  },
+  {
+    "file": "HC_Departments.csv",
+    "bytes": 5163,
+    "sha256": "c2a05f4ba0e4c60dcf29eeb99e50ec623e32bbc9da464f6517d03dd6c4e8933f",
+    "source_id": "15OsSQm2vfjNU7W7LHkK0PI1i89q2w0BU",
+    "source_url": "https://drive.google.com/file/d/15OsSQm2vfjNU7W7LHkK0PI1i89q2w0BU/view?usp=sharing"
+  },
+  {
+    "file": "HC_Medical_Specialties.csv",
+    "bytes": 5479,
+    "sha256": "3df1c7859c2719a5b72e0263e21c02427e82413c0e2dffff27c48215187dac8a",
+    "source_id": "1gSxj2KHcy51_33xopiLHy3HUOgI3yOf6",
+    "source_url": "https://drive.google.com/file/d/1gSxj2KHcy51_33xopiLHy3HUOgI3yOf6/view?usp=sharing"
+  },
+  {
+    "file": "HC_Services.csv",
+    "bytes": 15679,
+    "sha256": "cbca82c6f341cafb1b5855dba0461f3a89645a518c3faba9f69f73ca372261ce",
+    "source_id": "1WxzgKH17BmxQvsS4hjdYziqlL2B1cPn8",
+    "source_url": "https://drive.google.com/file/d/1WxzgKH17BmxQvsS4hjdYziqlL2B1cPn8/view?usp=sharing"
+  },
+  {
+    "file": "HC_Medical_Equipment.csv",
+    "bytes": 8571,
+    "sha256": "a562a9cd9442ef51679c20f51cfe732f5ae8ad49eae057fdc4f61ee6a9f083f6",
+    "source_id": "1riRIJyWrwemhYq8Mf1khJgWy-jjtHhoA",
+    "source_url": "https://drive.google.com/file/d/1riRIJyWrwemhYq8Mf1khJgWy-jjtHhoA/view?usp=sharing"
+  },
+  {
+    "file": "HC_Rooms.csv",
+    "bytes": 15884,
+    "sha256": "13dc8a8819994d2d8c5dc376f19109fbdd9788b88b60dc4247fe9bfa510b9586",
+    "source_id": "1gVFEWZ8eVwFiHw3NFtkstLta85osi1YG",
+    "source_url": "https://drive.google.com/file/d/1gVFEWZ8eVwFiHw3NFtkstLta85osi1YG/view?usp=sharing"
+  },
+  {
+    "file": "HC_Beds.csv",
+    "bytes": 54024,
+    "sha256": "6db4130b16e86f669a4bd93279c14dc7e7fe6061fe8798e5f1d836af1cfc8179",
+    "source_id": "1_Ct3iwrtBpx8jHUltcstphTEnZnTLLd5",
+    "source_url": "https://drive.google.com/file/d/1_Ct3iwrtBpx8jHUltcstphTEnZnTLLd5/view?usp=sharing"
+  },
+  {
+    "file": "HC_Doctor.csv",
+    "bytes": 27479,
+    "sha256": "680f7cdf207ff118488305a5033d462b069c66d74b24bd99ec304411c0836e11",
+    "source_id": "1g3cRESQRk-uj4ossOgKwIPA3VfjtTw89",
+    "source_url": "https://drive.google.com/file/d/1g3cRESQRk-uj4ossOgKwIPA3VfjtTw89/view?usp=sharing"
+  },
+  {
+    "file": "HC_Nurse.csv",
+    "bytes": 49067,
+    "sha256": "1f644dacd08b63d532857b84fc833a9d35f1c0c0628c2f7341ab7fee05cd7459",
+    "source_id": "1YW6sef9tHJkB_10lS0mrRWYbt76X1cqV",
+    "source_url": "https://drive.google.com/file/d/1YW6sef9tHJkB_10lS0mrRWYbt76X1cqV/view?usp=sharing"
+  },
+  {
+    "file": "Pharmacist.csv",
+    "bytes": 4093,
+    "sha256": "44e893b20ddc2189c768a48f27906a4adf09d1cc73a5943b380372b35a41494f",
+    "source_id": "1doFvT_sn3Wc51vO82OHj-rowbdEsL7ma",
+    "source_url": "https://drive.google.com/file/d/1doFvT_sn3Wc51vO82OHj-rowbdEsL7ma/view?usp=sharing"
+  },
+  {
+    "file": "Laboratory_Scientist.csv",
+    "bytes": 4094,
+    "sha256": "d9ffde2cc3409b8e4219aa781b5409e0457423ad8c5800306232488cb04dd1da",
+    "source_id": "1pyQLZ4h3Xr53-ZbATPw5MMxKTNB8ngHR",
+    "source_url": "https://drive.google.com/file/d/1pyQLZ4h3Xr53-ZbATPw5MMxKTNB8ngHR/view?usp=sharing"
+  },
+  {
+    "file": "HC_Radiographer.csv",
+    "bytes": 2611,
+    "sha256": "57d7284b96cba6121a3b3dbd8e6df047f38d99397aea545f2062c37cd3a2326c",
+    "source_id": "1nexSktXT6cWB_1ZOx8cwWhd8PQA_YsNr",
+    "source_url": "https://drive.google.com/file/d/1nexSktXT6cWB_1ZOx8cwWhd8PQA_YsNr/view?usp=sharing"
+  },
+  {
+    "file": "HC_Administrative_Staff.csv",
+    "bytes": 8106,
+    "sha256": "d3fb68cef87a9f514f4e2faba4ccca98267e1c28c2f00ebd5e95513d5c6e279c",
+    "source_id": "1g9Ahw5JyrC-HY37167NJYOlR5ru55QMT",
+    "source_url": "https://drive.google.com/file/d/1g9Ahw5JyrC-HY37167NJYOlR5ru55QMT/view?usp=sharing"
+  },
+  {
+    "file": "HC_Patients.csv",
+    "bytes": 2786822,
+    "sha256": "b517e71a72ff695c3c345d9c14a6f07e59b1e855cdf041621daf88e6e09271e5",
+    "source_id": "15Vw2p-V4B7W0iA9L_k9VUFjTrbj39psh",
+    "source_url": "https://drive.google.com/file/d/15Vw2p-V4B7W0iA9L_k9VUFjTrbj39psh/view?usp=sharing"
+  },
+  {
+    "file": "HC_Diagnoses.csv",
+    "bytes": 2431317,
+    "sha256": "2bbcc53fbc2fb67a3e1d4dbb01b071707bee58446832ebc196b59c6a84e1e427",
+    "source_id": "1xksC3xmZW1fEkuZpsCtJBHHw1XS9j5_v",
+    "source_url": "https://drive.google.com/file/d/1xksC3xmZW1fEkuZpsCtJBHHw1XS9j5_v/view?usp=sharing"
+  },
+  {
+    "file": "HC_Clinical_Transactions.xlsx",
+    "bytes": 898069,
+    "sha256": "a706ebdcb2ec50f0df79c822d20f8d4d7963d887270951b4050752650d816a34",
+    "source_id": "1lGKk5ppaLvWPBsMNmud0DXIhlujcxsRA",
+    "source_url": "https://docs.google.com/spreadsheets/d/1lGKk5ppaLvWPBsMNmud0DXIhlujcxsRA/edit?usp=sharing&ouid=112378631926353872056&rtpof=true&sd=true"
+  },
+  {
+    "file": "HC_Billing.csv",
+    "bytes": 2220751,
+    "sha256": "a1c1bad9977967b4475a7556f31925bf1e3954c0640439165bbef92b133a44fb",
+    "source_id": "1_iG-RnobA9Yi5s_bU6eudkrVHOWUgWiP",
+    "source_url": "https://drive.google.com/file/d/1_iG-RnobA9Yi5s_bU6eudkrVHOWUgWiP/view?usp=sharing"
+  },
+  {
+    "file": "Insurance_Claims.csv",
+    "bytes": 1899268,
+    "sha256": "953193fa29bf96cc786a5440775f6fe304e62b51edfc1b115775198a4e2d1e58",
+    "source_id": "1S2lxqWSABB2iLYZkRWHb31idPsHSc0h9",
+    "source_url": "https://drive.google.com/file/d/1S2lxqWSABB2iLYZkRWHb31idPsHSc0h9/view?usp=sharing"
+  },
+  {
+    "file": "HC_Payments.csv",
+    "bytes": 2151757,
+    "sha256": "476eece4e903c2e2acbe79ad76f4c93e5989bcd2596b9ccc72d9fb2ff241dddb",
+    "source_id": "1nzxMGpWJPtVFwWmyhA_bGRWMbBFqEd9X",
+    "source_url": "https://drive.google.com/file/d/1nzxMGpWJPtVFwWmyhA_bGRWMbBFqEd9X/view?usp=sharing"
+  },
+  {
+    "file": "HC_Patient_Feedback.csv",
+    "bytes": 610386,
+    "sha256": "85d955a4ba07bb0ef0a64c0d9451ea78376cae2b25a3afbcf2d84fae1acb568f",
+    "source_id": "1OFDTCEo5dSqjYEg7b2ep6MdUdZoosRXK",
+    "source_url": "https://drive.google.com/file/d/1OFDTCEo5dSqjYEg7b2ep6MdUdZoosRXK/view?usp=sharing"
+  },
+  {
+    "file": "HC_Revenue_Summary.csv",
+    "bytes": 310,
+    "sha256": "1c107acece2f76c1ba9a89f9e893bcc421c0d851e9bd4114a60e1e5782dcd0f6",
+    "source_id": "1JfWK7bpyDJUE9EZC_0uWTlKac7g0SGEi",
+    "source_url": "https://drive.google.com/file/d/1JfWK7bpyDJUE9EZC_0uWTlKac7g0SGEi/view?usp=sharing"
+  }
+]

@@ -1,0 +1,123 @@
+Check,Passed,Observed,Expected
+Countries primary key,True,1,1
+Countries blank cells,True,0,0
+Provinces primary key,True,5,5
+Provinces blank cells,True,0,0
+Districts primary key,True,30,30
+Districts blank cells,True,0,0
+Sectors primary key,True,120,120
+Sectors blank cells,True,0,0
+Villages primary key,True,480,480
+Villages blank cells,True,0,0
+OwnershipTypes primary key,True,4,4
+OwnershipTypes blank cells,True,0,0
+Departments primary key,True,200,200
+Departments blank cells,True,0,0
+Specialties primary key,True,200,200
+Specialties blank cells,True,0,0
+Services primary key,True,400,400
+Services blank cells,True,0,0
+Equipment primary key,True,200,200
+Equipment blank cells,True,0,0
+Rooms primary key,True,400,400
+Rooms blank cells,True,0,0
+Beds primary key,True,2000,2000
+Beds blank cells,True,0,0
+Doctors primary key,True,350,350
+Doctors blank cells,True,0,0
+Doctors YearsExperience nonnegative,True,0,0
+Nurses primary key,True,700,700
+Nurses blank cells,True,0,0
+Nurses YearsExperience nonnegative,True,0,0
+Pharmacists primary key,True,50,50
+Pharmacists blank cells,True,0,0
+Pharmacists YearsExperience nonnegative,True,0,0
+LaboratoryScientists primary key,True,40,40
+LaboratoryScientists blank cells,True,0,0
+LaboratoryScientists YearsExperience nonnegative,True,0,0
+Radiographers primary key,True,30,30
+Radiographers blank cells,True,0,0
+Radiographers YearsExperience nonnegative,True,0,0
+AdministrativeStaff primary key,True,80,80
+AdministrativeStaff blank cells,True,0,0
+AdministrativeStaff YearsExperience nonnegative,True,0,0
+Patients primary key,True,20000,20000
+Patients blank cells,True,0,0
+Patients Age nonnegative,True,0,0
+Patients WeightKg nonnegative,True,0,0
+Patients BMI nonnegative,True,0,0
+Patients HeightCm nonnegative,True,0,0
+Diagnoses primary key,True,60000,60000
+Diagnoses blank cells,True,0,0
+Billing primary key,True,60000,60000
+Billing blank cells,True,0,0
+Billing Amount nonnegative,True,0,0
+InsuranceClaims primary key,True,42036,42036
+InsuranceClaims blank cells,True,0,0
+InsuranceClaims ClaimAmount nonnegative,True,0,0
+Payments primary key,True,60000,60000
+Payments blank cells,True,0,0
+Payments AmountPaid nonnegative,True,0,0
+Feedback primary key,True,21064,21064
+Feedback blank cells,True,0,0
+Feedback Rating nonnegative,True,0,0
+RevenueSummary primary key,True,12,12
+RevenueSummary blank cells,True,0,0
+RevenueSummary Revenue nonnegative,True,0,0
+RevenueSummary Appointments nonnegative,True,0,0
+Appointments primary key,True,5000,5000
+Appointments blank cells,True,0,0
+LaboratoryTests primary key,True,5000,5000
+LaboratoryTests blank cells,True,0,0
+Prescriptions primary key,True,5000,5000
+Prescriptions blank cells,True,0,0
+Admissions primary key,True,5000,5000
+Admissions blank cells,True,0,0
+Admissions LengthOfStayDays nonnegative,True,0,0
+Referrals primary key,True,4708,4708
+Referrals blank cells,True,0,0
+Workbook diagnosis subset agrees with full CSV,True,5000,5000
+Facility workbook mirrors Departments,True,200,200
+Facility workbook mirrors Specialties,True,200,200
+Facility workbook mirrors Services,True,400,400
+Facility workbook mirrors Equipment,True,200,200
+Facility workbook mirrors Rooms,True,400,400
+Facility workbook mirrors Beds,True,2000,2000
+Appointments dates parse,True,0,0
+Patients dates parse,True,0,0
+Patient ages 0-120,True,0,0
+Feedback ratings 1-5,True,0,0
+Provinces.CountryID references Countries,True,0,0
+Districts.ProvinceID references Provinces,True,0,0
+Sectors.DistrictID references Districts,True,0,0
+Villages.SectorID references Sectors,True,0,0
+Patients.VillageID references Villages,True,0,0
+Appointments.PatientID references Patients,True,0,0
+Appointments.DoctorID references Doctors,True,0,0
+Appointments.DepartmentID references Departments,True,0,0
+Beds.RoomID references Rooms,True,0,0
+Payments.BillingID references Billing,True,0,0
+InsuranceClaims.BillingID references Billing,True,0,0
+All required SQL queries executed,True,40,40
+Combined staff IDs are unique,True,1250,1250
+Billing view preserves bill grain,True,60000,60000
+Appointment view preserves appointment grain,True,5000,5000
+Billing arithmetic reconciles,True,0.0,0
+Patient geography coverage,True,0,0
+SQLite integrity,True,ok,ok
+Independent SQL reconciliation: Registered patients,True,0.0,0
+Independent SQL reconciliation: Available appointments,True,0.0,0
+Independent SQL reconciliation: Billing amount,True,0.0,0
+Independent SQL reconciliation: Payment amount,True,0.0,0
+Independent SQL reconciliation: Outstanding balance,True,0.0,0
+Independent SQL reconciliation: Patient age,True,0.0,0
+Independent SQL reconciliation: Mean feedback rating,True,0.0,0
+Independent SQL reconciliation: Average admission duration,True,0.0,0
+Independent SQL reconciliation: Emergency volume,True,0.0,0
+Independent SQL reconciliation: Approved claims,True,0.0,0
+Independent SQL reconciliation: Registered doctors,True,0.0,0
+Independent SQL reconciliation: Chronic-condition patients,True,0.0,0
+Patient profile aggregates reconcile,True,20000,20000
+Appointment cube reconciles,True,5000,5000
+No negative bill balances,True,0,0
+Claims have one record per bill for provider association,True,42036,42036

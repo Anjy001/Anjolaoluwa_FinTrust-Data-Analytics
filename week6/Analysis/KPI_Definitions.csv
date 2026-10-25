@@ -1,0 +1,72 @@
+Key,Metric,Value,Unit,Definition
+patients,Registered patient records,20000,patients,All supplied patient master records.
+active_patients,Patients labelled Active,20000,patients,"Source status, distinct from observed visit activity."
+observed_patients,Patients with observed appointments,4443,patients,Distinct PatientID in the available appointment extract.
+first_observed,First observed patients,4443,patients,First encounter within the supplied extract; registration dates are absent.
+returning,Patients with repeat observed appointments,510,patients,At least two available appointments; not a longitudinal retention rate.
+single_visit,Patients with one observed appointment,3933,patients,Exactly one encounter in the available appointment extract.
+male,Male patient records,10090,patients,Recorded Gender.
+female,Female patient records,9910,patients,Recorded Gender.
+insurance,Recorded insurance-code presence,1,ratio,Nonempty insurance identifier; policy validity and patient-to-provider lookup are unavailable.
+age,Average recorded age,45.0332,years,Supplied Age values; no recalculation against the execution date.
+chronic,Patients with recorded chronic conditions,14929,patients,Any recorded condition other than None/blank/Unknown.
+appointments,Available appointments,5000,appointments,"5,000 source rows; this extract does not cover all encounters referenced elsewhere."
+emergency,Emergency appointments,1650,appointments,Available appointment extract.
+consultation,Consultation appointments,1656,appointments,Available appointment extract.
+followup,Follow-up appointments,1694,appointments,Available appointment extract.
+referral_rate,Referral association in available appointments,0.083,ratio,Distinct available appointments with at least one matching referral / available appointments.
+admission_rate,Admission association in available appointments,0.1172,ratio,Distinct available appointments with at least one matching admission / available appointments.
+diagnoses,Diagnosis records,60000,records,"Full diagnosis CSV; the 5,000-row workbook copy is a matching subset, not an additional fact table."
+lab_tests,Laboratory test records,5000,records,"All supplied laboratory rows, including unlinked appointments."
+prescriptions,Prescription records,5000,records,All supplied prescription rows.
+admissions,Admission records,5000,records,All supplied admission rows.
+los,Average supplied length of stay,5.4876,days,All supplied admission duration values; admissions have no dated start/end fields.
+referrals,Referral records,4708,records,All supplied referral rows.
+repeat_admission,Patients with multiple linked admission records,8,patients,Descriptive observed repeat-admission indicator; no clinical 30-day readmission definition is supported.
+doctors,Doctors records,350,staff,Role-specific supplied master table.
+nurses,Nurses records,700,staff,Role-specific supplied master table.
+pharmacists,Pharmacists records,50,staff,Role-specific supplied master table.
+lab_scientists,LaboratoryScientists records,40,staff,Role-specific supplied master table.
+radiographers,Radiographers records,30,staff,Role-specific supplied master table.
+admin_staff,AdministrativeStaff records,80,staff,Role-specific supplied master table.
+staff,All staff records,1250,staff,Six role extracts; StaffID uniqueness checked across the combined population.
+experience,Average staff experience,12.928,years,All supplied staff records.
+staff_ratio,"Clinical staff per 1,000 registered patients",58.5,"per 1,000","Doctors, nurses, pharmacists, laboratory scientists and radiographers / patient register; not a staffing adequacy standard."
+doctor_workload,Appointments per registered doctor,14.2857142857143,appointments/doctor,Includes doctors with zero available appointments.
+facilities,Observed facility identifiers,20,identifiers,"Union of FacilityIDs in supplied tables; facility names, ownership and locations are absent."
+beds,Bed register capacity,2000,beds,Supplied bed records; not a dated occupancy census.
+available_beds,Beds labelled Available,2000,beds,Source status only; all beds carry the same status.
+rooms,Room records,400,rooms,Supplied room inventory.
+equipment,Equipment records,200,items,Supplied medical equipment inventory.
+billed,Billing amounts,9309401961,RWF,All supplied bill Amount values.
+payments,Recorded payment amounts,8389454556,RWF,All AmountPaid values; payment dates and accounting revenue-recognition fields are absent.
+outstanding,Positive bill balances,919947405,RWF,"Sum max(bill Amount - aggregate AmountPaid per bill, 0)."
+credit,Credit balances,0,RWF,"Sum max(aggregate paid per bill - bill Amount, 0)."
+collection_ratio,Recorded payment-to-bill ratio,0.90118082677556,ratio,All recorded payment amounts / all billed amounts; not a dated collection-performance rate.
+average_bill,Average billing amount,155156.69935,RWF/bill,Total billing / bill count.
+summary_revenue,Revenue Summary amount,1132677500,RWF,Separate source series; unreconciled with payment and billing totals.
+summary_appointments,Revenue Summary appointment count,60809,appointments,"Separate source summary, not the available appointment extract."
+claim_count,Insurance claims,42036,claims,All supplied claim records.
+claim_approved,Approved share of all claims,0.49976210866876,ratio,"Approved / all supplied claims, including Pending. Rejected records are absent."
+claim_pending,Pending insurance claims,21028,claims,Source Status equals Pending.
+claim_amount,Insurance claim amounts,4881863293.88,RWF,Claim amount differs from billed revenue and received payments.
+satisfaction,Mean recorded feedback rating,2.98718192176225,out of 5,"All supplied feedback records, including unlinked appointments."
+feedback,Feedback records,21064,responses,All supplied feedback rows.
+poor_rating,Ratings 1-2,0.404386631219142,ratio,Analytical poor-rating band defined as source Rating 1 or 2.
+excellent_rating,Ratings 5,0.196971135586783,ratio,Source Rating equals 5.
+billing_coverage,Billing appointment-link coverage,0.0833333333333333,ratio,Bills with a valid appointment row / all bills.
+feedback_coverage,Feedback appointment-link coverage,0.083364982909229,ratio,Feedback rows linked to the available appointment extract / all feedback.
+department_alignment,Appointment department/facility alignment,0.0512,ratio,Appointment FacilityID agrees with its department master FacilityID.
+future_appointments,Available appointments dated after 25 October 2026,864,appointments,Supplied training scenario includes future-dated records; not a claim of completed real-world activity.
+new_registrations,Newly registered patients,,unavailable,No registration date.
+cancellation,Appointment cancellation rate,,unavailable,No appointment status or cancellation field.
+bed_utilization,Bed occupancy utilization,,unavailable,"No dated occupancy census, bed assignments or admission start/end dates."
+room_utilization,Room utilization,,unavailable,No usage or availability history.
+equipment_utilization,Equipment utilization,,unavailable,No usage hours or capacity.
+equipment_availability,Equipment availability,,unavailable,No availability/status field.
+facility_types,Facility type distribution,,unavailable,Facility master table is not supplied.
+facility_provinces,Facility province distribution,,unavailable,Facility-to-geography mapping is not supplied.
+service_revenue,Revenue by healthcare service,,unavailable,No transaction-level ServiceID.
+readmission_rate,Clinical readmission rate,,unavailable,"No admission dates, discharge dates or defined readmission window."
+payment_growth,Payment growth by receipt month,,unavailable,No payment receipt date.
+capacity,Department physical capacity,,unavailable,No staffed capacity or department throughput limits.

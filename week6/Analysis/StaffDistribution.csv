@@ -1,0 +1,121 @@
+FacilityID,Role,Department,Staff,AverageExperience
+HF001,Administrative Staff,Emergency,4,16.5
+HF001,Doctor,Emergency,18,14.6666666666667
+HF001,Laboratory Scientist,Emergency,2,13
+HF001,Nurse,Emergency,35,12.6285714285714
+HF001,Pharmacist,Emergency,3,9.33333333333333
+HF001,Radiographer,Emergency,2,24.5
+HF002,Administrative Staff,Internal Medicine,4,15
+HF002,Doctor,Internal Medicine,18,13.8333333333333
+HF002,Laboratory Scientist,Internal Medicine,2,14.5
+HF002,Nurse,Internal Medicine,35,14.3142857142857
+HF002,Pharmacist,Internal Medicine,3,13.6666666666667
+HF002,Radiographer,Internal Medicine,2,5.5
+HF003,Administrative Staff,Surgery,4,11
+HF003,Doctor,Surgery,18,13.5
+HF003,Laboratory Scientist,Surgery,2,1.5
+HF003,Nurse,Surgery,35,13.7428571428571
+HF003,Pharmacist,Surgery,3,15
+HF003,Radiographer,Surgery,2,5
+HF004,Administrative Staff,Pediatrics,4,10.5
+HF004,Doctor,Pediatrics,18,15.7222222222222
+HF004,Laboratory Scientist,Pediatrics,2,3
+HF004,Nurse,Pediatrics,35,13.2285714285714
+HF004,Pharmacist,Pediatrics,3,22
+HF004,Radiographer,Pediatrics,2,14
+HF005,Administrative Staff,Obstetrics & Gynecology,4,14.75
+HF005,Doctor,Obstetrics & Gynecology,18,12.1666666666667
+HF005,Laboratory Scientist,Obstetrics & Gynecology,2,13.5
+HF005,Nurse,Obstetrics & Gynecology,35,13.5428571428571
+HF005,Pharmacist,Obstetrics & Gynecology,3,21.3333333333333
+HF005,Radiographer,Obstetrics & Gynecology,2,11
+HF006,Administrative Staff,Radiology,4,15.25
+HF006,Doctor,Radiology,18,10.3333333333333
+HF006,Laboratory Scientist,Radiology,2,3.5
+HF006,Nurse,Radiology,35,11.5714285714286
+HF006,Pharmacist,Radiology,3,11.6666666666667
+HF006,Radiographer,Radiology,2,11.5
+HF007,Administrative Staff,Laboratory,4,5.25
+HF007,Doctor,Laboratory,18,13.3888888888889
+HF007,Laboratory Scientist,Laboratory,2,5
+HF007,Nurse,Laboratory,35,13.5142857142857
+HF007,Pharmacist,Laboratory,3,8.33333333333333
+HF007,Radiographer,Laboratory,2,17
+HF008,Administrative Staff,Pharmacy,4,12.75
+HF008,Doctor,Pharmacy,18,12
+HF008,Laboratory Scientist,Pharmacy,2,18.5
+HF008,Nurse,Pharmacy,35,13.8285714285714
+HF008,Pharmacist,Pharmacy,3,14.6666666666667
+HF008,Radiographer,Pharmacy,2,18
+HF009,Administrative Staff,ICU,4,12
+HF009,Doctor,ICU,18,11.5555555555556
+HF009,Laboratory Scientist,ICU,2,13.5
+HF009,Nurse,ICU,35,12.6285714285714
+HF009,Pharmacist,ICU,3,7
+HF009,Radiographer,ICU,2,4
+HF010,Administrative Staff,Cardiology,4,14.5
+HF010,Doctor,Cardiology,18,12.1111111111111
+HF010,Laboratory Scientist,Cardiology,2,10.5
+HF010,Nurse,Cardiology,35,12.2
+HF010,Pharmacist,Cardiology,3,15
+HF010,Radiographer,Cardiology,2,14
+HF011,Administrative Staff,Emergency,4,8
+HF011,Doctor,Emergency,17,13.7058823529412
+HF011,Laboratory Scientist,Emergency,2,4.5
+HF011,Nurse,Emergency,35,14
+HF011,Pharmacist,Emergency,2,7
+HF011,Radiographer,Emergency,1,4
+HF012,Administrative Staff,Internal Medicine,4,12
+HF012,Doctor,Internal Medicine,17,9.35294117647059
+HF012,Laboratory Scientist,Internal Medicine,2,13.5
+HF012,Nurse,Internal Medicine,35,14.1428571428571
+HF012,Pharmacist,Internal Medicine,2,12
+HF012,Radiographer,Internal Medicine,1,5
+HF013,Administrative Staff,Surgery,4,12.5
+HF013,Doctor,Surgery,17,15
+HF013,Laboratory Scientist,Surgery,2,10
+HF013,Nurse,Surgery,35,13.2857142857143
+HF013,Pharmacist,Surgery,2,11.5
+HF013,Radiographer,Surgery,1,2
+HF014,Administrative Staff,Pediatrics,4,12.75
+HF014,Doctor,Pediatrics,17,12.7647058823529
+HF014,Laboratory Scientist,Pediatrics,2,8
+HF014,Nurse,Pediatrics,35,13.6857142857143
+HF014,Pharmacist,Pediatrics,2,19
+HF014,Radiographer,Pediatrics,1,7
+HF015,Administrative Staff,Obstetrics & Gynecology,4,6.5
+HF015,Doctor,Obstetrics & Gynecology,17,17.2941176470588
+HF015,Laboratory Scientist,Obstetrics & Gynecology,2,8
+HF015,Nurse,Obstetrics & Gynecology,35,12.6857142857143
+HF015,Pharmacist,Obstetrics & Gynecology,2,8.5
+HF015,Radiographer,Obstetrics & Gynecology,1,22
+HF016,Administrative Staff,Radiology,4,14.75
+HF016,Doctor,Radiology,17,15.1176470588235
+HF016,Laboratory Scientist,Radiology,2,6.5
+HF016,Nurse,Radiology,35,13.8857142857143
+HF016,Pharmacist,Radiology,2,13
+HF016,Radiographer,Radiology,1,3
+HF017,Administrative Staff,Laboratory,4,12
+HF017,Doctor,Laboratory,17,10.8235294117647
+HF017,Laboratory Scientist,Laboratory,2,24.5
+HF017,Nurse,Laboratory,35,12.2571428571429
+HF017,Pharmacist,Laboratory,2,17.5
+HF017,Radiographer,Laboratory,1,7
+HF018,Administrative Staff,Pharmacy,4,15.25
+HF018,Doctor,Pharmacy,17,9.58823529411765
+HF018,Laboratory Scientist,Pharmacy,2,10
+HF018,Nurse,Pharmacy,35,13.6285714285714
+HF018,Pharmacist,Pharmacy,2,18
+HF018,Radiographer,Pharmacy,1,3
+HF019,Administrative Staff,ICU,4,18.5
+HF019,Doctor,ICU,17,11.5294117647059
+HF019,Laboratory Scientist,ICU,2,20
+HF019,Nurse,ICU,35,11.3142857142857
+HF019,Pharmacist,ICU,2,9
+HF019,Radiographer,ICU,1,2
+HF020,Administrative Staff,Cardiology,4,11.5
+HF020,Doctor,Cardiology,17,15.9411764705882
+HF020,Laboratory Scientist,Cardiology,2,9.5
+HF020,Nurse,Cardiology,35,12.8857142857143
+HF020,Pharmacist,Cardiology,2,9
+HF020,Radiographer,Cardiology,1,6

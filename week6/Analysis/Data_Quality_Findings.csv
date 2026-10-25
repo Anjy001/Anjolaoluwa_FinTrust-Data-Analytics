@@ -1,0 +1,11 @@
+Issue,Records,Denominator,Share,Interpretation
+Billing appointment references absent from extract,55000,60000,0.9166666666666666,Unmatched records retained in their own reporting grain; excluded from appointment-linked attribution.
+Diagnoses appointment references absent from extract,55000,60000,0.9166666666666666,Unmatched records retained in their own reporting grain; excluded from appointment-linked attribution.
+Feedback appointment references absent from extract,19308,21064,0.916635017090771,Unmatched records retained in their own reporting grain; excluded from appointment-linked attribution.
+LaboratoryTests appointment references absent from extract,2728,5000,0.5456,Unmatched records retained in their own reporting grain; excluded from appointment-linked attribution.
+Prescriptions appointment references absent from extract,997,5000,0.1994,Unmatched records retained in their own reporting grain; excluded from appointment-linked attribution.
+Admissions appointment references absent from extract,4414,5000,0.8828,Unmatched records retained in their own reporting grain; excluded from appointment-linked attribution.
+Referrals appointment references absent from extract,4293,4708,0.9118521665250637,Unmatched records retained in their own reporting grain; excluded from appointment-linked attribution.
+Appointment versus department facility mismatch,4744,5000,0.9488,Record FacilityID identifies appointment activity; department lookup supplies type only.
+Staff versus department facility mismatch,1187,1250,0.9496,Staff distribution uses the staff record's facility and department label.
+Appointment versus doctor master facility mismatch,4743,5000,0.9486,A master affiliation does not establish the location of each encounter.

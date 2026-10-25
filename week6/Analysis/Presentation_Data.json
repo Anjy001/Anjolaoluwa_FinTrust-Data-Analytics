@@ -1,0 +1,152 @@
+{
+  "coverage": [
+    {
+      "Source": "Billing",
+      "Records": 60000,
+      "LinkedRecords": 5000
+    },
+    {
+      "Source": "Diagnoses",
+      "Records": 60000,
+      "LinkedRecords": 5000
+    },
+    {
+      "Source": "Feedback",
+      "Records": 21064,
+      "LinkedRecords": 1756
+    },
+    {
+      "Source": "Laboratory tests",
+      "Records": 5000,
+      "LinkedRecords": 2272
+    },
+    {
+      "Source": "Prescriptions",
+      "Records": 5000,
+      "LinkedRecords": 4003
+    },
+    {
+      "Source": "Admissions",
+      "Records": 5000,
+      "LinkedRecords": 586
+    },
+    {
+      "Source": "Referrals",
+      "Records": 4708,
+      "LinkedRecords": 415
+    }
+  ],
+  "roles": [
+    {
+      "Role": "Nurse",
+      "Staff": 700
+    },
+    {
+      "Role": "Doctor",
+      "Staff": 350
+    },
+    {
+      "Role": "Administrative Staff",
+      "Staff": 80
+    },
+    {
+      "Role": "Pharmacist",
+      "Staff": 50
+    },
+    {
+      "Role": "Laboratory Scientist",
+      "Staff": 40
+    },
+    {
+      "Role": "Radiographer",
+      "Staff": 30
+    }
+  ],
+  "financial": [
+    {
+      "Source": "Billing",
+      "AmountRWF": 9309401961.0
+    },
+    {
+      "Source": "Payment records",
+      "AmountRWF": 8389454556.0
+    },
+    {
+      "Source": "Revenue Summary",
+      "AmountRWF": 1132677500.0
+    }
+  ],
+  "source_table_count": 30,
+  "quality": [
+    {
+      "Issue": "Billing appointment references absent from extract",
+      "Records": 55000,
+      "Denominator": 60000,
+      "Share": 0.9166666666666666,
+      "Interpretation": "Unmatched records retained in their own reporting grain; excluded from appointment-linked attribution."
+    },
+    {
+      "Issue": "Diagnoses appointment references absent from extract",
+      "Records": 55000,
+      "Denominator": 60000,
+      "Share": 0.9166666666666666,
+      "Interpretation": "Unmatched records retained in their own reporting grain; excluded from appointment-linked attribution."
+    },
+    {
+      "Issue": "Feedback appointment references absent from extract",
+      "Records": 19308,
+      "Denominator": 21064,
+      "Share": 0.916635017090771,
+      "Interpretation": "Unmatched records retained in their own reporting grain; excluded from appointment-linked attribution."
+    },
+    {
+      "Issue": "LaboratoryTests appointment references absent from extract",
+      "Records": 2728,
+      "Denominator": 5000,
+      "Share": 0.5456,
+      "Interpretation": "Unmatched records retained in their own reporting grain; excluded from appointment-linked attribution."
+    },
+    {
+      "Issue": "Prescriptions appointment references absent from extract",
+      "Records": 997,
+      "Denominator": 5000,
+      "Share": 0.1994,
+      "Interpretation": "Unmatched records retained in their own reporting grain; excluded from appointment-linked attribution."
+    },
+    {
+      "Issue": "Admissions appointment references absent from extract",
+      "Records": 4414,
+      "Denominator": 5000,
+      "Share": 0.8828,
+      "Interpretation": "Unmatched records retained in their own reporting grain; excluded from appointment-linked attribution."
+    },
+    {
+      "Issue": "Referrals appointment references absent from extract",
+      "Records": 4293,
+      "Denominator": 4708,
+      "Share": 0.9118521665250636,
+      "Interpretation": "Unmatched records retained in their own reporting grain; excluded from appointment-linked attribution."
+    },
+    {
+      "Issue": "Appointment versus department facility mismatch",
+      "Records": 4744,
+      "Denominator": 5000,
+      "Share": 0.9488,
+      "Interpretation": "Record FacilityID identifies appointment activity; department lookup supplies type only."
+    },
+    {
+      "Issue": "Staff versus department facility mismatch",
+      "Records": 1187,
+      "Denominator": 1250,
+      "Share": 0.9496,
+      "Interpretation": "Staff distribution uses the staff record's facility and department label."
+    },
+    {
+      "Issue": "Appointment versus doctor master facility mismatch",
+      "Records": 4743,
+      "Denominator": 5000,
+      "Share": 0.9486,
+      "Interpretation": "A master affiliation does not establish the location of each encounter."
+    }
+  ]
+}

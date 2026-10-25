@@ -1,0 +1,13 @@
+Metric,PandasValue,SQLValue,Difference,Matched
+Registered patients,20000,20000,0,True
+Available appointments,5000,5000,0,True
+Billing amount,9309401961,9309401961,0,True
+Payment amount,8389454556,8389454556,0,True
+Outstanding balance,919947405,919947405,0,True
+Patient age,45.0332,45.0332,0,True
+Mean feedback rating,2.98718192176225,2.98718192176225,0,True
+Average admission duration,5.4876,5.4876,0,True
+Emergency volume,1650,1650,0,True
+Approved claims,21008,21008,0,True
+Registered doctors,350,350,0,True
+Chronic-condition patients,14929,14929,0,True

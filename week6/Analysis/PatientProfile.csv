@@ -1,0 +1,1401 @@
+ProvinceName,Gender,AgeGroup,ChronicCondition,BloodGroup,Patients
+Eastern,Female,0-17,Asthma,A+,16
+Eastern,Female,0-17,Asthma,A-,14
+Eastern,Female,0-17,Asthma,AB+,8
+Eastern,Female,0-17,Asthma,B+,24
+Eastern,Female,0-17,Asthma,B-,21
+Eastern,Female,0-17,Asthma,O+,17
+Eastern,Female,0-17,Asthma,O-,15
+Eastern,Female,0-17,Diabetes,A+,14
+Eastern,Female,0-17,Diabetes,A-,16
+Eastern,Female,0-17,Diabetes,AB+,19
+Eastern,Female,0-17,Diabetes,B+,10
+Eastern,Female,0-17,Diabetes,B-,14
+Eastern,Female,0-17,Diabetes,O+,12
+Eastern,Female,0-17,Diabetes,O-,15
+Eastern,Female,0-17,Hypertension,A+,14
+Eastern,Female,0-17,Hypertension,A-,12
+Eastern,Female,0-17,Hypertension,AB+,16
+Eastern,Female,0-17,Hypertension,B+,14
+Eastern,Female,0-17,Hypertension,B-,11
+Eastern,Female,0-17,Hypertension,O+,11
+Eastern,Female,0-17,Hypertension,O-,21
+Eastern,Female,0-17,None,A+,13
+Eastern,Female,0-17,None,A-,20
+Eastern,Female,0-17,None,AB+,15
+Eastern,Female,0-17,None,B+,18
+Eastern,Female,0-17,None,B-,13
+Eastern,Female,0-17,None,O+,14
+Eastern,Female,0-17,None,O-,12
+Eastern,Female,18-34,Asthma,A+,10
+Eastern,Female,18-34,Asthma,A-,13
+Eastern,Female,18-34,Asthma,AB+,14
+Eastern,Female,18-34,Asthma,B+,13
+Eastern,Female,18-34,Asthma,B-,19
+Eastern,Female,18-34,Asthma,O+,20
+Eastern,Female,18-34,Asthma,O-,20
+Eastern,Female,18-34,Diabetes,A+,14
+Eastern,Female,18-34,Diabetes,A-,14
+Eastern,Female,18-34,Diabetes,AB+,15
+Eastern,Female,18-34,Diabetes,B+,19
+Eastern,Female,18-34,Diabetes,B-,14
+Eastern,Female,18-34,Diabetes,O+,12
+Eastern,Female,18-34,Diabetes,O-,13
+Eastern,Female,18-34,Hypertension,A+,11
+Eastern,Female,18-34,Hypertension,A-,13
+Eastern,Female,18-34,Hypertension,AB+,6
+Eastern,Female,18-34,Hypertension,B+,10
+Eastern,Female,18-34,Hypertension,B-,17
+Eastern,Female,18-34,Hypertension,O+,15
+Eastern,Female,18-34,Hypertension,O-,18
+Eastern,Female,18-34,None,A+,6
+Eastern,Female,18-34,None,A-,15
+Eastern,Female,18-34,None,AB+,5
+Eastern,Female,18-34,None,B+,13
+Eastern,Female,18-34,None,B-,20
+Eastern,Female,18-34,None,O+,16
+Eastern,Female,18-34,None,O-,21
+Eastern,Female,35-49,Asthma,A+,13
+Eastern,Female,35-49,Asthma,A-,10
+Eastern,Female,35-49,Asthma,AB+,10
+Eastern,Female,35-49,Asthma,B+,11
+Eastern,Female,35-49,Asthma,B-,6
+Eastern,Female,35-49,Asthma,O+,14
+Eastern,Female,35-49,Asthma,O-,14
+Eastern,Female,35-49,Diabetes,A+,12
+Eastern,Female,35-49,Diabetes,A-,19
+Eastern,Female,35-49,Diabetes,AB+,12
+Eastern,Female,35-49,Diabetes,B+,12
+Eastern,Female,35-49,Diabetes,B-,15
+Eastern,Female,35-49,Diabetes,O+,15
+Eastern,Female,35-49,Diabetes,O-,15
+Eastern,Female,35-49,Hypertension,A+,10
+Eastern,Female,35-49,Hypertension,A-,12
+Eastern,Female,35-49,Hypertension,AB+,9
+Eastern,Female,35-49,Hypertension,B+,15
+Eastern,Female,35-49,Hypertension,B-,14
+Eastern,Female,35-49,Hypertension,O+,14
+Eastern,Female,35-49,Hypertension,O-,13
+Eastern,Female,35-49,None,A+,8
+Eastern,Female,35-49,None,A-,9
+Eastern,Female,35-49,None,AB+,14
+Eastern,Female,35-49,None,B+,11
+Eastern,Female,35-49,None,B-,10
+Eastern,Female,35-49,None,O+,16
+Eastern,Female,35-49,None,O-,6
+Eastern,Female,50-64,Asthma,A+,9
+Eastern,Female,50-64,Asthma,A-,8
+Eastern,Female,50-64,Asthma,AB+,10
+Eastern,Female,50-64,Asthma,B+,9
+Eastern,Female,50-64,Asthma,B-,11
+Eastern,Female,50-64,Asthma,O+,12
+Eastern,Female,50-64,Asthma,O-,9
+Eastern,Female,50-64,Diabetes,A+,7
+Eastern,Female,50-64,Diabetes,A-,11
+Eastern,Female,50-64,Diabetes,AB+,7
+Eastern,Female,50-64,Diabetes,B+,8
+Eastern,Female,50-64,Diabetes,B-,14
+Eastern,Female,50-64,Diabetes,O+,10
+Eastern,Female,50-64,Diabetes,O-,13
+Eastern,Female,50-64,Hypertension,A+,21
+Eastern,Female,50-64,Hypertension,A-,18
+Eastern,Female,50-64,Hypertension,AB+,16
+Eastern,Female,50-64,Hypertension,B+,9
+Eastern,Female,50-64,Hypertension,B-,9
+Eastern,Female,50-64,Hypertension,O+,21
+Eastern,Female,50-64,Hypertension,O-,10
+Eastern,Female,50-64,None,A+,11
+Eastern,Female,50-64,None,A-,12
+Eastern,Female,50-64,None,AB+,11
+Eastern,Female,50-64,None,B+,16
+Eastern,Female,50-64,None,B-,5
+Eastern,Female,50-64,None,O+,10
+Eastern,Female,50-64,None,O-,14
+Eastern,Female,65+,Asthma,A+,19
+Eastern,Female,65+,Asthma,A-,21
+Eastern,Female,65+,Asthma,AB+,26
+Eastern,Female,65+,Asthma,B+,25
+Eastern,Female,65+,Asthma,B-,20
+Eastern,Female,65+,Asthma,O+,14
+Eastern,Female,65+,Asthma,O-,20
+Eastern,Female,65+,Diabetes,A+,19
+Eastern,Female,65+,Diabetes,A-,21
+Eastern,Female,65+,Diabetes,AB+,19
+Eastern,Female,65+,Diabetes,B+,18
+Eastern,Female,65+,Diabetes,B-,20
+Eastern,Female,65+,Diabetes,O+,16
+Eastern,Female,65+,Diabetes,O-,26
+Eastern,Female,65+,Hypertension,A+,25
+Eastern,Female,65+,Hypertension,A-,22
+Eastern,Female,65+,Hypertension,AB+,21
+Eastern,Female,65+,Hypertension,B+,19
+Eastern,Female,65+,Hypertension,B-,14
+Eastern,Female,65+,Hypertension,O+,16
+Eastern,Female,65+,Hypertension,O-,20
+Eastern,Female,65+,None,A+,23
+Eastern,Female,65+,None,A-,16
+Eastern,Female,65+,None,AB+,22
+Eastern,Female,65+,None,B+,15
+Eastern,Female,65+,None,B-,20
+Eastern,Female,65+,None,O+,24
+Eastern,Female,65+,None,O-,23
+Eastern,Male,0-17,Asthma,A+,14
+Eastern,Male,0-17,Asthma,A-,15
+Eastern,Male,0-17,Asthma,AB+,11
+Eastern,Male,0-17,Asthma,B+,16
+Eastern,Male,0-17,Asthma,B-,11
+Eastern,Male,0-17,Asthma,O+,11
+Eastern,Male,0-17,Asthma,O-,7
+Eastern,Male,0-17,Diabetes,A+,19
+Eastern,Male,0-17,Diabetes,A-,21
+Eastern,Male,0-17,Diabetes,AB+,14
+Eastern,Male,0-17,Diabetes,B+,17
+Eastern,Male,0-17,Diabetes,B-,8
+Eastern,Male,0-17,Diabetes,O+,16
+Eastern,Male,0-17,Diabetes,O-,11
+Eastern,Male,0-17,Hypertension,A+,16
+Eastern,Male,0-17,Hypertension,A-,16
+Eastern,Male,0-17,Hypertension,AB+,13
+Eastern,Male,0-17,Hypertension,B+,16
+Eastern,Male,0-17,Hypertension,B-,17
+Eastern,Male,0-17,Hypertension,O+,13
+Eastern,Male,0-17,Hypertension,O-,9
+Eastern,Male,0-17,None,A+,11
+Eastern,Male,0-17,None,A-,21
+Eastern,Male,0-17,None,AB+,17
+Eastern,Male,0-17,None,B+,16
+Eastern,Male,0-17,None,B-,16
+Eastern,Male,0-17,None,O+,9
+Eastern,Male,0-17,None,O-,20
+Eastern,Male,18-34,Asthma,A+,11
+Eastern,Male,18-34,Asthma,A-,14
+Eastern,Male,18-34,Asthma,AB+,14
+Eastern,Male,18-34,Asthma,B+,17
+Eastern,Male,18-34,Asthma,B-,20
+Eastern,Male,18-34,Asthma,O+,14
+Eastern,Male,18-34,Asthma,O-,11
+Eastern,Male,18-34,Diabetes,A+,17
+Eastern,Male,18-34,Diabetes,A-,15
+Eastern,Male,18-34,Diabetes,AB+,20
+Eastern,Male,18-34,Diabetes,B+,9
+Eastern,Male,18-34,Diabetes,B-,11
+Eastern,Male,18-34,Diabetes,O+,16
+Eastern,Male,18-34,Diabetes,O-,14
+Eastern,Male,18-34,Hypertension,A+,23
+Eastern,Male,18-34,Hypertension,A-,15
+Eastern,Male,18-34,Hypertension,AB+,11
+Eastern,Male,18-34,Hypertension,B+,18
+Eastern,Male,18-34,Hypertension,B-,16
+Eastern,Male,18-34,Hypertension,O+,5
+Eastern,Male,18-34,Hypertension,O-,12
+Eastern,Male,18-34,None,A+,9
+Eastern,Male,18-34,None,A-,19
+Eastern,Male,18-34,None,AB+,16
+Eastern,Male,18-34,None,B+,11
+Eastern,Male,18-34,None,B-,11
+Eastern,Male,18-34,None,O+,9
+Eastern,Male,18-34,None,O-,15
+Eastern,Male,35-49,Asthma,A+,15
+Eastern,Male,35-49,Asthma,A-,18
+Eastern,Male,35-49,Asthma,AB+,13
+Eastern,Male,35-49,Asthma,B+,11
+Eastern,Male,35-49,Asthma,B-,14
+Eastern,Male,35-49,Asthma,O+,10
+Eastern,Male,35-49,Asthma,O-,8
+Eastern,Male,35-49,Diabetes,A+,22
+Eastern,Male,35-49,Diabetes,A-,8
+Eastern,Male,35-49,Diabetes,AB+,8
+Eastern,Male,35-49,Diabetes,B+,10
+Eastern,Male,35-49,Diabetes,B-,15
+Eastern,Male,35-49,Diabetes,O+,6
+Eastern,Male,35-49,Diabetes,O-,17
+Eastern,Male,35-49,Hypertension,A+,11
+Eastern,Male,35-49,Hypertension,A-,16
+Eastern,Male,35-49,Hypertension,AB+,7
+Eastern,Male,35-49,Hypertension,B+,8
+Eastern,Male,35-49,Hypertension,B-,17
+Eastern,Male,35-49,Hypertension,O+,16
+Eastern,Male,35-49,Hypertension,O-,11
+Eastern,Male,35-49,None,A+,12
+Eastern,Male,35-49,None,A-,14
+Eastern,Male,35-49,None,AB+,14
+Eastern,Male,35-49,None,B+,13
+Eastern,Male,35-49,None,B-,7
+Eastern,Male,35-49,None,O+,14
+Eastern,Male,35-49,None,O-,6
+Eastern,Male,50-64,Asthma,A+,11
+Eastern,Male,50-64,Asthma,A-,14
+Eastern,Male,50-64,Asthma,AB+,12
+Eastern,Male,50-64,Asthma,B+,12
+Eastern,Male,50-64,Asthma,B-,9
+Eastern,Male,50-64,Asthma,O+,11
+Eastern,Male,50-64,Asthma,O-,11
+Eastern,Male,50-64,Diabetes,A+,22
+Eastern,Male,50-64,Diabetes,A-,12
+Eastern,Male,50-64,Diabetes,AB+,6
+Eastern,Male,50-64,Diabetes,B+,12
+Eastern,Male,50-64,Diabetes,B-,12
+Eastern,Male,50-64,Diabetes,O+,16
+Eastern,Male,50-64,Diabetes,O-,12
+Eastern,Male,50-64,Hypertension,A+,17
+Eastern,Male,50-64,Hypertension,A-,12
+Eastern,Male,50-64,Hypertension,AB+,11
+Eastern,Male,50-64,Hypertension,B+,7
+Eastern,Male,50-64,Hypertension,B-,10
+Eastern,Male,50-64,Hypertension,O+,12
+Eastern,Male,50-64,Hypertension,O-,14
+Eastern,Male,50-64,None,A+,11
+Eastern,Male,50-64,None,A-,13
+Eastern,Male,50-64,None,AB+,9
+Eastern,Male,50-64,None,B+,11
+Eastern,Male,50-64,None,B-,9
+Eastern,Male,50-64,None,O+,14
+Eastern,Male,50-64,None,O-,4
+Eastern,Male,65+,Asthma,A+,20
+Eastern,Male,65+,Asthma,A-,16
+Eastern,Male,65+,Asthma,AB+,23
+Eastern,Male,65+,Asthma,B+,22
+Eastern,Male,65+,Asthma,B-,19
+Eastern,Male,65+,Asthma,O+,19
+Eastern,Male,65+,Asthma,O-,23
+Eastern,Male,65+,Diabetes,A+,21
+Eastern,Male,65+,Diabetes,A-,21
+Eastern,Male,65+,Diabetes,AB+,17
+Eastern,Male,65+,Diabetes,B+,20
+Eastern,Male,65+,Diabetes,B-,14
+Eastern,Male,65+,Diabetes,O+,17
+Eastern,Male,65+,Diabetes,O-,19
+Eastern,Male,65+,Hypertension,A+,20
+Eastern,Male,65+,Hypertension,A-,15
+Eastern,Male,65+,Hypertension,AB+,25
+Eastern,Male,65+,Hypertension,B+,21
+Eastern,Male,65+,Hypertension,B-,12
+Eastern,Male,65+,Hypertension,O+,22
+Eastern,Male,65+,Hypertension,O-,20
+Eastern,Male,65+,None,A+,19
+Eastern,Male,65+,None,A-,28
+Eastern,Male,65+,None,AB+,27
+Eastern,Male,65+,None,B+,22
+Eastern,Male,65+,None,B-,19
+Eastern,Male,65+,None,O+,21
+Eastern,Male,65+,None,O-,25
+Kigali City,Female,0-17,Asthma,A+,12
+Kigali City,Female,0-17,Asthma,A-,18
+Kigali City,Female,0-17,Asthma,AB+,14
+Kigali City,Female,0-17,Asthma,B+,10
+Kigali City,Female,0-17,Asthma,B-,16
+Kigali City,Female,0-17,Asthma,O+,7
+Kigali City,Female,0-17,Asthma,O-,15
+Kigali City,Female,0-17,Diabetes,A+,15
+Kigali City,Female,0-17,Diabetes,A-,7
+Kigali City,Female,0-17,Diabetes,AB+,12
+Kigali City,Female,0-17,Diabetes,B+,14
+Kigali City,Female,0-17,Diabetes,B-,10
+Kigali City,Female,0-17,Diabetes,O+,19
+Kigali City,Female,0-17,Diabetes,O-,9
+Kigali City,Female,0-17,Hypertension,A+,12
+Kigali City,Female,0-17,Hypertension,A-,15
+Kigali City,Female,0-17,Hypertension,AB+,15
+Kigali City,Female,0-17,Hypertension,B+,13
+Kigali City,Female,0-17,Hypertension,B-,12
+Kigali City,Female,0-17,Hypertension,O+,16
+Kigali City,Female,0-17,Hypertension,O-,15
+Kigali City,Female,0-17,None,A+,13
+Kigali City,Female,0-17,None,A-,10
+Kigali City,Female,0-17,None,AB+,12
+Kigali City,Female,0-17,None,B+,16
+Kigali City,Female,0-17,None,B-,17
+Kigali City,Female,0-17,None,O+,13
+Kigali City,Female,0-17,None,O-,15
+Kigali City,Female,18-34,Asthma,A+,10
+Kigali City,Female,18-34,Asthma,A-,14
+Kigali City,Female,18-34,Asthma,AB+,6
+Kigali City,Female,18-34,Asthma,B+,11
+Kigali City,Female,18-34,Asthma,B-,6
+Kigali City,Female,18-34,Asthma,O+,12
+Kigali City,Female,18-34,Asthma,O-,7
+Kigali City,Female,18-34,Diabetes,A+,20
+Kigali City,Female,18-34,Diabetes,A-,7
+Kigali City,Female,18-34,Diabetes,AB+,12
+Kigali City,Female,18-34,Diabetes,B+,11
+Kigali City,Female,18-34,Diabetes,B-,10
+Kigali City,Female,18-34,Diabetes,O+,12
+Kigali City,Female,18-34,Diabetes,O-,15
+Kigali City,Female,18-34,Hypertension,A+,12
+Kigali City,Female,18-34,Hypertension,A-,11
+Kigali City,Female,18-34,Hypertension,AB+,15
+Kigali City,Female,18-34,Hypertension,B+,8
+Kigali City,Female,18-34,Hypertension,B-,12
+Kigali City,Female,18-34,Hypertension,O+,14
+Kigali City,Female,18-34,Hypertension,O-,9
+Kigali City,Female,18-34,None,A+,16
+Kigali City,Female,18-34,None,A-,18
+Kigali City,Female,18-34,None,AB+,7
+Kigali City,Female,18-34,None,B+,10
+Kigali City,Female,18-34,None,B-,15
+Kigali City,Female,18-34,None,O+,16
+Kigali City,Female,18-34,None,O-,10
+Kigali City,Female,35-49,Asthma,A+,12
+Kigali City,Female,35-49,Asthma,A-,12
+Kigali City,Female,35-49,Asthma,AB+,11
+Kigali City,Female,35-49,Asthma,B+,18
+Kigali City,Female,35-49,Asthma,B-,11
+Kigali City,Female,35-49,Asthma,O+,10
+Kigali City,Female,35-49,Asthma,O-,9
+Kigali City,Female,35-49,Diabetes,A+,11
+Kigali City,Female,35-49,Diabetes,A-,12
+Kigali City,Female,35-49,Diabetes,AB+,10
+Kigali City,Female,35-49,Diabetes,B+,9
+Kigali City,Female,35-49,Diabetes,B-,11
+Kigali City,Female,35-49,Diabetes,O+,11
+Kigali City,Female,35-49,Diabetes,O-,20
+Kigali City,Female,35-49,Hypertension,A+,13
+Kigali City,Female,35-49,Hypertension,A-,15
+Kigali City,Female,35-49,Hypertension,AB+,16
+Kigali City,Female,35-49,Hypertension,B+,11
+Kigali City,Female,35-49,Hypertension,B-,12
+Kigali City,Female,35-49,Hypertension,O+,8
+Kigali City,Female,35-49,Hypertension,O-,11
+Kigali City,Female,35-49,None,A+,14
+Kigali City,Female,35-49,None,A-,16
+Kigali City,Female,35-49,None,AB+,19
+Kigali City,Female,35-49,None,B+,13
+Kigali City,Female,35-49,None,B-,8
+Kigali City,Female,35-49,None,O+,12
+Kigali City,Female,35-49,None,O-,11
+Kigali City,Female,50-64,Asthma,A+,11
+Kigali City,Female,50-64,Asthma,A-,15
+Kigali City,Female,50-64,Asthma,AB+,9
+Kigali City,Female,50-64,Asthma,B+,5
+Kigali City,Female,50-64,Asthma,B-,13
+Kigali City,Female,50-64,Asthma,O+,15
+Kigali City,Female,50-64,Asthma,O-,9
+Kigali City,Female,50-64,Diabetes,A+,17
+Kigali City,Female,50-64,Diabetes,A-,10
+Kigali City,Female,50-64,Diabetes,AB+,15
+Kigali City,Female,50-64,Diabetes,B+,9
+Kigali City,Female,50-64,Diabetes,B-,6
+Kigali City,Female,50-64,Diabetes,O+,14
+Kigali City,Female,50-64,Diabetes,O-,8
+Kigali City,Female,50-64,Hypertension,A+,9
+Kigali City,Female,50-64,Hypertension,A-,12
+Kigali City,Female,50-64,Hypertension,AB+,13
+Kigali City,Female,50-64,Hypertension,B+,14
+Kigali City,Female,50-64,Hypertension,B-,11
+Kigali City,Female,50-64,Hypertension,O+,8
+Kigali City,Female,50-64,Hypertension,O-,8
+Kigali City,Female,50-64,None,A+,15
+Kigali City,Female,50-64,None,A-,12
+Kigali City,Female,50-64,None,AB+,12
+Kigali City,Female,50-64,None,B+,15
+Kigali City,Female,50-64,None,B-,12
+Kigali City,Female,50-64,None,O+,8
+Kigali City,Female,50-64,None,O-,17
+Kigali City,Female,65+,Asthma,A+,26
+Kigali City,Female,65+,Asthma,A-,23
+Kigali City,Female,65+,Asthma,AB+,22
+Kigali City,Female,65+,Asthma,B+,19
+Kigali City,Female,65+,Asthma,B-,20
+Kigali City,Female,65+,Asthma,O+,18
+Kigali City,Female,65+,Asthma,O-,22
+Kigali City,Female,65+,Diabetes,A+,21
+Kigali City,Female,65+,Diabetes,A-,19
+Kigali City,Female,65+,Diabetes,AB+,22
+Kigali City,Female,65+,Diabetes,B+,18
+Kigali City,Female,65+,Diabetes,B-,17
+Kigali City,Female,65+,Diabetes,O+,17
+Kigali City,Female,65+,Diabetes,O-,19
+Kigali City,Female,65+,Hypertension,A+,23
+Kigali City,Female,65+,Hypertension,A-,19
+Kigali City,Female,65+,Hypertension,AB+,14
+Kigali City,Female,65+,Hypertension,B+,30
+Kigali City,Female,65+,Hypertension,B-,21
+Kigali City,Female,65+,Hypertension,O+,19
+Kigali City,Female,65+,Hypertension,O-,16
+Kigali City,Female,65+,None,A+,12
+Kigali City,Female,65+,None,A-,11
+Kigali City,Female,65+,None,AB+,16
+Kigali City,Female,65+,None,B+,19
+Kigali City,Female,65+,None,B-,22
+Kigali City,Female,65+,None,O+,29
+Kigali City,Female,65+,None,O-,24
+Kigali City,Male,0-17,Asthma,A+,12
+Kigali City,Male,0-17,Asthma,A-,15
+Kigali City,Male,0-17,Asthma,AB+,18
+Kigali City,Male,0-17,Asthma,B+,15
+Kigali City,Male,0-17,Asthma,B-,14
+Kigali City,Male,0-17,Asthma,O+,14
+Kigali City,Male,0-17,Asthma,O-,15
+Kigali City,Male,0-17,Diabetes,A+,22
+Kigali City,Male,0-17,Diabetes,A-,8
+Kigali City,Male,0-17,Diabetes,AB+,11
+Kigali City,Male,0-17,Diabetes,B+,12
+Kigali City,Male,0-17,Diabetes,B-,12
+Kigali City,Male,0-17,Diabetes,O+,10
+Kigali City,Male,0-17,Diabetes,O-,12
+Kigali City,Male,0-17,Hypertension,A+,14
+Kigali City,Male,0-17,Hypertension,A-,16
+Kigali City,Male,0-17,Hypertension,AB+,13
+Kigali City,Male,0-17,Hypertension,B+,23
+Kigali City,Male,0-17,Hypertension,B-,14
+Kigali City,Male,0-17,Hypertension,O+,11
+Kigali City,Male,0-17,Hypertension,O-,19
+Kigali City,Male,0-17,None,A+,6
+Kigali City,Male,0-17,None,A-,17
+Kigali City,Male,0-17,None,AB+,20
+Kigali City,Male,0-17,None,B+,15
+Kigali City,Male,0-17,None,B-,10
+Kigali City,Male,0-17,None,O+,16
+Kigali City,Male,0-17,None,O-,11
+Kigali City,Male,18-34,Asthma,A+,18
+Kigali City,Male,18-34,Asthma,A-,10
+Kigali City,Male,18-34,Asthma,AB+,15
+Kigali City,Male,18-34,Asthma,B+,13
+Kigali City,Male,18-34,Asthma,B-,15
+Kigali City,Male,18-34,Asthma,O+,14
+Kigali City,Male,18-34,Asthma,O-,13
+Kigali City,Male,18-34,Diabetes,A+,15
+Kigali City,Male,18-34,Diabetes,A-,9
+Kigali City,Male,18-34,Diabetes,AB+,8
+Kigali City,Male,18-34,Diabetes,B+,19
+Kigali City,Male,18-34,Diabetes,B-,10
+Kigali City,Male,18-34,Diabetes,O+,18
+Kigali City,Male,18-34,Diabetes,O-,14
+Kigali City,Male,18-34,Hypertension,A+,17
+Kigali City,Male,18-34,Hypertension,A-,16
+Kigali City,Male,18-34,Hypertension,AB+,14
+Kigali City,Male,18-34,Hypertension,B+,14
+Kigali City,Male,18-34,Hypertension,B-,12
+Kigali City,Male,18-34,Hypertension,O+,8
+Kigali City,Male,18-34,Hypertension,O-,17
+Kigali City,Male,18-34,None,A+,10
+Kigali City,Male,18-34,None,A-,14
+Kigali City,Male,18-34,None,AB+,11
+Kigali City,Male,18-34,None,B+,12
+Kigali City,Male,18-34,None,B-,23
+Kigali City,Male,18-34,None,O+,9
+Kigali City,Male,18-34,None,O-,12
+Kigali City,Male,35-49,Asthma,A+,19
+Kigali City,Male,35-49,Asthma,A-,10
+Kigali City,Male,35-49,Asthma,AB+,11
+Kigali City,Male,35-49,Asthma,B+,7
+Kigali City,Male,35-49,Asthma,B-,6
+Kigali City,Male,35-49,Asthma,O+,12
+Kigali City,Male,35-49,Asthma,O-,10
+Kigali City,Male,35-49,Diabetes,A+,12
+Kigali City,Male,35-49,Diabetes,A-,15
+Kigali City,Male,35-49,Diabetes,AB+,14
+Kigali City,Male,35-49,Diabetes,B+,13
+Kigali City,Male,35-49,Diabetes,B-,17
+Kigali City,Male,35-49,Diabetes,O+,12
+Kigali City,Male,35-49,Diabetes,O-,15
+Kigali City,Male,35-49,Hypertension,A+,8
+Kigali City,Male,35-49,Hypertension,A-,15
+Kigali City,Male,35-49,Hypertension,AB+,21
+Kigali City,Male,35-49,Hypertension,B+,14
+Kigali City,Male,35-49,Hypertension,B-,12
+Kigali City,Male,35-49,Hypertension,O+,7
+Kigali City,Male,35-49,Hypertension,O-,7
+Kigali City,Male,35-49,None,A+,8
+Kigali City,Male,35-49,None,A-,7
+Kigali City,Male,35-49,None,AB+,9
+Kigali City,Male,35-49,None,B+,11
+Kigali City,Male,35-49,None,B-,15
+Kigali City,Male,35-49,None,O+,12
+Kigali City,Male,35-49,None,O-,15
+Kigali City,Male,50-64,Asthma,A+,12
+Kigali City,Male,50-64,Asthma,A-,10
+Kigali City,Male,50-64,Asthma,AB+,15
+Kigali City,Male,50-64,Asthma,B+,10
+Kigali City,Male,50-64,Asthma,B-,9
+Kigali City,Male,50-64,Asthma,O+,11
+Kigali City,Male,50-64,Asthma,O-,7
+Kigali City,Male,50-64,Diabetes,A+,12
+Kigali City,Male,50-64,Diabetes,A-,17
+Kigali City,Male,50-64,Diabetes,AB+,13
+Kigali City,Male,50-64,Diabetes,B+,9
+Kigali City,Male,50-64,Diabetes,B-,13
+Kigali City,Male,50-64,Diabetes,O+,12
+Kigali City,Male,50-64,Diabetes,O-,13
+Kigali City,Male,50-64,Hypertension,A+,9
+Kigali City,Male,50-64,Hypertension,A-,11
+Kigali City,Male,50-64,Hypertension,AB+,11
+Kigali City,Male,50-64,Hypertension,B+,15
+Kigali City,Male,50-64,Hypertension,B-,9
+Kigali City,Male,50-64,Hypertension,O+,6
+Kigali City,Male,50-64,Hypertension,O-,19
+Kigali City,Male,50-64,None,A+,13
+Kigali City,Male,50-64,None,A-,13
+Kigali City,Male,50-64,None,AB+,13
+Kigali City,Male,50-64,None,B+,14
+Kigali City,Male,50-64,None,B-,13
+Kigali City,Male,50-64,None,O+,7
+Kigali City,Male,50-64,None,O-,13
+Kigali City,Male,65+,Asthma,A+,28
+Kigali City,Male,65+,Asthma,A-,30
+Kigali City,Male,65+,Asthma,AB+,20
+Kigali City,Male,65+,Asthma,B+,22
+Kigali City,Male,65+,Asthma,B-,19
+Kigali City,Male,65+,Asthma,O+,32
+Kigali City,Male,65+,Asthma,O-,19
+Kigali City,Male,65+,Diabetes,A+,18
+Kigali City,Male,65+,Diabetes,A-,19
+Kigali City,Male,65+,Diabetes,AB+,16
+Kigali City,Male,65+,Diabetes,B+,22
+Kigali City,Male,65+,Diabetes,B-,13
+Kigali City,Male,65+,Diabetes,O+,26
+Kigali City,Male,65+,Diabetes,O-,15
+Kigali City,Male,65+,Hypertension,A+,17
+Kigali City,Male,65+,Hypertension,A-,19
+Kigali City,Male,65+,Hypertension,AB+,17
+Kigali City,Male,65+,Hypertension,B+,29
+Kigali City,Male,65+,Hypertension,B-,13
+Kigali City,Male,65+,Hypertension,O+,15
+Kigali City,Male,65+,Hypertension,O-,22
+Kigali City,Male,65+,None,A+,22
+Kigali City,Male,65+,None,A-,31
+Kigali City,Male,65+,None,AB+,20
+Kigali City,Male,65+,None,B+,19
+Kigali City,Male,65+,None,B-,28
+Kigali City,Male,65+,None,O+,25
+Kigali City,Male,65+,None,O-,14
+Northern,Female,0-17,Asthma,A+,15
+Northern,Female,0-17,Asthma,A-,24
+Northern,Female,0-17,Asthma,AB+,16
+Northern,Female,0-17,Asthma,B+,14
+Northern,Female,0-17,Asthma,B-,16
+Northern,Female,0-17,Asthma,O+,12
+Northern,Female,0-17,Asthma,O-,17
+Northern,Female,0-17,Diabetes,A+,17
+Northern,Female,0-17,Diabetes,A-,19
+Northern,Female,0-17,Diabetes,AB+,13
+Northern,Female,0-17,Diabetes,B+,17
+Northern,Female,0-17,Diabetes,B-,11
+Northern,Female,0-17,Diabetes,O+,19
+Northern,Female,0-17,Diabetes,O-,15
+Northern,Female,0-17,Hypertension,A+,13
+Northern,Female,0-17,Hypertension,A-,9
+Northern,Female,0-17,Hypertension,AB+,18
+Northern,Female,0-17,Hypertension,B+,13
+Northern,Female,0-17,Hypertension,B-,14
+Northern,Female,0-17,Hypertension,O+,7
+Northern,Female,0-17,Hypertension,O-,18
+Northern,Female,0-17,None,A+,10
+Northern,Female,0-17,None,A-,18
+Northern,Female,0-17,None,AB+,10
+Northern,Female,0-17,None,B+,10
+Northern,Female,0-17,None,B-,12
+Northern,Female,0-17,None,O+,15
+Northern,Female,0-17,None,O-,9
+Northern,Female,18-34,Asthma,A+,16
+Northern,Female,18-34,Asthma,A-,12
+Northern,Female,18-34,Asthma,AB+,16
+Northern,Female,18-34,Asthma,B+,8
+Northern,Female,18-34,Asthma,B-,8
+Northern,Female,18-34,Asthma,O+,5
+Northern,Female,18-34,Asthma,O-,10
+Northern,Female,18-34,Diabetes,A+,11
+Northern,Female,18-34,Diabetes,A-,12
+Northern,Female,18-34,Diabetes,AB+,23
+Northern,Female,18-34,Diabetes,B+,20
+Northern,Female,18-34,Diabetes,B-,12
+Northern,Female,18-34,Diabetes,O+,8
+Northern,Female,18-34,Diabetes,O-,13
+Northern,Female,18-34,Hypertension,A+,13
+Northern,Female,18-34,Hypertension,A-,7
+Northern,Female,18-34,Hypertension,AB+,12
+Northern,Female,18-34,Hypertension,B+,12
+Northern,Female,18-34,Hypertension,B-,11
+Northern,Female,18-34,Hypertension,O+,17
+Northern,Female,18-34,Hypertension,O-,19
+Northern,Female,18-34,None,A+,13
+Northern,Female,18-34,None,A-,20
+Northern,Female,18-34,None,AB+,14
+Northern,Female,18-34,None,B+,13
+Northern,Female,18-34,None,B-,12
+Northern,Female,18-34,None,O+,14
+Northern,Female,18-34,None,O-,16
+Northern,Female,35-49,Asthma,A+,17
+Northern,Female,35-49,Asthma,A-,12
+Northern,Female,35-49,Asthma,AB+,9
+Northern,Female,35-49,Asthma,B+,11
+Northern,Female,35-49,Asthma,B-,10
+Northern,Female,35-49,Asthma,O+,16
+Northern,Female,35-49,Asthma,O-,11
+Northern,Female,35-49,Diabetes,A+,15
+Northern,Female,35-49,Diabetes,A-,12
+Northern,Female,35-49,Diabetes,AB+,12
+Northern,Female,35-49,Diabetes,B+,12
+Northern,Female,35-49,Diabetes,B-,14
+Northern,Female,35-49,Diabetes,O+,7
+Northern,Female,35-49,Diabetes,O-,10
+Northern,Female,35-49,Hypertension,A+,11
+Northern,Female,35-49,Hypertension,A-,12
+Northern,Female,35-49,Hypertension,AB+,15
+Northern,Female,35-49,Hypertension,B+,7
+Northern,Female,35-49,Hypertension,B-,10
+Northern,Female,35-49,Hypertension,O+,12
+Northern,Female,35-49,Hypertension,O-,17
+Northern,Female,35-49,None,A+,11
+Northern,Female,35-49,None,A-,14
+Northern,Female,35-49,None,AB+,8
+Northern,Female,35-49,None,B+,3
+Northern,Female,35-49,None,B-,9
+Northern,Female,35-49,None,O+,14
+Northern,Female,35-49,None,O-,13
+Northern,Female,50-64,Asthma,A+,9
+Northern,Female,50-64,Asthma,A-,11
+Northern,Female,50-64,Asthma,AB+,7
+Northern,Female,50-64,Asthma,B+,13
+Northern,Female,50-64,Asthma,B-,12
+Northern,Female,50-64,Asthma,O+,8
+Northern,Female,50-64,Asthma,O-,16
+Northern,Female,50-64,Diabetes,A+,14
+Northern,Female,50-64,Diabetes,A-,10
+Northern,Female,50-64,Diabetes,AB+,15
+Northern,Female,50-64,Diabetes,B+,10
+Northern,Female,50-64,Diabetes,B-,7
+Northern,Female,50-64,Diabetes,O+,11
+Northern,Female,50-64,Diabetes,O-,16
+Northern,Female,50-64,Hypertension,A+,13
+Northern,Female,50-64,Hypertension,A-,14
+Northern,Female,50-64,Hypertension,AB+,11
+Northern,Female,50-64,Hypertension,B+,12
+Northern,Female,50-64,Hypertension,B-,15
+Northern,Female,50-64,Hypertension,O+,9
+Northern,Female,50-64,Hypertension,O-,7
+Northern,Female,50-64,None,A+,11
+Northern,Female,50-64,None,A-,14
+Northern,Female,50-64,None,AB+,9
+Northern,Female,50-64,None,B+,2
+Northern,Female,50-64,None,B-,10
+Northern,Female,50-64,None,O+,20
+Northern,Female,50-64,None,O-,10
+Northern,Female,65+,Asthma,A+,24
+Northern,Female,65+,Asthma,A-,21
+Northern,Female,65+,Asthma,AB+,15
+Northern,Female,65+,Asthma,B+,15
+Northern,Female,65+,Asthma,B-,22
+Northern,Female,65+,Asthma,O+,18
+Northern,Female,65+,Asthma,O-,14
+Northern,Female,65+,Diabetes,A+,20
+Northern,Female,65+,Diabetes,A-,24
+Northern,Female,65+,Diabetes,AB+,24
+Northern,Female,65+,Diabetes,B+,17
+Northern,Female,65+,Diabetes,B-,23
+Northern,Female,65+,Diabetes,O+,16
+Northern,Female,65+,Diabetes,O-,17
+Northern,Female,65+,Hypertension,A+,28
+Northern,Female,65+,Hypertension,A-,14
+Northern,Female,65+,Hypertension,AB+,17
+Northern,Female,65+,Hypertension,B+,18
+Northern,Female,65+,Hypertension,B-,15
+Northern,Female,65+,Hypertension,O+,23
+Northern,Female,65+,Hypertension,O-,14
+Northern,Female,65+,None,A+,23
+Northern,Female,65+,None,A-,17
+Northern,Female,65+,None,AB+,27
+Northern,Female,65+,None,B+,21
+Northern,Female,65+,None,B-,16
+Northern,Female,65+,None,O+,23
+Northern,Female,65+,None,O-,17
+Northern,Male,0-17,Asthma,A+,18
+Northern,Male,0-17,Asthma,A-,20
+Northern,Male,0-17,Asthma,AB+,13
+Northern,Male,0-17,Asthma,B+,14
+Northern,Male,0-17,Asthma,B-,21
+Northern,Male,0-17,Asthma,O+,21
+Northern,Male,0-17,Asthma,O-,13
+Northern,Male,0-17,Diabetes,A+,12
+Northern,Male,0-17,Diabetes,A-,17
+Northern,Male,0-17,Diabetes,AB+,15
+Northern,Male,0-17,Diabetes,B+,7
+Northern,Male,0-17,Diabetes,B-,12
+Northern,Male,0-17,Diabetes,O+,20
+Northern,Male,0-17,Diabetes,O-,20
+Northern,Male,0-17,Hypertension,A+,15
+Northern,Male,0-17,Hypertension,A-,18
+Northern,Male,0-17,Hypertension,AB+,10
+Northern,Male,0-17,Hypertension,B+,11
+Northern,Male,0-17,Hypertension,B-,16
+Northern,Male,0-17,Hypertension,O+,13
+Northern,Male,0-17,Hypertension,O-,17
+Northern,Male,0-17,None,A+,12
+Northern,Male,0-17,None,A-,16
+Northern,Male,0-17,None,AB+,8
+Northern,Male,0-17,None,B+,11
+Northern,Male,0-17,None,B-,15
+Northern,Male,0-17,None,O+,18
+Northern,Male,0-17,None,O-,16
+Northern,Male,18-34,Asthma,A+,15
+Northern,Male,18-34,Asthma,A-,20
+Northern,Male,18-34,Asthma,AB+,8
+Northern,Male,18-34,Asthma,B+,15
+Northern,Male,18-34,Asthma,B-,20
+Northern,Male,18-34,Asthma,O+,12
+Northern,Male,18-34,Asthma,O-,7
+Northern,Male,18-34,Diabetes,A+,11
+Northern,Male,18-34,Diabetes,A-,6
+Northern,Male,18-34,Diabetes,AB+,11
+Northern,Male,18-34,Diabetes,B+,11
+Northern,Male,18-34,Diabetes,B-,16
+Northern,Male,18-34,Diabetes,O+,9
+Northern,Male,18-34,Diabetes,O-,11
+Northern,Male,18-34,Hypertension,A+,15
+Northern,Male,18-34,Hypertension,A-,16
+Northern,Male,18-34,Hypertension,AB+,13
+Northern,Male,18-34,Hypertension,B+,13
+Northern,Male,18-34,Hypertension,B-,16
+Northern,Male,18-34,Hypertension,O+,15
+Northern,Male,18-34,Hypertension,O-,9
+Northern,Male,18-34,None,A+,6
+Northern,Male,18-34,None,A-,10
+Northern,Male,18-34,None,AB+,14
+Northern,Male,18-34,None,B+,8
+Northern,Male,18-34,None,B-,6
+Northern,Male,18-34,None,O+,13
+Northern,Male,18-34,None,O-,6
+Northern,Male,35-49,Asthma,A+,12
+Northern,Male,35-49,Asthma,A-,3
+Northern,Male,35-49,Asthma,AB+,15
+Northern,Male,35-49,Asthma,B+,13
+Northern,Male,35-49,Asthma,B-,15
+Northern,Male,35-49,Asthma,O+,11
+Northern,Male,35-49,Asthma,O-,12
+Northern,Male,35-49,Diabetes,A+,14
+Northern,Male,35-49,Diabetes,A-,5
+Northern,Male,35-49,Diabetes,AB+,14
+Northern,Male,35-49,Diabetes,B+,12
+Northern,Male,35-49,Diabetes,B-,10
+Northern,Male,35-49,Diabetes,O+,10
+Northern,Male,35-49,Diabetes,O-,11
+Northern,Male,35-49,Hypertension,A+,10
+Northern,Male,35-49,Hypertension,A-,6
+Northern,Male,35-49,Hypertension,AB+,15
+Northern,Male,35-49,Hypertension,B+,14
+Northern,Male,35-49,Hypertension,B-,16
+Northern,Male,35-49,Hypertension,O+,14
+Northern,Male,35-49,Hypertension,O-,20
+Northern,Male,35-49,None,A+,16
+Northern,Male,35-49,None,A-,9
+Northern,Male,35-49,None,AB+,11
+Northern,Male,35-49,None,B+,14
+Northern,Male,35-49,None,B-,10
+Northern,Male,35-49,None,O+,10
+Northern,Male,35-49,None,O-,11
+Northern,Male,50-64,Asthma,A+,12
+Northern,Male,50-64,Asthma,A-,13
+Northern,Male,50-64,Asthma,AB+,17
+Northern,Male,50-64,Asthma,B+,15
+Northern,Male,50-64,Asthma,B-,12
+Northern,Male,50-64,Asthma,O+,14
+Northern,Male,50-64,Asthma,O-,7
+Northern,Male,50-64,Diabetes,A+,17
+Northern,Male,50-64,Diabetes,A-,14
+Northern,Male,50-64,Diabetes,AB+,12
+Northern,Male,50-64,Diabetes,B+,10
+Northern,Male,50-64,Diabetes,B-,10
+Northern,Male,50-64,Diabetes,O+,10
+Northern,Male,50-64,Diabetes,O-,15
+Northern,Male,50-64,Hypertension,A+,10
+Northern,Male,50-64,Hypertension,A-,11
+Northern,Male,50-64,Hypertension,AB+,10
+Northern,Male,50-64,Hypertension,B+,13
+Northern,Male,50-64,Hypertension,B-,12
+Northern,Male,50-64,Hypertension,O+,10
+Northern,Male,50-64,Hypertension,O-,12
+Northern,Male,50-64,None,A+,7
+Northern,Male,50-64,None,A-,10
+Northern,Male,50-64,None,AB+,21
+Northern,Male,50-64,None,B+,14
+Northern,Male,50-64,None,B-,6
+Northern,Male,50-64,None,O+,18
+Northern,Male,50-64,None,O-,13
+Northern,Male,65+,Asthma,A+,22
+Northern,Male,65+,Asthma,A-,22
+Northern,Male,65+,Asthma,AB+,23
+Northern,Male,65+,Asthma,B+,13
+Northern,Male,65+,Asthma,B-,23
+Northern,Male,65+,Asthma,O+,22
+Northern,Male,65+,Asthma,O-,20
+Northern,Male,65+,Diabetes,A+,14
+Northern,Male,65+,Diabetes,A-,19
+Northern,Male,65+,Diabetes,AB+,25
+Northern,Male,65+,Diabetes,B+,13
+Northern,Male,65+,Diabetes,B-,16
+Northern,Male,65+,Diabetes,O+,17
+Northern,Male,65+,Diabetes,O-,18
+Northern,Male,65+,Hypertension,A+,22
+Northern,Male,65+,Hypertension,A-,13
+Northern,Male,65+,Hypertension,AB+,20
+Northern,Male,65+,Hypertension,B+,27
+Northern,Male,65+,Hypertension,B-,20
+Northern,Male,65+,Hypertension,O+,19
+Northern,Male,65+,Hypertension,O-,29
+Northern,Male,65+,None,A+,17
+Northern,Male,65+,None,A-,18
+Northern,Male,65+,None,AB+,20
+Northern,Male,65+,None,B+,15
+Northern,Male,65+,None,B-,16
+Northern,Male,65+,None,O+,27
+Northern,Male,65+,None,O-,13
+Southern,Female,0-17,Asthma,A+,20
+Southern,Female,0-17,Asthma,A-,11
+Southern,Female,0-17,Asthma,AB+,14
+Southern,Female,0-17,Asthma,B+,10
+Southern,Female,0-17,Asthma,B-,16
+Southern,Female,0-17,Asthma,O+,16
+Southern,Female,0-17,Asthma,O-,12
+Southern,Female,0-17,Diabetes,A+,16
+Southern,Female,0-17,Diabetes,A-,18
+Southern,Female,0-17,Diabetes,AB+,12
+Southern,Female,0-17,Diabetes,B+,11
+Southern,Female,0-17,Diabetes,B-,9
+Southern,Female,0-17,Diabetes,O+,8
+Southern,Female,0-17,Diabetes,O-,13
+Southern,Female,0-17,Hypertension,A+,12
+Southern,Female,0-17,Hypertension,A-,8
+Southern,Female,0-17,Hypertension,AB+,18
+Southern,Female,0-17,Hypertension,B+,19
+Southern,Female,0-17,Hypertension,B-,7
+Southern,Female,0-17,Hypertension,O+,10
+Southern,Female,0-17,Hypertension,O-,10
+Southern,Female,0-17,None,A+,9
+Southern,Female,0-17,None,A-,17
+Southern,Female,0-17,None,AB+,11
+Southern,Female,0-17,None,B+,11
+Southern,Female,0-17,None,B-,9
+Southern,Female,0-17,None,O+,10
+Southern,Female,0-17,None,O-,8
+Southern,Female,18-34,Asthma,A+,13
+Southern,Female,18-34,Asthma,A-,12
+Southern,Female,18-34,Asthma,AB+,15
+Southern,Female,18-34,Asthma,B+,14
+Southern,Female,18-34,Asthma,B-,15
+Southern,Female,18-34,Asthma,O+,10
+Southern,Female,18-34,Asthma,O-,17
+Southern,Female,18-34,Diabetes,A+,9
+Southern,Female,18-34,Diabetes,A-,13
+Southern,Female,18-34,Diabetes,AB+,17
+Southern,Female,18-34,Diabetes,B+,11
+Southern,Female,18-34,Diabetes,B-,9
+Southern,Female,18-34,Diabetes,O+,10
+Southern,Female,18-34,Diabetes,O-,17
+Southern,Female,18-34,Hypertension,A+,16
+Southern,Female,18-34,Hypertension,A-,11
+Southern,Female,18-34,Hypertension,AB+,11
+Southern,Female,18-34,Hypertension,B+,12
+Southern,Female,18-34,Hypertension,B-,11
+Southern,Female,18-34,Hypertension,O+,15
+Southern,Female,18-34,Hypertension,O-,17
+Southern,Female,18-34,None,A+,15
+Southern,Female,18-34,None,A-,8
+Southern,Female,18-34,None,AB+,16
+Southern,Female,18-34,None,B+,5
+Southern,Female,18-34,None,B-,17
+Southern,Female,18-34,None,O+,8
+Southern,Female,18-34,None,O-,14
+Southern,Female,35-49,Asthma,A+,9
+Southern,Female,35-49,Asthma,A-,7
+Southern,Female,35-49,Asthma,AB+,19
+Southern,Female,35-49,Asthma,B+,13
+Southern,Female,35-49,Asthma,B-,15
+Southern,Female,35-49,Asthma,O+,13
+Southern,Female,35-49,Asthma,O-,14
+Southern,Female,35-49,Diabetes,A+,16
+Southern,Female,35-49,Diabetes,A-,10
+Southern,Female,35-49,Diabetes,AB+,10
+Southern,Female,35-49,Diabetes,B+,10
+Southern,Female,35-49,Diabetes,B-,15
+Southern,Female,35-49,Diabetes,O+,9
+Southern,Female,35-49,Diabetes,O-,12
+Southern,Female,35-49,Hypertension,A+,12
+Southern,Female,35-49,Hypertension,A-,13
+Southern,Female,35-49,Hypertension,AB+,10
+Southern,Female,35-49,Hypertension,B+,12
+Southern,Female,35-49,Hypertension,B-,8
+Southern,Female,35-49,Hypertension,O+,10
+Southern,Female,35-49,Hypertension,O-,14
+Southern,Female,35-49,None,A+,15
+Southern,Female,35-49,None,A-,14
+Southern,Female,35-49,None,AB+,17
+Southern,Female,35-49,None,B+,12
+Southern,Female,35-49,None,B-,10
+Southern,Female,35-49,None,O+,10
+Southern,Female,35-49,None,O-,12
+Southern,Female,50-64,Asthma,A+,5
+Southern,Female,50-64,Asthma,A-,14
+Southern,Female,50-64,Asthma,AB+,13
+Southern,Female,50-64,Asthma,B+,7
+Southern,Female,50-64,Asthma,B-,12
+Southern,Female,50-64,Asthma,O+,9
+Southern,Female,50-64,Asthma,O-,13
+Southern,Female,50-64,Diabetes,A+,9
+Southern,Female,50-64,Diabetes,A-,12
+Southern,Female,50-64,Diabetes,AB+,12
+Southern,Female,50-64,Diabetes,B+,17
+Southern,Female,50-64,Diabetes,B-,10
+Southern,Female,50-64,Diabetes,O+,8
+Southern,Female,50-64,Diabetes,O-,19
+Southern,Female,50-64,Hypertension,A+,10
+Southern,Female,50-64,Hypertension,A-,8
+Southern,Female,50-64,Hypertension,AB+,7
+Southern,Female,50-64,Hypertension,B+,9
+Southern,Female,50-64,Hypertension,B-,10
+Southern,Female,50-64,Hypertension,O+,15
+Southern,Female,50-64,Hypertension,O-,19
+Southern,Female,50-64,None,A+,14
+Southern,Female,50-64,None,A-,14
+Southern,Female,50-64,None,AB+,11
+Southern,Female,50-64,None,B+,16
+Southern,Female,50-64,None,B-,8
+Southern,Female,50-64,None,O+,12
+Southern,Female,50-64,None,O-,11
+Southern,Female,65+,Asthma,A+,23
+Southern,Female,65+,Asthma,A-,21
+Southern,Female,65+,Asthma,AB+,18
+Southern,Female,65+,Asthma,B+,20
+Southern,Female,65+,Asthma,B-,14
+Southern,Female,65+,Asthma,O+,20
+Southern,Female,65+,Asthma,O-,16
+Southern,Female,65+,Diabetes,A+,23
+Southern,Female,65+,Diabetes,A-,12
+Southern,Female,65+,Diabetes,AB+,19
+Southern,Female,65+,Diabetes,B+,19
+Southern,Female,65+,Diabetes,B-,25
+Southern,Female,65+,Diabetes,O+,21
+Southern,Female,65+,Diabetes,O-,22
+Southern,Female,65+,Hypertension,A+,21
+Southern,Female,65+,Hypertension,A-,19
+Southern,Female,65+,Hypertension,AB+,23
+Southern,Female,65+,Hypertension,B+,15
+Southern,Female,65+,Hypertension,B-,26
+Southern,Female,65+,Hypertension,O+,22
+Southern,Female,65+,Hypertension,O-,19
+Southern,Female,65+,None,A+,24
+Southern,Female,65+,None,A-,21
+Southern,Female,65+,None,AB+,26
+Southern,Female,65+,None,B+,24
+Southern,Female,65+,None,B-,21
+Southern,Female,65+,None,O+,20
+Southern,Female,65+,None,O-,24
+Southern,Male,0-17,Asthma,A+,12
+Southern,Male,0-17,Asthma,A-,15
+Southern,Male,0-17,Asthma,AB+,7
+Southern,Male,0-17,Asthma,B+,16
+Southern,Male,0-17,Asthma,B-,12
+Southern,Male,0-17,Asthma,O+,9
+Southern,Male,0-17,Asthma,O-,11
+Southern,Male,0-17,Diabetes,A+,8
+Southern,Male,0-17,Diabetes,A-,12
+Southern,Male,0-17,Diabetes,AB+,15
+Southern,Male,0-17,Diabetes,B+,14
+Southern,Male,0-17,Diabetes,B-,15
+Southern,Male,0-17,Diabetes,O+,11
+Southern,Male,0-17,Diabetes,O-,12
+Southern,Male,0-17,Hypertension,A+,12
+Southern,Male,0-17,Hypertension,A-,14
+Southern,Male,0-17,Hypertension,AB+,22
+Southern,Male,0-17,Hypertension,B+,12
+Southern,Male,0-17,Hypertension,B-,23
+Southern,Male,0-17,Hypertension,O+,12
+Southern,Male,0-17,Hypertension,O-,17
+Southern,Male,0-17,None,A+,14
+Southern,Male,0-17,None,A-,15
+Southern,Male,0-17,None,AB+,19
+Southern,Male,0-17,None,B+,24
+Southern,Male,0-17,None,B-,19
+Southern,Male,0-17,None,O+,14
+Southern,Male,0-17,None,O-,10
+Southern,Male,18-34,Asthma,A+,7
+Southern,Male,18-34,Asthma,A-,16
+Southern,Male,18-34,Asthma,AB+,11
+Southern,Male,18-34,Asthma,B+,16
+Southern,Male,18-34,Asthma,B-,14
+Southern,Male,18-34,Asthma,O+,18
+Southern,Male,18-34,Asthma,O-,23
+Southern,Male,18-34,Diabetes,A+,11
+Southern,Male,18-34,Diabetes,A-,13
+Southern,Male,18-34,Diabetes,AB+,12
+Southern,Male,18-34,Diabetes,B+,10
+Southern,Male,18-34,Diabetes,B-,14
+Southern,Male,18-34,Diabetes,O+,8
+Southern,Male,18-34,Diabetes,O-,18
+Southern,Male,18-34,Hypertension,A+,12
+Southern,Male,18-34,Hypertension,A-,10
+Southern,Male,18-34,Hypertension,AB+,14
+Southern,Male,18-34,Hypertension,B+,18
+Southern,Male,18-34,Hypertension,B-,16
+Southern,Male,18-34,Hypertension,O+,14
+Southern,Male,18-34,Hypertension,O-,12
+Southern,Male,18-34,None,A+,10
+Southern,Male,18-34,None,A-,18
+Southern,Male,18-34,None,AB+,19
+Southern,Male,18-34,None,B+,15
+Southern,Male,18-34,None,B-,16
+Southern,Male,18-34,None,O+,21
+Southern,Male,18-34,None,O-,11
+Southern,Male,35-49,Asthma,A+,12
+Southern,Male,35-49,Asthma,A-,18
+Southern,Male,35-49,Asthma,AB+,10
+Southern,Male,35-49,Asthma,B+,14
+Southern,Male,35-49,Asthma,B-,11
+Southern,Male,35-49,Asthma,O+,18
+Southern,Male,35-49,Asthma,O-,7
+Southern,Male,35-49,Diabetes,A+,9
+Southern,Male,35-49,Diabetes,A-,14
+Southern,Male,35-49,Diabetes,AB+,10
+Southern,Male,35-49,Diabetes,B+,16
+Southern,Male,35-49,Diabetes,B-,16
+Southern,Male,35-49,Diabetes,O+,9
+Southern,Male,35-49,Diabetes,O-,14
+Southern,Male,35-49,Hypertension,A+,12
+Southern,Male,35-49,Hypertension,A-,16
+Southern,Male,35-49,Hypertension,AB+,7
+Southern,Male,35-49,Hypertension,B+,13
+Southern,Male,35-49,Hypertension,B-,8
+Southern,Male,35-49,Hypertension,O+,10
+Southern,Male,35-49,Hypertension,O-,7
+Southern,Male,35-49,None,A+,11
+Southern,Male,35-49,None,A-,9
+Southern,Male,35-49,None,AB+,13
+Southern,Male,35-49,None,B+,13
+Southern,Male,35-49,None,B-,9
+Southern,Male,35-49,None,O+,14
+Southern,Male,35-49,None,O-,11
+Southern,Male,50-64,Asthma,A+,11
+Southern,Male,50-64,Asthma,A-,9
+Southern,Male,50-64,Asthma,AB+,12
+Southern,Male,50-64,Asthma,B+,17
+Southern,Male,50-64,Asthma,B-,6
+Southern,Male,50-64,Asthma,O+,15
+Southern,Male,50-64,Asthma,O-,10
+Southern,Male,50-64,Diabetes,A+,12
+Southern,Male,50-64,Diabetes,A-,11
+Southern,Male,50-64,Diabetes,AB+,14
+Southern,Male,50-64,Diabetes,B+,12
+Southern,Male,50-64,Diabetes,B-,6
+Southern,Male,50-64,Diabetes,O+,12
+Southern,Male,50-64,Diabetes,O-,12
+Southern,Male,50-64,Hypertension,A+,14
+Southern,Male,50-64,Hypertension,A-,13
+Southern,Male,50-64,Hypertension,AB+,18
+Southern,Male,50-64,Hypertension,B+,13
+Southern,Male,50-64,Hypertension,B-,10
+Southern,Male,50-64,Hypertension,O+,7
+Southern,Male,50-64,Hypertension,O-,6
+Southern,Male,50-64,None,A+,6
+Southern,Male,50-64,None,A-,12
+Southern,Male,50-64,None,AB+,17
+Southern,Male,50-64,None,B+,8
+Southern,Male,50-64,None,B-,15
+Southern,Male,50-64,None,O+,7
+Southern,Male,50-64,None,O-,10
+Southern,Male,65+,Asthma,A+,15
+Southern,Male,65+,Asthma,A-,24
+Southern,Male,65+,Asthma,AB+,23
+Southern,Male,65+,Asthma,B+,20
+Southern,Male,65+,Asthma,B-,32
+Southern,Male,65+,Asthma,O+,18
+Southern,Male,65+,Asthma,O-,18
+Southern,Male,65+,Diabetes,A+,21
+Southern,Male,65+,Diabetes,A-,17
+Southern,Male,65+,Diabetes,AB+,26
+Southern,Male,65+,Diabetes,B+,21
+Southern,Male,65+,Diabetes,B-,16
+Southern,Male,65+,Diabetes,O+,20
+Southern,Male,65+,Diabetes,O-,20
+Southern,Male,65+,Hypertension,A+,19
+Southern,Male,65+,Hypertension,A-,16
+Southern,Male,65+,Hypertension,AB+,22
+Southern,Male,65+,Hypertension,B+,22
+Southern,Male,65+,Hypertension,B-,18
+Southern,Male,65+,Hypertension,O+,14
+Southern,Male,65+,Hypertension,O-,23
+Southern,Male,65+,None,A+,17
+Southern,Male,65+,None,A-,14
+Southern,Male,65+,None,AB+,23
+Southern,Male,65+,None,B+,26
+Southern,Male,65+,None,B-,32
+Southern,Male,65+,None,O+,24
+Southern,Male,65+,None,O-,21
+Western,Female,0-17,Asthma,A+,17
+Western,Female,0-17,Asthma,A-,13
+Western,Female,0-17,Asthma,AB+,8
+Western,Female,0-17,Asthma,B+,12
+Western,Female,0-17,Asthma,B-,16
+Western,Female,0-17,Asthma,O+,16
+Western,Female,0-17,Asthma,O-,13
+Western,Female,0-17,Diabetes,A+,15
+Western,Female,0-17,Diabetes,A-,20
+Western,Female,0-17,Diabetes,AB+,11
+Western,Female,0-17,Diabetes,B+,13
+Western,Female,0-17,Diabetes,B-,11
+Western,Female,0-17,Diabetes,O+,6
+Western,Female,0-17,Diabetes,O-,14
+Western,Female,0-17,Hypertension,A+,15
+Western,Female,0-17,Hypertension,A-,16
+Western,Female,0-17,Hypertension,AB+,13
+Western,Female,0-17,Hypertension,B+,11
+Western,Female,0-17,Hypertension,B-,18
+Western,Female,0-17,Hypertension,O+,15
+Western,Female,0-17,Hypertension,O-,15
+Western,Female,0-17,None,A+,10
+Western,Female,0-17,None,A-,19
+Western,Female,0-17,None,AB+,19
+Western,Female,0-17,None,B+,21
+Western,Female,0-17,None,B-,16
+Western,Female,0-17,None,O+,14
+Western,Female,0-17,None,O-,19
+Western,Female,18-34,Asthma,A+,13
+Western,Female,18-34,Asthma,A-,16
+Western,Female,18-34,Asthma,AB+,13
+Western,Female,18-34,Asthma,B+,18
+Western,Female,18-34,Asthma,B-,12
+Western,Female,18-34,Asthma,O+,12
+Western,Female,18-34,Asthma,O-,15
+Western,Female,18-34,Diabetes,A+,19
+Western,Female,18-34,Diabetes,A-,12
+Western,Female,18-34,Diabetes,AB+,15
+Western,Female,18-34,Diabetes,B+,6
+Western,Female,18-34,Diabetes,B-,16
+Western,Female,18-34,Diabetes,O+,7
+Western,Female,18-34,Diabetes,O-,12
+Western,Female,18-34,Hypertension,A+,14
+Western,Female,18-34,Hypertension,A-,13
+Western,Female,18-34,Hypertension,AB+,18
+Western,Female,18-34,Hypertension,B+,18
+Western,Female,18-34,Hypertension,B-,15
+Western,Female,18-34,Hypertension,O+,13
+Western,Female,18-34,Hypertension,O-,16
+Western,Female,18-34,None,A+,10
+Western,Female,18-34,None,A-,12
+Western,Female,18-34,None,AB+,14
+Western,Female,18-34,None,B+,11
+Western,Female,18-34,None,B-,17
+Western,Female,18-34,None,O+,15
+Western,Female,18-34,None,O-,17
+Western,Female,35-49,Asthma,A+,13
+Western,Female,35-49,Asthma,A-,19
+Western,Female,35-49,Asthma,AB+,13
+Western,Female,35-49,Asthma,B+,9
+Western,Female,35-49,Asthma,B-,9
+Western,Female,35-49,Asthma,O+,10
+Western,Female,35-49,Asthma,O-,10
+Western,Female,35-49,Diabetes,A+,10
+Western,Female,35-49,Diabetes,A-,7
+Western,Female,35-49,Diabetes,AB+,15
+Western,Female,35-49,Diabetes,B+,11
+Western,Female,35-49,Diabetes,B-,13
+Western,Female,35-49,Diabetes,O+,9
+Western,Female,35-49,Diabetes,O-,10
+Western,Female,35-49,Hypertension,A+,10
+Western,Female,35-49,Hypertension,A-,5
+Western,Female,35-49,Hypertension,AB+,7
+Western,Female,35-49,Hypertension,B+,7
+Western,Female,35-49,Hypertension,B-,16
+Western,Female,35-49,Hypertension,O+,9
+Western,Female,35-49,Hypertension,O-,8
+Western,Female,35-49,None,A+,8
+Western,Female,35-49,None,A-,12
+Western,Female,35-49,None,AB+,11
+Western,Female,35-49,None,B+,15
+Western,Female,35-49,None,B-,18
+Western,Female,35-49,None,O+,11
+Western,Female,35-49,None,O-,13
+Western,Female,50-64,Asthma,A+,13
+Western,Female,50-64,Asthma,A-,12
+Western,Female,50-64,Asthma,AB+,13
+Western,Female,50-64,Asthma,B+,17
+Western,Female,50-64,Asthma,B-,11
+Western,Female,50-64,Asthma,O+,12
+Western,Female,50-64,Asthma,O-,15
+Western,Female,50-64,Diabetes,A+,15
+Western,Female,50-64,Diabetes,A-,6
+Western,Female,50-64,Diabetes,AB+,14
+Western,Female,50-64,Diabetes,B+,14
+Western,Female,50-64,Diabetes,B-,10
+Western,Female,50-64,Diabetes,O+,11
+Western,Female,50-64,Diabetes,O-,16
+Western,Female,50-64,Hypertension,A+,12
+Western,Female,50-64,Hypertension,A-,13
+Western,Female,50-64,Hypertension,AB+,6
+Western,Female,50-64,Hypertension,B+,15
+Western,Female,50-64,Hypertension,B-,15
+Western,Female,50-64,Hypertension,O+,7
+Western,Female,50-64,Hypertension,O-,17
+Western,Female,50-64,None,A+,18
+Western,Female,50-64,None,A-,13
+Western,Female,50-64,None,AB+,16
+Western,Female,50-64,None,B+,16
+Western,Female,50-64,None,B-,10
+Western,Female,50-64,None,O+,14
+Western,Female,50-64,None,O-,12
+Western,Female,65+,Asthma,A+,20
+Western,Female,65+,Asthma,A-,24
+Western,Female,65+,Asthma,AB+,22
+Western,Female,65+,Asthma,B+,29
+Western,Female,65+,Asthma,B-,15
+Western,Female,65+,Asthma,O+,21
+Western,Female,65+,Asthma,O-,19
+Western,Female,65+,Diabetes,A+,17
+Western,Female,65+,Diabetes,A-,25
+Western,Female,65+,Diabetes,AB+,19
+Western,Female,65+,Diabetes,B+,22
+Western,Female,65+,Diabetes,B-,17
+Western,Female,65+,Diabetes,O+,16
+Western,Female,65+,Diabetes,O-,22
+Western,Female,65+,Hypertension,A+,17
+Western,Female,65+,Hypertension,A-,19
+Western,Female,65+,Hypertension,AB+,24
+Western,Female,65+,Hypertension,B+,20
+Western,Female,65+,Hypertension,B-,19
+Western,Female,65+,Hypertension,O+,19
+Western,Female,65+,Hypertension,O-,26
+Western,Female,65+,None,A+,20
+Western,Female,65+,None,A-,26
+Western,Female,65+,None,AB+,20
+Western,Female,65+,None,B+,16
+Western,Female,65+,None,B-,23
+Western,Female,65+,None,O+,25
+Western,Female,65+,None,O-,22
+Western,Male,0-17,Asthma,A+,11
+Western,Male,0-17,Asthma,A-,10
+Western,Male,0-17,Asthma,AB+,7
+Western,Male,0-17,Asthma,B+,12
+Western,Male,0-17,Asthma,B-,11
+Western,Male,0-17,Asthma,O+,10
+Western,Male,0-17,Asthma,O-,13
+Western,Male,0-17,Diabetes,A+,19
+Western,Male,0-17,Diabetes,A-,18
+Western,Male,0-17,Diabetes,AB+,22
+Western,Male,0-17,Diabetes,B+,17
+Western,Male,0-17,Diabetes,B-,16
+Western,Male,0-17,Diabetes,O+,18
+Western,Male,0-17,Diabetes,O-,17
+Western,Male,0-17,Hypertension,A+,17
+Western,Male,0-17,Hypertension,A-,20
+Western,Male,0-17,Hypertension,AB+,13
+Western,Male,0-17,Hypertension,B+,16
+Western,Male,0-17,Hypertension,B-,15
+Western,Male,0-17,Hypertension,O+,13
+Western,Male,0-17,Hypertension,O-,13
+Western,Male,0-17,None,A+,12
+Western,Male,0-17,None,A-,13
+Western,Male,0-17,None,AB+,17
+Western,Male,0-17,None,B+,15
+Western,Male,0-17,None,B-,11
+Western,Male,0-17,None,O+,23
+Western,Male,0-17,None,O-,17
+Western,Male,18-34,Asthma,A+,12
+Western,Male,18-34,Asthma,A-,13
+Western,Male,18-34,Asthma,AB+,9
+Western,Male,18-34,Asthma,B+,9
+Western,Male,18-34,Asthma,B-,14
+Western,Male,18-34,Asthma,O+,13
+Western,Male,18-34,Asthma,O-,11
+Western,Male,18-34,Diabetes,A+,21
+Western,Male,18-34,Diabetes,A-,13
+Western,Male,18-34,Diabetes,AB+,12
+Western,Male,18-34,Diabetes,B+,10
+Western,Male,18-34,Diabetes,B-,12
+Western,Male,18-34,Diabetes,O+,12
+Western,Male,18-34,Diabetes,O-,17
+Western,Male,18-34,Hypertension,A+,13
+Western,Male,18-34,Hypertension,A-,14
+Western,Male,18-34,Hypertension,AB+,12
+Western,Male,18-34,Hypertension,B+,10
+Western,Male,18-34,Hypertension,B-,15
+Western,Male,18-34,Hypertension,O+,15
+Western,Male,18-34,Hypertension,O-,18
+Western,Male,18-34,None,A+,17
+Western,Male,18-34,None,A-,7
+Western,Male,18-34,None,AB+,21
+Western,Male,18-34,None,B+,16
+Western,Male,18-34,None,B-,10
+Western,Male,18-34,None,O+,8
+Western,Male,18-34,None,O-,17
+Western,Male,35-49,Asthma,A+,16
+Western,Male,35-49,Asthma,A-,10
+Western,Male,35-49,Asthma,AB+,11
+Western,Male,35-49,Asthma,B+,10
+Western,Male,35-49,Asthma,B-,15
+Western,Male,35-49,Asthma,O+,13
+Western,Male,35-49,Asthma,O-,15
+Western,Male,35-49,Diabetes,A+,12
+Western,Male,35-49,Diabetes,A-,7
+Western,Male,35-49,Diabetes,AB+,13
+Western,Male,35-49,Diabetes,B+,10
+Western,Male,35-49,Diabetes,B-,8
+Western,Male,35-49,Diabetes,O+,8
+Western,Male,35-49,Diabetes,O-,12
+Western,Male,35-49,Hypertension,A+,12
+Western,Male,35-49,Hypertension,A-,8
+Western,Male,35-49,Hypertension,AB+,15
+Western,Male,35-49,Hypertension,B+,10
+Western,Male,35-49,Hypertension,B-,15
+Western,Male,35-49,Hypertension,O+,13
+Western,Male,35-49,Hypertension,O-,12
+Western,Male,35-49,None,A+,8
+Western,Male,35-49,None,A-,20
+Western,Male,35-49,None,AB+,7
+Western,Male,35-49,None,B+,10
+Western,Male,35-49,None,B-,17
+Western,Male,35-49,None,O+,11
+Western,Male,35-49,None,O-,15
+Western,Male,50-64,Asthma,A+,11
+Western,Male,50-64,Asthma,A-,17
+Western,Male,50-64,Asthma,AB+,8
+Western,Male,50-64,Asthma,B+,7
+Western,Male,50-64,Asthma,B-,10
+Western,Male,50-64,Asthma,O+,14
+Western,Male,50-64,Asthma,O-,13
+Western,Male,50-64,Diabetes,A+,14
+Western,Male,50-64,Diabetes,A-,9
+Western,Male,50-64,Diabetes,AB+,12
+Western,Male,50-64,Diabetes,B+,12
+Western,Male,50-64,Diabetes,B-,16
+Western,Male,50-64,Diabetes,O+,12
+Western,Male,50-64,Diabetes,O-,21
+Western,Male,50-64,Hypertension,A+,15
+Western,Male,50-64,Hypertension,A-,8
+Western,Male,50-64,Hypertension,AB+,11
+Western,Male,50-64,Hypertension,B+,14
+Western,Male,50-64,Hypertension,B-,8
+Western,Male,50-64,Hypertension,O+,12
+Western,Male,50-64,Hypertension,O-,9
+Western,Male,50-64,None,A+,9
+Western,Male,50-64,None,A-,7
+Western,Male,50-64,None,AB+,16
+Western,Male,50-64,None,B+,12
+Western,Male,50-64,None,B-,11
+Western,Male,50-64,None,O+,10
+Western,Male,50-64,None,O-,11
+Western,Male,65+,Asthma,A+,14
+Western,Male,65+,Asthma,A-,24
+Western,Male,65+,Asthma,AB+,23
+Western,Male,65+,Asthma,B+,22
+Western,Male,65+,Asthma,B-,20
+Western,Male,65+,Asthma,O+,13
+Western,Male,65+,Asthma,O-,25
+Western,Male,65+,Diabetes,A+,21
+Western,Male,65+,Diabetes,A-,27
+Western,Male,65+,Diabetes,AB+,33
+Western,Male,65+,Diabetes,B+,16
+Western,Male,65+,Diabetes,B-,12
+Western,Male,65+,Diabetes,O+,23
+Western,Male,65+,Diabetes,O-,13
+Western,Male,65+,Hypertension,A+,22
+Western,Male,65+,Hypertension,A-,12
+Western,Male,65+,Hypertension,AB+,21
+Western,Male,65+,Hypertension,B+,23
+Western,Male,65+,Hypertension,B-,20
+Western,Male,65+,Hypertension,O+,20
+Western,Male,65+,Hypertension,O-,24
+Western,Male,65+,None,A+,28
+Western,Male,65+,None,A-,25
+Western,Male,65+,None,AB+,20
+Western,Male,65+,None,B+,24
+Western,Male,65+,None,B-,24
+Western,Male,65+,None,O+,24
+Western,Male,65+,None,O-,19

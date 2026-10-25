@@ -1,0 +1,1258 @@
+Month,FacilityID,DepartmentName,Responses,RatingSum,PoorRatings,ExcellentRatings
+2026-01,HF001,Cardiology,1,1,1,0
+2026-01,HF001,Emergency,2,4,2,0
+2026-01,HF001,ICU,1,4,0,0
+2026-01,HF001,Pediatrics,1,3,0,0
+2026-01,HF001,Surgery,1,4,0,0
+2026-01,HF002,Cardiology,1,2,1,0
+2026-01,HF002,Emergency,1,2,1,0
+2026-01,HF002,Laboratory,1,4,0,0
+2026-01,HF002,Pediatrics,1,2,1,0
+2026-01,HF002,Radiology,2,6,1,0
+2026-01,HF002,Surgery,1,5,0,1
+2026-01,HF003,Cardiology,1,3,0,0
+2026-01,HF003,Emergency,2,7,0,0
+2026-01,HF003,ICU,1,2,1,0
+2026-01,HF003,Laboratory,1,3,0,0
+2026-01,HF003,Pharmacy,1,5,0,1
+2026-01,HF003,Surgery,1,4,0,0
+2026-01,HF004,Cardiology,2,6,1,0
+2026-01,HF004,ICU,2,4,1,0
+2026-01,HF004,Internal Medicine,1,4,0,0
+2026-01,HF004,Obstetrics & Gynecology,2,4,1,0
+2026-01,HF004,Pediatrics,2,7,1,1
+2026-01,HF004,Radiology,1,2,1,0
+2026-01,HF005,Emergency,1,3,0,0
+2026-01,HF005,ICU,1,4,0,0
+2026-01,HF005,Internal Medicine,1,5,0,1
+2026-01,HF005,Obstetrics & Gynecology,1,4,0,0
+2026-01,HF005,Pediatrics,1,3,0,0
+2026-01,HF005,Pharmacy,1,2,1,0
+2026-01,HF005,Radiology,1,2,1,0
+2026-01,HF005,Surgery,2,9,0,1
+2026-01,HF006,Emergency,1,1,1,0
+2026-01,HF006,ICU,1,4,0,0
+2026-01,HF006,Internal Medicine,2,4,2,0
+2026-01,HF006,Obstetrics & Gynecology,1,1,1,0
+2026-01,HF006,Radiology,1,2,1,0
+2026-01,HF006,Surgery,3,9,1,0
+2026-01,HF007,Emergency,1,4,0,0
+2026-01,HF007,ICU,2,6,1,0
+2026-01,HF007,Laboratory,1,1,1,0
+2026-01,HF007,Pharmacy,1,2,1,0
+2026-01,HF008,Emergency,2,6,1,1
+2026-01,HF008,ICU,1,1,1,0
+2026-01,HF009,Cardiology,2,8,0,1
+2026-01,HF009,Emergency,2,7,1,1
+2026-01,HF009,Internal Medicine,3,8,2,0
+2026-01,HF009,Laboratory,1,3,0,0
+2026-01,HF009,Pharmacy,1,4,0,0
+2026-01,HF009,Surgery,2,6,1,1
+2026-01,HF010,Internal Medicine,1,1,1,0
+2026-01,HF010,Laboratory,2,7,0,0
+2026-01,HF010,Radiology,1,4,0,0
+2026-01,HF011,ICU,1,1,1,0
+2026-01,HF011,Internal Medicine,2,6,1,1
+2026-01,HF011,Obstetrics & Gynecology,1,3,0,0
+2026-01,HF011,Pediatrics,2,6,1,1
+2026-01,HF011,Pharmacy,3,8,2,1
+2026-01,HF012,Emergency,2,8,0,1
+2026-01,HF012,ICU,1,4,0,0
+2026-01,HF012,Internal Medicine,3,9,0,0
+2026-01,HF012,Pediatrics,1,4,0,0
+2026-01,HF012,Pharmacy,1,2,1,0
+2026-01,HF013,ICU,1,1,1,0
+2026-01,HF013,Laboratory,1,5,0,1
+2026-01,HF013,Obstetrics & Gynecology,2,5,1,0
+2026-01,HF013,Pharmacy,2,8,0,0
+2026-01,HF013,Surgery,1,3,0,0
+2026-01,HF014,Cardiology,1,2,1,0
+2026-01,HF014,Internal Medicine,1,4,0,0
+2026-01,HF014,Obstetrics & Gynecology,1,4,0,0
+2026-01,HF015,Laboratory,1,4,0,0
+2026-01,HF015,Obstetrics & Gynecology,2,9,0,1
+2026-01,HF015,Surgery,2,3,2,0
+2026-01,HF016,Emergency,1,5,0,1
+2026-01,HF016,ICU,1,4,0,0
+2026-01,HF016,Pharmacy,1,2,1,0
+2026-01,HF016,Radiology,2,6,1,1
+2026-01,HF016,Surgery,2,5,1,0
+2026-01,HF017,Cardiology,3,9,2,1
+2026-01,HF017,Laboratory,1,4,0,0
+2026-01,HF017,Pediatrics,1,5,0,1
+2026-01,HF018,Cardiology,1,3,0,0
+2026-01,HF018,Laboratory,1,4,0,0
+2026-01,HF018,Obstetrics & Gynecology,1,4,0,0
+2026-01,HF018,Pediatrics,1,1,1,0
+2026-01,HF018,Radiology,1,4,0,0
+2026-01,HF018,Surgery,1,4,0,0
+2026-01,HF019,Cardiology,1,1,1,0
+2026-01,HF019,ICU,1,1,1,0
+2026-01,HF019,Internal Medicine,1,5,0,1
+2026-01,HF019,Obstetrics & Gynecology,1,5,0,1
+2026-01,HF019,Pediatrics,1,4,0,0
+2026-01,HF019,Radiology,3,12,0,1
+2026-01,HF020,ICU,1,4,0,0
+2026-01,HF020,Laboratory,1,1,1,0
+2026-01,HF020,Obstetrics & Gynecology,1,2,1,0
+2026-01,HF020,Pharmacy,1,3,0,0
+2026-01,HF020,Radiology,1,4,0,0
+2026-02,HF001,Emergency,2,4,2,0
+2026-02,HF001,ICU,1,5,0,1
+2026-02,HF001,Laboratory,1,1,1,0
+2026-02,HF001,Pediatrics,1,4,0,0
+2026-02,HF001,Surgery,1,5,0,1
+2026-02,HF002,Emergency,2,4,1,0
+2026-02,HF002,ICU,1,3,0,0
+2026-02,HF002,Internal Medicine,2,2,2,0
+2026-02,HF002,Laboratory,1,1,1,0
+2026-02,HF002,Obstetrics & Gynecology,2,9,0,1
+2026-02,HF002,Radiology,1,3,0,0
+2026-02,HF002,Surgery,1,2,1,0
+2026-02,HF003,Cardiology,1,3,0,0
+2026-02,HF003,Emergency,1,1,1,0
+2026-02,HF003,Internal Medicine,1,4,0,0
+2026-02,HF003,Laboratory,1,3,0,0
+2026-02,HF003,Obstetrics & Gynecology,2,5,1,0
+2026-02,HF003,Pharmacy,2,5,1,0
+2026-02,HF004,Cardiology,2,5,1,0
+2026-02,HF004,ICU,1,3,0,0
+2026-02,HF004,Internal Medicine,1,1,1,0
+2026-02,HF004,Radiology,1,4,0,0
+2026-02,HF005,Obstetrics & Gynecology,3,6,2,0
+2026-02,HF005,Pediatrics,2,6,1,1
+2026-02,HF006,Cardiology,2,7,1,1
+2026-02,HF006,Emergency,1,5,0,1
+2026-02,HF006,Laboratory,2,4,1,0
+2026-02,HF006,Obstetrics & Gynecology,1,1,1,0
+2026-02,HF006,Radiology,2,7,1,1
+2026-02,HF006,Surgery,2,8,0,0
+2026-02,HF007,Cardiology,2,4,1,0
+2026-02,HF007,Laboratory,3,9,1,1
+2026-02,HF007,Pediatrics,1,1,1,0
+2026-02,HF007,Surgery,1,2,1,0
+2026-02,HF008,Cardiology,3,9,2,1
+2026-02,HF008,Emergency,1,4,0,0
+2026-02,HF008,ICU,1,3,0,0
+2026-02,HF008,Internal Medicine,1,3,0,0
+2026-02,HF008,Pharmacy,2,6,1,1
+2026-02,HF009,Cardiology,1,4,0,0
+2026-02,HF009,Emergency,1,1,1,0
+2026-02,HF009,ICU,1,1,1,0
+2026-02,HF009,Laboratory,3,7,2,0
+2026-02,HF009,Obstetrics & Gynecology,1,4,0,0
+2026-02,HF010,ICU,4,10,3,1
+2026-02,HF010,Internal Medicine,2,5,1,0
+2026-02,HF010,Laboratory,1,5,0,1
+2026-02,HF010,Obstetrics & Gynecology,1,5,0,1
+2026-02,HF010,Pediatrics,1,1,1,0
+2026-02,HF010,Pharmacy,1,3,0,0
+2026-02,HF010,Radiology,1,3,0,0
+2026-02,HF011,Laboratory,2,9,0,1
+2026-02,HF011,Pediatrics,1,3,0,0
+2026-02,HF012,Cardiology,1,1,1,0
+2026-02,HF012,Emergency,2,10,0,2
+2026-02,HF012,ICU,1,4,0,0
+2026-02,HF012,Internal Medicine,1,4,0,0
+2026-02,HF012,Radiology,3,10,0,0
+2026-02,HF012,Surgery,1,1,1,0
+2026-02,HF013,Cardiology,2,8,0,0
+2026-02,HF013,ICU,1,1,1,0
+2026-02,HF013,Laboratory,1,3,0,0
+2026-02,HF013,Obstetrics & Gynecology,2,7,1,1
+2026-02,HF013,Pharmacy,2,6,1,1
+2026-02,HF013,Radiology,1,3,0,0
+2026-02,HF014,Internal Medicine,1,3,0,0
+2026-02,HF014,Laboratory,2,9,0,1
+2026-02,HF014,Pediatrics,1,5,0,1
+2026-02,HF014,Pharmacy,3,4,3,0
+2026-02,HF014,Radiology,1,4,0,0
+2026-02,HF014,Surgery,1,3,0,0
+2026-02,HF015,ICU,1,2,1,0
+2026-02,HF015,Radiology,1,3,0,0
+2026-02,HF016,ICU,2,7,1,1
+2026-02,HF016,Laboratory,1,2,1,0
+2026-02,HF016,Obstetrics & Gynecology,1,4,0,0
+2026-02,HF016,Pediatrics,1,5,0,1
+2026-02,HF016,Pharmacy,1,3,0,0
+2026-02,HF016,Radiology,2,4,1,0
+2026-02,HF016,Surgery,1,2,1,0
+2026-02,HF017,Cardiology,1,2,1,0
+2026-02,HF017,Internal Medicine,2,7,0,0
+2026-02,HF017,Laboratory,1,4,0,0
+2026-02,HF017,Obstetrics & Gynecology,1,5,0,1
+2026-02,HF017,Pharmacy,2,6,0,0
+2026-02,HF017,Surgery,2,7,0,0
+2026-02,HF018,Emergency,1,5,0,1
+2026-02,HF018,Internal Medicine,2,8,0,0
+2026-02,HF018,Obstetrics & Gynecology,2,4,1,0
+2026-02,HF018,Pharmacy,1,2,1,0
+2026-02,HF018,Radiology,1,1,1,0
+2026-02,HF019,ICU,1,2,1,0
+2026-02,HF019,Internal Medicine,2,3,2,0
+2026-02,HF019,Obstetrics & Gynecology,1,1,1,0
+2026-02,HF019,Pharmacy,2,5,1,0
+2026-02,HF020,Cardiology,1,4,0,0
+2026-02,HF020,ICU,1,3,0,0
+2026-02,HF020,Laboratory,1,2,1,0
+2026-02,HF020,Radiology,1,2,1,0
+2026-03,HF001,Cardiology,1,3,0,0
+2026-03,HF001,Emergency,2,6,1,1
+2026-03,HF001,Internal Medicine,1,2,1,0
+2026-03,HF001,Laboratory,3,9,1,0
+2026-03,HF001,Pediatrics,3,8,1,0
+2026-03,HF001,Pharmacy,1,4,0,0
+2026-03,HF001,Radiology,2,6,1,0
+2026-03,HF001,Surgery,1,4,0,0
+2026-03,HF002,Laboratory,1,3,0,0
+2026-03,HF002,Obstetrics & Gynecology,1,5,0,1
+2026-03,HF002,Pediatrics,1,1,1,0
+2026-03,HF002,Pharmacy,1,3,0,0
+2026-03,HF003,Emergency,1,1,1,0
+2026-03,HF003,ICU,1,2,1,0
+2026-03,HF003,Pediatrics,2,6,1,0
+2026-03,HF003,Pharmacy,2,8,0,0
+2026-03,HF004,Emergency,1,1,1,0
+2026-03,HF004,Laboratory,2,7,1,1
+2026-03,HF004,Obstetrics & Gynecology,1,5,0,1
+2026-03,HF004,Pharmacy,1,4,0,0
+2026-03,HF004,Surgery,2,3,2,0
+2026-03,HF005,Cardiology,2,6,0,0
+2026-03,HF005,Emergency,1,2,1,0
+2026-03,HF005,ICU,1,4,0,0
+2026-03,HF005,Internal Medicine,1,4,0,0
+2026-03,HF005,Laboratory,1,4,0,0
+2026-03,HF005,Obstetrics & Gynecology,1,2,1,0
+2026-03,HF005,Pharmacy,1,4,0,0
+2026-03,HF006,Cardiology,1,2,1,0
+2026-03,HF006,Emergency,1,5,0,1
+2026-03,HF006,Internal Medicine,2,6,0,0
+2026-03,HF006,Laboratory,3,12,0,1
+2026-03,HF006,Obstetrics & Gynecology,2,6,1,1
+2026-03,HF006,Pediatrics,1,1,1,0
+2026-03,HF006,Pharmacy,2,5,1,0
+2026-03,HF006,Radiology,2,6,0,0
+2026-03,HF007,Cardiology,2,4,2,0
+2026-03,HF007,Emergency,1,5,0,1
+2026-03,HF007,ICU,1,1,1,0
+2026-03,HF007,Internal Medicine,2,6,1,1
+2026-03,HF007,Laboratory,2,2,2,0
+2026-03,HF007,Obstetrics & Gynecology,1,4,0,0
+2026-03,HF007,Radiology,1,3,0,0
+2026-03,HF007,Surgery,2,7,0,0
+2026-03,HF008,ICU,1,1,1,0
+2026-03,HF008,Internal Medicine,1,1,1,0
+2026-03,HF008,Laboratory,1,2,1,0
+2026-03,HF008,Pediatrics,1,4,0,0
+2026-03,HF008,Radiology,1,2,1,0
+2026-03,HF009,Cardiology,3,12,0,1
+2026-03,HF009,Obstetrics & Gynecology,1,1,1,0
+2026-03,HF009,Pediatrics,1,2,1,0
+2026-03,HF009,Pharmacy,1,1,1,0
+2026-03,HF009,Radiology,1,1,1,0
+2026-03,HF010,Cardiology,1,1,1,0
+2026-03,HF010,Emergency,1,4,0,0
+2026-03,HF010,Internal Medicine,1,2,1,0
+2026-03,HF010,Laboratory,1,2,1,0
+2026-03,HF010,Pediatrics,3,8,2,0
+2026-03,HF010,Surgery,2,3,2,0
+2026-03,HF011,Cardiology,2,5,1,0
+2026-03,HF011,Emergency,3,9,1,1
+2026-03,HF011,Obstetrics & Gynecology,1,4,0,0
+2026-03,HF011,Pediatrics,1,4,0,0
+2026-03,HF011,Pharmacy,1,4,0,0
+2026-03,HF011,Radiology,2,8,0,1
+2026-03,HF012,Cardiology,2,4,2,0
+2026-03,HF012,Emergency,1,1,1,0
+2026-03,HF012,ICU,1,1,1,0
+2026-03,HF012,Pediatrics,1,1,1,0
+2026-03,HF012,Pharmacy,1,4,0,0
+2026-03,HF012,Radiology,2,3,2,0
+2026-03,HF013,ICU,1,4,0,0
+2026-03,HF013,Laboratory,2,7,1,1
+2026-03,HF013,Obstetrics & Gynecology,1,4,0,0
+2026-03,HF014,Cardiology,1,1,1,0
+2026-03,HF014,Emergency,1,1,1,0
+2026-03,HF014,Laboratory,2,9,0,1
+2026-03,HF014,Obstetrics & Gynecology,1,1,1,0
+2026-03,HF014,Pediatrics,3,13,0,2
+2026-03,HF014,Pharmacy,2,9,0,1
+2026-03,HF014,Radiology,1,3,0,0
+2026-03,HF014,Surgery,2,7,1,1
+2026-03,HF015,Cardiology,1,3,0,0
+2026-03,HF015,ICU,1,2,1,0
+2026-03,HF015,Internal Medicine,1,5,0,1
+2026-03,HF015,Laboratory,1,3,0,0
+2026-03,HF015,Pediatrics,1,3,0,0
+2026-03,HF015,Radiology,1,4,0,0
+2026-03,HF016,ICU,1,5,0,1
+2026-03,HF016,Internal Medicine,2,7,1,1
+2026-03,HF016,Radiology,1,2,1,0
+2026-03,HF016,Surgery,1,4,0,0
+2026-03,HF017,Cardiology,2,6,1,0
+2026-03,HF017,ICU,2,4,2,0
+2026-03,HF017,Internal Medicine,1,4,0,0
+2026-03,HF017,Laboratory,1,2,1,0
+2026-03,HF017,Pediatrics,1,3,0,0
+2026-03,HF017,Pharmacy,2,6,1,1
+2026-03,HF017,Surgery,1,4,0,0
+2026-03,HF018,Cardiology,1,1,1,0
+2026-03,HF018,Internal Medicine,1,2,1,0
+2026-03,HF018,Laboratory,1,3,0,0
+2026-03,HF018,Obstetrics & Gynecology,1,1,1,0
+2026-03,HF018,Pharmacy,1,1,1,0
+2026-03,HF018,Surgery,1,5,0,1
+2026-03,HF019,Cardiology,2,8,0,1
+2026-03,HF019,Internal Medicine,1,3,0,0
+2026-03,HF019,Radiology,4,12,2,1
+2026-03,HF020,Cardiology,2,7,1,1
+2026-03,HF020,Emergency,3,5,2,0
+2026-03,HF020,Internal Medicine,1,4,0,0
+2026-03,HF020,Laboratory,1,4,0,0
+2026-03,HF020,Obstetrics & Gynecology,1,1,1,0
+2026-03,HF020,Radiology,1,5,0,1
+2026-04,HF001,Emergency,1,5,0,1
+2026-04,HF001,ICU,1,4,0,0
+2026-04,HF001,Laboratory,1,3,0,0
+2026-04,HF001,Obstetrics & Gynecology,1,3,0,0
+2026-04,HF001,Pediatrics,1,3,0,0
+2026-04,HF001,Radiology,2,7,0,0
+2026-04,HF002,Cardiology,1,3,0,0
+2026-04,HF002,Emergency,1,3,0,0
+2026-04,HF002,ICU,1,4,0,0
+2026-04,HF002,Laboratory,2,4,1,0
+2026-04,HF002,Obstetrics & Gynecology,1,3,0,0
+2026-04,HF003,Cardiology,1,5,0,1
+2026-04,HF003,Emergency,1,1,1,0
+2026-04,HF003,ICU,1,1,1,0
+2026-04,HF003,Internal Medicine,1,3,0,0
+2026-04,HF003,Laboratory,1,1,1,0
+2026-04,HF003,Obstetrics & Gynecology,2,5,1,0
+2026-04,HF003,Surgery,2,7,1,1
+2026-04,HF004,Internal Medicine,1,1,1,0
+2026-04,HF004,Obstetrics & Gynecology,1,3,0,0
+2026-04,HF004,Pediatrics,1,4,0,0
+2026-04,HF004,Pharmacy,1,3,0,0
+2026-04,HF004,Radiology,1,2,1,0
+2026-04,HF004,Surgery,1,1,1,0
+2026-04,HF005,Internal Medicine,3,11,0,1
+2026-04,HF005,Laboratory,1,3,0,0
+2026-04,HF005,Pediatrics,1,2,1,0
+2026-04,HF005,Surgery,1,1,1,0
+2026-04,HF006,Cardiology,2,8,0,1
+2026-04,HF006,Emergency,1,1,1,0
+2026-04,HF006,ICU,1,3,0,0
+2026-04,HF006,Obstetrics & Gynecology,3,11,1,1
+2026-04,HF006,Radiology,2,7,0,0
+2026-04,HF007,Cardiology,2,5,1,0
+2026-04,HF007,Emergency,1,2,1,0
+2026-04,HF007,ICU,1,1,1,0
+2026-04,HF007,Internal Medicine,1,1,1,0
+2026-04,HF007,Obstetrics & Gynecology,1,5,0,1
+2026-04,HF007,Pharmacy,3,9,1,0
+2026-04,HF007,Radiology,1,4,0,0
+2026-04,HF007,Surgery,1,4,0,0
+2026-04,HF008,ICU,1,3,0,0
+2026-04,HF008,Laboratory,1,5,0,1
+2026-04,HF008,Obstetrics & Gynecology,1,2,1,0
+2026-04,HF008,Pediatrics,1,2,1,0
+2026-04,HF008,Radiology,2,4,1,0
+2026-04,HF009,Laboratory,1,3,0,0
+2026-04,HF009,Obstetrics & Gynecology,1,3,0,0
+2026-04,HF010,Internal Medicine,1,1,1,0
+2026-04,HF010,Laboratory,1,1,1,0
+2026-04,HF010,Pediatrics,1,4,0,0
+2026-04,HF010,Pharmacy,1,5,0,1
+2026-04,HF011,Cardiology,2,5,1,0
+2026-04,HF011,Emergency,2,8,0,1
+2026-04,HF011,Laboratory,2,7,1,1
+2026-04,HF011,Obstetrics & Gynecology,2,7,0,0
+2026-04,HF011,Pediatrics,3,8,2,1
+2026-04,HF011,Radiology,1,5,0,1
+2026-04,HF012,Cardiology,1,1,1,0
+2026-04,HF012,Emergency,1,5,0,1
+2026-04,HF012,ICU,1,1,1,0
+2026-04,HF012,Laboratory,2,7,1,1
+2026-04,HF012,Pediatrics,1,2,1,0
+2026-04,HF012,Pharmacy,3,11,0,1
+2026-04,HF012,Radiology,2,5,1,0
+2026-04,HF012,Surgery,3,11,1,1
+2026-04,HF013,Emergency,1,4,0,0
+2026-04,HF013,ICU,1,2,1,0
+2026-04,HF013,Internal Medicine,1,1,1,0
+2026-04,HF013,Laboratory,1,1,1,0
+2026-04,HF013,Pharmacy,1,2,1,0
+2026-04,HF013,Surgery,1,2,1,0
+2026-04,HF014,Pediatrics,1,4,0,0
+2026-04,HF015,Internal Medicine,1,3,0,0
+2026-04,HF015,Obstetrics & Gynecology,1,4,0,0
+2026-04,HF015,Pediatrics,2,6,1,1
+2026-04,HF015,Pharmacy,2,8,0,1
+2026-04,HF016,ICU,1,3,0,0
+2026-04,HF016,Internal Medicine,1,2,1,0
+2026-04,HF016,Pharmacy,1,5,0,1
+2026-04,HF016,Surgery,1,4,0,0
+2026-04,HF017,Internal Medicine,2,4,2,0
+2026-04,HF017,Laboratory,1,2,1,0
+2026-04,HF017,Obstetrics & Gynecology,1,2,1,0
+2026-04,HF018,Emergency,1,5,0,1
+2026-04,HF018,Internal Medicine,1,1,1,0
+2026-04,HF018,Radiology,3,8,1,0
+2026-04,HF019,Cardiology,1,3,0,0
+2026-04,HF019,Laboratory,1,5,0,1
+2026-04,HF019,Pediatrics,2,8,0,1
+2026-04,HF019,Radiology,3,8,1,0
+2026-04,HF020,Cardiology,1,1,1,0
+2026-04,HF020,Emergency,1,1,1,0
+2026-04,HF020,ICU,1,4,0,0
+2026-04,HF020,Internal Medicine,1,5,0,1
+2026-04,HF020,Obstetrics & Gynecology,1,3,0,0
+2026-04,HF020,Pharmacy,1,1,1,0
+2026-04,HF020,Surgery,1,3,0,0
+2026-05,HF001,ICU,1,5,0,1
+2026-05,HF001,Internal Medicine,2,3,2,0
+2026-05,HF001,Laboratory,1,2,1,0
+2026-05,HF001,Obstetrics & Gynecology,1,3,0,0
+2026-05,HF001,Pediatrics,2,6,1,0
+2026-05,HF001,Pharmacy,1,4,0,0
+2026-05,HF002,Cardiology,1,5,0,1
+2026-05,HF002,Emergency,1,4,0,0
+2026-05,HF002,Laboratory,2,9,0,1
+2026-05,HF002,Obstetrics & Gynecology,2,5,1,0
+2026-05,HF002,Pediatrics,4,15,1,1
+2026-05,HF002,Pharmacy,2,2,2,0
+2026-05,HF003,Cardiology,1,2,1,0
+2026-05,HF003,Internal Medicine,1,3,0,0
+2026-05,HF003,Laboratory,1,4,0,0
+2026-05,HF003,Obstetrics & Gynecology,1,1,1,0
+2026-05,HF003,Pharmacy,2,3,2,0
+2026-05,HF003,Radiology,1,1,1,0
+2026-05,HF003,Surgery,1,4,0,0
+2026-05,HF004,Cardiology,1,5,0,1
+2026-05,HF004,ICU,1,1,1,0
+2026-05,HF004,Internal Medicine,1,3,0,0
+2026-05,HF004,Laboratory,1,5,0,1
+2026-05,HF005,Cardiology,3,3,3,0
+2026-05,HF005,Emergency,1,1,1,0
+2026-05,HF005,Pharmacy,3,4,3,0
+2026-05,HF005,Radiology,1,2,1,0
+2026-05,HF006,Cardiology,1,2,1,0
+2026-05,HF006,Laboratory,1,4,0,0
+2026-05,HF006,Pediatrics,2,2,2,0
+2026-05,HF006,Pharmacy,2,2,2,0
+2026-05,HF006,Radiology,1,1,1,0
+2026-05,HF006,Surgery,2,8,0,0
+2026-05,HF007,ICU,1,2,1,0
+2026-05,HF007,Laboratory,1,5,0,1
+2026-05,HF007,Obstetrics & Gynecology,1,2,1,0
+2026-05,HF007,Pharmacy,1,1,1,0
+2026-05,HF007,Surgery,1,2,1,0
+2026-05,HF008,Cardiology,1,5,0,1
+2026-05,HF008,Internal Medicine,1,2,1,0
+2026-05,HF008,Laboratory,1,4,0,0
+2026-05,HF008,Obstetrics & Gynecology,1,5,0,1
+2026-05,HF008,Pediatrics,1,2,1,0
+2026-05,HF008,Pharmacy,2,8,0,1
+2026-05,HF009,Cardiology,1,5,0,1
+2026-05,HF009,ICU,4,14,1,1
+2026-05,HF009,Internal Medicine,2,5,1,0
+2026-05,HF009,Laboratory,1,3,0,0
+2026-05,HF009,Obstetrics & Gynecology,1,5,0,1
+2026-05,HF009,Radiology,1,3,0,0
+2026-05,HF009,Surgery,2,2,2,0
+2026-05,HF010,ICU,3,12,1,2
+2026-05,HF010,Internal Medicine,1,3,0,0
+2026-05,HF010,Laboratory,2,7,1,1
+2026-05,HF010,Obstetrics & Gynecology,1,1,1,0
+2026-05,HF010,Pediatrics,2,6,1,1
+2026-05,HF010,Surgery,1,2,1,0
+2026-05,HF011,Cardiology,1,2,1,0
+2026-05,HF011,Emergency,1,2,1,0
+2026-05,HF011,Internal Medicine,2,8,0,1
+2026-05,HF011,Laboratory,3,12,0,1
+2026-05,HF011,Pediatrics,1,5,0,1
+2026-05,HF011,Surgery,1,2,1,0
+2026-05,HF012,Laboratory,1,2,1,0
+2026-05,HF013,ICU,1,1,1,0
+2026-05,HF013,Internal Medicine,2,5,1,0
+2026-05,HF013,Laboratory,1,3,0,0
+2026-05,HF013,Obstetrics & Gynecology,1,2,1,0
+2026-05,HF013,Pediatrics,1,5,0,1
+2026-05,HF013,Pharmacy,1,3,0,0
+2026-05,HF013,Radiology,2,7,0,0
+2026-05,HF013,Surgery,1,3,0,0
+2026-05,HF014,Emergency,2,6,1,0
+2026-05,HF014,ICU,2,7,0,0
+2026-05,HF014,Radiology,1,4,0,0
+2026-05,HF015,ICU,1,3,0,0
+2026-05,HF015,Internal Medicine,2,6,1,1
+2026-05,HF015,Obstetrics & Gynecology,1,5,0,1
+2026-05,HF015,Pediatrics,1,5,0,1
+2026-05,HF015,Radiology,2,2,2,0
+2026-05,HF016,Emergency,1,3,0,0
+2026-05,HF016,ICU,1,2,1,0
+2026-05,HF016,Pediatrics,1,2,1,0
+2026-05,HF016,Pharmacy,1,5,0,1
+2026-05,HF016,Radiology,1,3,0,0
+2026-05,HF016,Surgery,1,4,0,0
+2026-05,HF017,Emergency,2,6,0,0
+2026-05,HF017,ICU,1,2,1,0
+2026-05,HF017,Internal Medicine,1,4,0,0
+2026-05,HF017,Pediatrics,1,2,1,0
+2026-05,HF017,Pharmacy,1,1,1,0
+2026-05,HF017,Radiology,1,1,1,0
+2026-05,HF017,Surgery,2,9,0,1
+2026-05,HF018,Internal Medicine,1,2,1,0
+2026-05,HF018,Laboratory,1,1,1,0
+2026-05,HF018,Radiology,1,2,1,0
+2026-05,HF019,Pediatrics,1,5,0,1
+2026-05,HF019,Pharmacy,3,10,1,1
+2026-05,HF020,Cardiology,1,3,0,0
+2026-05,HF020,Emergency,1,4,0,0
+2026-05,HF020,Internal Medicine,1,2,1,0
+2026-05,HF020,Obstetrics & Gynecology,1,1,1,0
+2026-05,HF020,Pharmacy,2,3,2,0
+2026-06,HF001,Cardiology,1,5,0,1
+2026-06,HF001,Emergency,2,5,1,0
+2026-06,HF001,ICU,2,10,0,2
+2026-06,HF001,Pediatrics,2,4,1,0
+2026-06,HF001,Radiology,2,7,1,1
+2026-06,HF001,Surgery,2,9,0,1
+2026-06,HF002,Emergency,3,10,1,1
+2026-06,HF002,ICU,1,2,1,0
+2026-06,HF002,Laboratory,1,3,0,0
+2026-06,HF002,Obstetrics & Gynecology,1,5,0,1
+2026-06,HF002,Radiology,1,2,1,0
+2026-06,HF003,Emergency,1,1,1,0
+2026-06,HF003,ICU,1,3,0,0
+2026-06,HF003,Obstetrics & Gynecology,1,1,1,0
+2026-06,HF003,Pediatrics,1,2,1,0
+2026-06,HF003,Pharmacy,1,1,1,0
+2026-06,HF003,Radiology,1,5,0,1
+2026-06,HF004,Emergency,1,3,0,0
+2026-06,HF004,Internal Medicine,1,1,1,0
+2026-06,HF004,Obstetrics & Gynecology,1,3,0,0
+2026-06,HF004,Pediatrics,1,1,1,0
+2026-06,HF004,Radiology,1,5,0,1
+2026-06,HF004,Surgery,1,2,1,0
+2026-06,HF005,ICU,1,5,0,1
+2026-06,HF005,Internal Medicine,2,8,0,1
+2026-06,HF005,Obstetrics & Gynecology,1,1,1,0
+2026-06,HF005,Pediatrics,1,4,0,0
+2026-06,HF005,Surgery,1,3,0,0
+2026-06,HF006,Emergency,1,4,0,0
+2026-06,HF006,Internal Medicine,1,4,0,0
+2026-06,HF006,Laboratory,1,3,0,0
+2026-06,HF006,Obstetrics & Gynecology,1,3,0,0
+2026-06,HF006,Pharmacy,1,3,0,0
+2026-06,HF007,Cardiology,3,7,1,0
+2026-06,HF007,Emergency,1,5,0,1
+2026-06,HF007,Obstetrics & Gynecology,2,7,1,1
+2026-06,HF007,Pediatrics,2,8,0,0
+2026-06,HF007,Radiology,3,10,1,1
+2026-06,HF008,ICU,1,1,1,0
+2026-06,HF008,Laboratory,1,5,0,1
+2026-06,HF008,Pharmacy,1,1,1,0
+2026-06,HF008,Radiology,1,2,1,0
+2026-06,HF008,Surgery,1,2,1,0
+2026-06,HF009,Cardiology,2,8,0,1
+2026-06,HF009,Emergency,2,5,1,0
+2026-06,HF009,Internal Medicine,2,6,0,0
+2026-06,HF009,Radiology,1,3,0,0
+2026-06,HF009,Surgery,1,1,1,0
+2026-06,HF010,Cardiology,1,2,1,0
+2026-06,HF010,ICU,1,5,0,1
+2026-06,HF010,Laboratory,1,5,0,1
+2026-06,HF010,Obstetrics & Gynecology,1,2,1,0
+2026-06,HF010,Pediatrics,2,2,2,0
+2026-06,HF010,Pharmacy,1,3,0,0
+2026-06,HF010,Radiology,1,3,0,0
+2026-06,HF010,Surgery,1,4,0,0
+2026-06,HF011,Cardiology,1,1,1,0
+2026-06,HF011,Emergency,1,5,0,1
+2026-06,HF011,Internal Medicine,2,5,1,0
+2026-06,HF011,Laboratory,1,3,0,0
+2026-06,HF011,Obstetrics & Gynecology,1,2,1,0
+2026-06,HF011,Pediatrics,1,4,0,0
+2026-06,HF011,Pharmacy,1,2,1,0
+2026-06,HF011,Radiology,1,4,0,0
+2026-06,HF012,Emergency,1,4,0,0
+2026-06,HF012,Internal Medicine,1,4,0,0
+2026-06,HF012,Obstetrics & Gynecology,1,4,0,0
+2026-06,HF012,Pharmacy,2,10,0,2
+2026-06,HF012,Radiology,1,4,0,0
+2026-06,HF013,Cardiology,2,8,0,0
+2026-06,HF013,Emergency,2,2,2,0
+2026-06,HF013,ICU,1,2,1,0
+2026-06,HF013,Internal Medicine,2,7,0,0
+2026-06,HF013,Laboratory,3,8,1,0
+2026-06,HF013,Pharmacy,1,2,1,0
+2026-06,HF013,Radiology,1,2,1,0
+2026-06,HF014,Emergency,2,4,1,0
+2026-06,HF014,ICU,1,3,0,0
+2026-06,HF014,Internal Medicine,2,6,0,0
+2026-06,HF014,Laboratory,2,5,1,0
+2026-06,HF014,Obstetrics & Gynecology,1,3,0,0
+2026-06,HF014,Pediatrics,1,1,1,0
+2026-06,HF014,Radiology,1,5,0,1
+2026-06,HF014,Surgery,1,1,1,0
+2026-06,HF015,Obstetrics & Gynecology,1,2,1,0
+2026-06,HF015,Radiology,2,7,1,1
+2026-06,HF015,Surgery,1,3,0,0
+2026-06,HF016,Internal Medicine,1,5,0,1
+2026-06,HF016,Laboratory,1,1,1,0
+2026-06,HF016,Obstetrics & Gynecology,1,2,1,0
+2026-06,HF016,Pediatrics,1,2,1,0
+2026-06,HF016,Pharmacy,1,2,1,0
+2026-06,HF016,Surgery,1,3,0,0
+2026-06,HF017,ICU,1,1,1,0
+2026-06,HF017,Internal Medicine,1,4,0,0
+2026-06,HF017,Laboratory,2,4,2,0
+2026-06,HF017,Surgery,1,2,1,0
+2026-06,HF018,Emergency,1,5,0,1
+2026-06,HF018,ICU,2,7,0,0
+2026-06,HF018,Internal Medicine,2,7,1,1
+2026-06,HF018,Obstetrics & Gynecology,1,2,1,0
+2026-06,HF018,Pediatrics,1,5,0,1
+2026-06,HF018,Pharmacy,2,6,1,0
+2026-06,HF018,Surgery,2,6,1,0
+2026-06,HF019,Emergency,1,4,0,0
+2026-06,HF019,ICU,2,3,2,0
+2026-06,HF019,Internal Medicine,1,5,0,1
+2026-06,HF019,Laboratory,2,6,0,0
+2026-06,HF019,Pediatrics,1,5,0,1
+2026-06,HF019,Pharmacy,3,6,3,0
+2026-06,HF020,Cardiology,3,7,2,1
+2026-06,HF020,ICU,2,5,1,0
+2026-06,HF020,Internal Medicine,1,5,0,1
+2026-06,HF020,Obstetrics & Gynecology,1,5,0,1
+2026-06,HF020,Pediatrics,1,3,0,0
+2026-07,HF001,Cardiology,3,10,1,1
+2026-07,HF001,Emergency,2,7,1,1
+2026-07,HF001,Pediatrics,1,5,0,1
+2026-07,HF002,Cardiology,1,3,0,0
+2026-07,HF002,Emergency,2,6,0,0
+2026-07,HF002,Internal Medicine,1,3,0,0
+2026-07,HF002,Laboratory,1,4,0,0
+2026-07,HF002,Pharmacy,1,2,1,0
+2026-07,HF002,Surgery,1,3,0,0
+2026-07,HF003,Cardiology,2,7,1,1
+2026-07,HF003,Emergency,1,5,0,1
+2026-07,HF003,ICU,1,1,1,0
+2026-07,HF003,Obstetrics & Gynecology,1,4,0,0
+2026-07,HF003,Pediatrics,1,1,1,0
+2026-07,HF003,Pharmacy,2,4,1,0
+2026-07,HF003,Radiology,2,5,1,0
+2026-07,HF004,Cardiology,1,3,0,0
+2026-07,HF004,Emergency,1,1,1,0
+2026-07,HF004,ICU,2,7,1,1
+2026-07,HF004,Internal Medicine,1,4,0,0
+2026-07,HF004,Obstetrics & Gynecology,2,10,0,2
+2026-07,HF004,Pharmacy,1,5,0,1
+2026-07,HF004,Radiology,1,2,1,0
+2026-07,HF004,Surgery,1,2,1,0
+2026-07,HF005,Laboratory,1,1,1,0
+2026-07,HF005,Pediatrics,1,2,1,0
+2026-07,HF005,Radiology,1,2,1,0
+2026-07,HF006,Emergency,1,4,0,0
+2026-07,HF006,Obstetrics & Gynecology,3,8,2,1
+2026-07,HF006,Pediatrics,2,4,2,0
+2026-07,HF006,Pharmacy,1,5,0,1
+2026-07,HF006,Surgery,1,5,0,1
+2026-07,HF007,Obstetrics & Gynecology,1,2,1,0
+2026-07,HF007,Pharmacy,1,4,0,0
+2026-07,HF008,Cardiology,1,4,0,0
+2026-07,HF008,ICU,1,3,0,0
+2026-07,HF008,Internal Medicine,1,1,1,0
+2026-07,HF008,Obstetrics & Gynecology,2,6,1,0
+2026-07,HF008,Pharmacy,1,3,0,0
+2026-07,HF008,Surgery,1,1,1,0
+2026-07,HF009,ICU,1,2,1,0
+2026-07,HF009,Laboratory,2,9,0,1
+2026-07,HF009,Obstetrics & Gynecology,1,3,0,0
+2026-07,HF009,Pediatrics,1,1,1,0
+2026-07,HF009,Pharmacy,1,4,0,0
+2026-07,HF009,Radiology,1,2,1,0
+2026-07,HF010,Cardiology,2,6,1,1
+2026-07,HF010,ICU,2,9,0,1
+2026-07,HF010,Laboratory,2,3,2,0
+2026-07,HF010,Obstetrics & Gynecology,1,5,0,1
+2026-07,HF010,Pharmacy,1,5,0,1
+2026-07,HF010,Radiology,1,3,0,0
+2026-07,HF010,Surgery,1,1,1,0
+2026-07,HF011,ICU,3,7,1,0
+2026-07,HF011,Laboratory,1,2,1,0
+2026-07,HF011,Obstetrics & Gynecology,1,5,0,1
+2026-07,HF011,Pediatrics,1,1,1,0
+2026-07,HF011,Radiology,3,10,1,0
+2026-07,HF012,Cardiology,2,5,1,0
+2026-07,HF012,Internal Medicine,2,5,1,0
+2026-07,HF012,Radiology,1,4,0,0
+2026-07,HF012,Surgery,1,2,1,0
+2026-07,HF013,Laboratory,1,4,0,0
+2026-07,HF014,Cardiology,2,5,1,0
+2026-07,HF014,Emergency,1,5,0,1
+2026-07,HF014,ICU,2,6,1,1
+2026-07,HF014,Laboratory,1,1,1,0
+2026-07,HF014,Pharmacy,1,4,0,0
+2026-07,HF014,Radiology,1,4,0,0
+2026-07,HF014,Surgery,1,4,0,0
+2026-07,HF015,Cardiology,1,5,0,1
+2026-07,HF015,ICU,1,3,0,0
+2026-07,HF015,Internal Medicine,1,1,1,0
+2026-07,HF015,Pediatrics,1,1,1,0
+2026-07,HF015,Pharmacy,1,1,1,0
+2026-07,HF016,ICU,3,9,1,0
+2026-07,HF016,Laboratory,1,4,0,0
+2026-07,HF016,Obstetrics & Gynecology,1,1,1,0
+2026-07,HF016,Pediatrics,3,5,2,0
+2026-07,HF016,Pharmacy,1,2,1,0
+2026-07,HF016,Radiology,1,1,1,0
+2026-07,HF017,Cardiology,1,4,0,0
+2026-07,HF017,Emergency,2,8,0,1
+2026-07,HF017,ICU,1,1,1,0
+2026-07,HF017,Laboratory,1,2,1,0
+2026-07,HF017,Obstetrics & Gynecology,1,1,1,0
+2026-07,HF017,Pharmacy,1,3,0,0
+2026-07,HF017,Radiology,1,5,0,1
+2026-07,HF018,Cardiology,3,10,1,1
+2026-07,HF018,ICU,1,4,0,0
+2026-07,HF018,Internal Medicine,2,3,2,0
+2026-07,HF018,Laboratory,2,9,0,1
+2026-07,HF018,Obstetrics & Gynecology,1,3,0,0
+2026-07,HF018,Pharmacy,2,8,0,1
+2026-07,HF018,Radiology,1,5,0,1
+2026-07,HF019,Internal Medicine,1,4,0,0
+2026-07,HF019,Pediatrics,1,5,0,1
+2026-07,HF019,Radiology,3,8,2,1
+2026-07,HF019,Surgery,1,5,0,1
+2026-07,HF020,Emergency,1,4,0,0
+2026-07,HF020,ICU,1,1,1,0
+2026-07,HF020,Internal Medicine,2,4,1,0
+2026-07,HF020,Laboratory,1,4,0,0
+2026-07,HF020,Pharmacy,1,1,1,0
+2026-07,HF020,Radiology,1,3,0,0
+2026-08,HF001,Cardiology,2,8,0,1
+2026-08,HF001,ICU,1,1,1,0
+2026-08,HF001,Laboratory,3,11,1,1
+2026-08,HF001,Obstetrics & Gynecology,1,4,0,0
+2026-08,HF001,Pediatrics,1,4,0,0
+2026-08,HF001,Surgery,1,5,0,1
+2026-08,HF002,Internal Medicine,1,5,0,1
+2026-08,HF002,Laboratory,2,6,0,0
+2026-08,HF002,Pediatrics,1,5,0,1
+2026-08,HF002,Radiology,1,5,0,1
+2026-08,HF003,Emergency,2,8,0,1
+2026-08,HF003,ICU,1,5,0,1
+2026-08,HF003,Laboratory,1,5,0,1
+2026-08,HF003,Obstetrics & Gynecology,2,5,1,0
+2026-08,HF003,Pediatrics,2,5,1,0
+2026-08,HF004,ICU,1,1,1,0
+2026-08,HF004,Surgery,2,9,0,1
+2026-08,HF005,Emergency,1,5,0,1
+2026-08,HF005,ICU,2,6,1,0
+2026-08,HF005,Internal Medicine,1,3,0,0
+2026-08,HF005,Laboratory,1,2,1,0
+2026-08,HF005,Radiology,1,4,0,0
+2026-08,HF005,Surgery,1,2,1,0
+2026-08,HF006,Emergency,1,1,1,0
+2026-08,HF006,Internal Medicine,1,2,1,0
+2026-08,HF006,Laboratory,2,9,0,1
+2026-08,HF006,Obstetrics & Gynecology,1,3,0,0
+2026-08,HF006,Pharmacy,1,2,1,0
+2026-08,HF006,Radiology,1,2,1,0
+2026-08,HF007,Emergency,1,3,0,0
+2026-08,HF007,Internal Medicine,1,3,0,0
+2026-08,HF007,Pharmacy,1,4,0,0
+2026-08,HF007,Radiology,1,4,0,0
+2026-08,HF008,Emergency,1,4,0,0
+2026-08,HF008,ICU,1,1,1,0
+2026-08,HF008,Obstetrics & Gynecology,1,4,0,0
+2026-08,HF008,Pediatrics,1,2,1,0
+2026-08,HF008,Radiology,2,6,0,0
+2026-08,HF009,Cardiology,4,16,0,1
+2026-08,HF009,Emergency,1,1,1,0
+2026-08,HF009,ICU,1,1,1,0
+2026-08,HF009,Laboratory,1,3,0,0
+2026-08,HF009,Pediatrics,3,10,0,0
+2026-08,HF010,Emergency,1,1,1,0
+2026-08,HF010,ICU,1,4,0,0
+2026-08,HF010,Internal Medicine,1,3,0,0
+2026-08,HF010,Obstetrics & Gynecology,2,5,1,0
+2026-08,HF010,Pediatrics,3,9,1,1
+2026-08,HF010,Pharmacy,1,1,1,0
+2026-08,HF010,Surgery,1,1,1,0
+2026-08,HF011,Cardiology,2,4,1,0
+2026-08,HF011,Obstetrics & Gynecology,1,3,0,0
+2026-08,HF011,Pediatrics,1,4,0,0
+2026-08,HF011,Radiology,1,2,1,0
+2026-08,HF012,Cardiology,1,3,0,0
+2026-08,HF012,Emergency,2,4,2,0
+2026-08,HF012,ICU,1,5,0,1
+2026-08,HF012,Internal Medicine,1,2,1,0
+2026-08,HF012,Laboratory,1,2,1,0
+2026-08,HF012,Obstetrics & Gynecology,1,1,1,0
+2026-08,HF012,Pediatrics,2,3,2,0
+2026-08,HF012,Radiology,2,6,1,1
+2026-08,HF013,Emergency,1,3,0,0
+2026-08,HF013,Laboratory,1,4,0,0
+2026-08,HF013,Pediatrics,2,6,1,0
+2026-08,HF013,Surgery,1,3,0,0
+2026-08,HF014,Cardiology,1,1,1,0
+2026-08,HF014,ICU,2,4,1,0
+2026-08,HF014,Obstetrics & Gynecology,1,1,1,0
+2026-08,HF014,Pediatrics,2,3,2,0
+2026-08,HF014,Pharmacy,1,4,0,0
+2026-08,HF014,Radiology,1,1,1,0
+2026-08,HF014,Surgery,2,5,1,0
+2026-08,HF015,Cardiology,3,6,2,0
+2026-08,HF015,Emergency,2,6,1,0
+2026-08,HF015,Internal Medicine,1,5,0,1
+2026-08,HF015,Laboratory,4,10,2,0
+2026-08,HF015,Obstetrics & Gynecology,1,2,1,0
+2026-08,HF015,Pharmacy,1,3,0,0
+2026-08,HF016,Cardiology,1,4,0,0
+2026-08,HF016,Emergency,1,5,0,1
+2026-08,HF016,Internal Medicine,1,2,1,0
+2026-08,HF016,Laboratory,2,2,2,0
+2026-08,HF016,Obstetrics & Gynecology,1,5,0,1
+2026-08,HF016,Pharmacy,3,8,1,0
+2026-08,HF016,Radiology,1,3,0,0
+2026-08,HF016,Surgery,1,5,0,1
+2026-08,HF017,Cardiology,1,1,1,0
+2026-08,HF017,Laboratory,2,4,1,0
+2026-08,HF018,Cardiology,1,1,1,0
+2026-08,HF018,ICU,2,7,1,1
+2026-08,HF018,Internal Medicine,1,1,1,0
+2026-08,HF018,Radiology,1,5,0,1
+2026-08,HF019,ICU,1,5,0,1
+2026-08,HF019,Laboratory,1,5,0,1
+2026-08,HF019,Pediatrics,2,4,2,0
+2026-08,HF019,Surgery,1,3,0,0
+2026-08,HF020,ICU,2,4,1,0
+2026-08,HF020,Laboratory,1,3,0,0
+2026-08,HF020,Obstetrics & Gynecology,2,5,1,0
+2026-08,HF020,Pediatrics,2,8,0,1
+2026-08,HF020,Pharmacy,2,8,0,1
+2026-09,HF001,Emergency,2,5,1,0
+2026-09,HF001,Obstetrics & Gynecology,1,1,1,0
+2026-09,HF001,Pharmacy,1,4,0,0
+2026-09,HF001,Radiology,3,10,1,1
+2026-09,HF002,Cardiology,1,5,0,1
+2026-09,HF002,Emergency,1,1,1,0
+2026-09,HF002,Laboratory,2,6,1,0
+2026-09,HF002,Obstetrics & Gynecology,1,1,1,0
+2026-09,HF002,Radiology,1,4,0,0
+2026-09,HF003,Emergency,1,4,0,0
+2026-09,HF003,ICU,1,5,0,1
+2026-09,HF003,Laboratory,1,5,0,1
+2026-09,HF003,Obstetrics & Gynecology,1,1,1,0
+2026-09,HF003,Pediatrics,2,6,0,0
+2026-09,HF003,Pharmacy,3,6,2,0
+2026-09,HF003,Surgery,1,1,1,0
+2026-09,HF004,Laboratory,1,4,0,0
+2026-09,HF004,Obstetrics & Gynecology,1,3,0,0
+2026-09,HF004,Pediatrics,1,4,0,0
+2026-09,HF004,Pharmacy,1,3,0,0
+2026-09,HF004,Radiology,2,9,0,1
+2026-09,HF005,Cardiology,1,4,0,0
+2026-09,HF005,Emergency,1,4,0,0
+2026-09,HF005,Obstetrics & Gynecology,1,5,0,1
+2026-09,HF005,Surgery,1,2,1,0
+2026-09,HF006,Cardiology,3,12,0,1
+2026-09,HF006,Internal Medicine,1,2,1,0
+2026-09,HF006,Laboratory,1,3,0,0
+2026-09,HF006,Pharmacy,3,8,1,0
+2026-09,HF006,Surgery,3,12,0,1
+2026-09,HF007,Obstetrics & Gynecology,1,3,0,0
+2026-09,HF007,Pediatrics,1,3,0,0
+2026-09,HF007,Pharmacy,1,2,1,0
+2026-09,HF007,Radiology,1,1,1,0
+2026-09,HF008,Cardiology,1,4,0,0
+2026-09,HF008,Emergency,1,2,1,0
+2026-09,HF008,Pediatrics,2,4,1,0
+2026-09,HF008,Pharmacy,1,4,0,0
+2026-09,HF008,Surgery,1,3,0,0
+2026-09,HF009,Cardiology,1,3,0,0
+2026-09,HF009,Internal Medicine,1,1,1,0
+2026-09,HF009,Pediatrics,1,5,0,1
+2026-09,HF009,Pharmacy,1,3,0,0
+2026-09,HF009,Radiology,1,5,0,1
+2026-09,HF009,Surgery,1,3,0,0
+2026-09,HF010,Cardiology,1,1,1,0
+2026-09,HF010,Emergency,1,5,0,1
+2026-09,HF010,Internal Medicine,2,6,1,0
+2026-09,HF010,Obstetrics & Gynecology,1,1,1,0
+2026-09,HF010,Surgery,1,3,0,0
+2026-09,HF011,Cardiology,1,3,0,0
+2026-09,HF011,Emergency,1,5,0,1
+2026-09,HF011,Internal Medicine,2,6,1,0
+2026-09,HF012,Emergency,2,9,0,1
+2026-09,HF012,ICU,1,4,0,0
+2026-09,HF012,Internal Medicine,2,6,1,1
+2026-09,HF012,Obstetrics & Gynecology,2,10,0,2
+2026-09,HF012,Pediatrics,1,3,0,0
+2026-09,HF012,Pharmacy,1,1,1,0
+2026-09,HF012,Surgery,1,4,0,0
+2026-09,HF013,ICU,1,2,1,0
+2026-09,HF013,Laboratory,1,1,1,0
+2026-09,HF013,Obstetrics & Gynecology,2,5,1,0
+2026-09,HF013,Pediatrics,1,3,0,0
+2026-09,HF013,Pharmacy,1,3,0,0
+2026-09,HF013,Surgery,1,3,0,0
+2026-09,HF014,Cardiology,1,1,1,0
+2026-09,HF014,Internal Medicine,1,1,1,0
+2026-09,HF014,Pediatrics,1,2,1,0
+2026-09,HF014,Surgery,2,5,1,0
+2026-09,HF015,Emergency,2,5,1,0
+2026-09,HF015,Obstetrics & Gynecology,1,1,1,0
+2026-09,HF015,Pharmacy,2,4,2,0
+2026-09,HF015,Radiology,1,1,1,0
+2026-09,HF016,Cardiology,2,6,1,1
+2026-09,HF016,Emergency,1,4,0,0
+2026-09,HF016,ICU,1,2,1,0
+2026-09,HF016,Laboratory,1,5,0,1
+2026-09,HF016,Obstetrics & Gynecology,2,4,1,0
+2026-09,HF016,Pediatrics,1,1,1,0
+2026-09,HF016,Radiology,2,2,2,0
+2026-09,HF017,Cardiology,1,4,0,0
+2026-09,HF017,ICU,1,2,1,0
+2026-09,HF017,Internal Medicine,3,8,1,0
+2026-09,HF017,Laboratory,4,12,1,0
+2026-09,HF017,Obstetrics & Gynecology,1,3,0,0
+2026-09,HF017,Pediatrics,1,2,1,0
+2026-09,HF017,Radiology,1,3,0,0
+2026-09,HF018,Emergency,1,1,1,0
+2026-09,HF018,Internal Medicine,1,2,1,0
+2026-09,HF018,Laboratory,1,2,1,0
+2026-09,HF018,Obstetrics & Gynecology,1,4,0,0
+2026-09,HF018,Pediatrics,1,4,0,0
+2026-09,HF018,Pharmacy,1,1,1,0
+2026-09,HF019,Emergency,1,4,0,0
+2026-09,HF019,ICU,1,1,1,0
+2026-09,HF019,Obstetrics & Gynecology,2,6,1,1
+2026-09,HF019,Pediatrics,1,4,0,0
+2026-09,HF019,Pharmacy,1,1,1,0
+2026-09,HF019,Radiology,1,3,0,0
+2026-09,HF019,Surgery,1,4,0,0
+2026-09,HF020,ICU,1,2,1,0
+2026-09,HF020,Laboratory,1,2,1,0
+2026-09,HF020,Obstetrics & Gynecology,2,3,2,0
+2026-09,HF020,Radiology,2,5,1,0
+2026-09,HF020,Surgery,1,1,1,0
+2026-10,HF001,Emergency,1,4,0,0
+2026-10,HF001,ICU,1,2,1,0
+2026-10,HF001,Laboratory,2,5,1,0
+2026-10,HF001,Pediatrics,1,3,0,0
+2026-10,HF002,Cardiology,1,4,0,0
+2026-10,HF002,Emergency,2,7,0,0
+2026-10,HF002,Radiology,1,3,0,0
+2026-10,HF003,Cardiology,1,2,1,0
+2026-10,HF003,Emergency,2,6,0,0
+2026-10,HF003,ICU,2,6,1,1
+2026-10,HF003,Laboratory,1,3,0,0
+2026-10,HF003,Obstetrics & Gynecology,1,5,0,1
+2026-10,HF003,Pediatrics,1,4,0,0
+2026-10,HF003,Pharmacy,1,2,1,0
+2026-10,HF003,Surgery,1,4,0,0
+2026-10,HF004,Cardiology,1,4,0,0
+2026-10,HF004,Emergency,1,3,0,0
+2026-10,HF004,Obstetrics & Gynecology,4,15,1,2
+2026-10,HF004,Surgery,2,6,1,0
+2026-10,HF005,Cardiology,1,3,0,0
+2026-10,HF005,Emergency,1,4,0,0
+2026-10,HF005,Pharmacy,1,5,0,1
+2026-10,HF005,Radiology,1,4,0,0
+2026-10,HF006,Emergency,1,1,1,0
+2026-10,HF006,Pharmacy,1,5,0,1
+2026-10,HF006,Radiology,2,4,1,0
+2026-10,HF006,Surgery,1,3,0,0
+2026-10,HF007,Emergency,1,4,0,0
+2026-10,HF007,Internal Medicine,2,3,2,0
+2026-10,HF007,Laboratory,1,3,0,0
+2026-10,HF007,Obstetrics & Gynecology,1,4,0,0
+2026-10,HF007,Radiology,1,2,1,0
+2026-10,HF008,ICU,1,3,0,0
+2026-10,HF008,Pharmacy,1,5,0,1
+2026-10,HF008,Radiology,2,6,0,0
+2026-10,HF009,Emergency,2,5,1,0
+2026-10,HF009,ICU,1,3,0,0
+2026-10,HF009,Internal Medicine,2,4,1,0
+2026-10,HF009,Obstetrics & Gynecology,2,4,1,0
+2026-10,HF009,Surgery,1,1,1,0
+2026-10,HF010,Cardiology,1,3,0,0
+2026-10,HF010,Emergency,2,6,1,1
+2026-10,HF010,Internal Medicine,2,6,1,1
+2026-10,HF010,Obstetrics & Gynecology,1,5,0,1
+2026-10,HF010,Pediatrics,2,5,1,0
+2026-10,HF010,Pharmacy,4,7,3,0
+2026-10,HF010,Radiology,1,4,0,0
+2026-10,HF010,Surgery,1,1,1,0
+2026-10,HF011,Cardiology,1,2,1,0
+2026-10,HF011,Emergency,1,3,0,0
+2026-10,HF011,ICU,1,4,0,0
+2026-10,HF011,Internal Medicine,1,1,1,0
+2026-10,HF011,Pharmacy,1,5,0,1
+2026-10,HF012,Cardiology,1,5,0,1
+2026-10,HF012,Emergency,1,4,0,0
+2026-10,HF012,ICU,2,7,1,1
+2026-10,HF012,Pediatrics,1,4,0,0
+2026-10,HF012,Pharmacy,1,4,0,0
+2026-10,HF012,Surgery,2,5,1,0
+2026-10,HF013,Cardiology,3,7,2,0
+2026-10,HF013,Emergency,2,4,1,0
+2026-10,HF013,ICU,2,3,2,0
+2026-10,HF013,Internal Medicine,1,4,0,0
+2026-10,HF013,Laboratory,1,1,1,0
+2026-10,HF013,Pediatrics,1,5,0,1
+2026-10,HF013,Pharmacy,2,8,0,1
+2026-10,HF013,Radiology,1,2,1,0
+2026-10,HF014,Emergency,2,4,1,0
+2026-10,HF014,ICU,1,2,1,0
+2026-10,HF014,Internal Medicine,1,1,1,0
+2026-10,HF014,Laboratory,1,4,0,0
+2026-10,HF014,Obstetrics & Gynecology,3,7,1,0
+2026-10,HF014,Pediatrics,2,7,0,0
+2026-10,HF014,Pharmacy,2,8,0,0
+2026-10,HF014,Radiology,2,4,1,0
+2026-10,HF014,Surgery,3,9,2,1
+2026-10,HF015,Emergency,3,12,0,1
+2026-10,HF015,ICU,1,2,1,0
+2026-10,HF015,Internal Medicine,1,4,0,0
+2026-10,HF015,Obstetrics & Gynecology,3,8,2,1
+2026-10,HF015,Pediatrics,2,7,0,0
+2026-10,HF015,Pharmacy,1,1,1,0
+2026-10,HF015,Surgery,1,5,0,1
+2026-10,HF016,Cardiology,1,3,0,0
+2026-10,HF016,Emergency,1,4,0,0
+2026-10,HF016,ICU,1,1,1,0
+2026-10,HF016,Laboratory,1,5,0,1
+2026-10,HF016,Radiology,1,5,0,1
+2026-10,HF017,Emergency,1,2,1,0
+2026-10,HF017,ICU,1,2,1,0
+2026-10,HF017,Pediatrics,1,3,0,0
+2026-10,HF017,Pharmacy,3,11,1,2
+2026-10,HF017,Radiology,3,10,0,0
+2026-10,HF017,Surgery,2,8,0,1
+2026-10,HF018,Cardiology,4,14,0,1
+2026-10,HF018,ICU,1,3,0,0
+2026-10,HF018,Internal Medicine,1,3,0,0
+2026-10,HF018,Obstetrics & Gynecology,1,4,0,0
+2026-10,HF018,Pediatrics,1,2,1,0
+2026-10,HF018,Pharmacy,1,5,0,1
+2026-10,HF018,Radiology,2,7,0,0
+2026-10,HF018,Surgery,2,7,0,0
+2026-10,HF019,Emergency,3,9,1,1
+2026-10,HF019,Laboratory,1,2,1,0
+2026-10,HF019,Pharmacy,1,3,0,0
+2026-10,HF020,ICU,1,2,1,0
+2026-10,HF020,Internal Medicine,1,3,0,0
+2026-10,HF020,Laboratory,2,4,1,0
+2026-10,HF020,Obstetrics & Gynecology,2,8,0,0
+2026-10,HF020,Pediatrics,1,5,0,1
+2026-10,HF020,Radiology,1,4,0,0
+2026-11,HF001,Cardiology,2,6,1,0
+2026-11,HF001,Emergency,1,2,1,0
+2026-11,HF001,ICU,1,1,1,0
+2026-11,HF001,Internal Medicine,1,5,0,1
+2026-11,HF001,Obstetrics & Gynecology,2,6,1,1
+2026-11,HF001,Radiology,3,6,2,0
+2026-11,HF002,Cardiology,1,1,1,0
+2026-11,HF002,Emergency,1,3,0,0
+2026-11,HF002,ICU,2,3,2,0
+2026-11,HF002,Internal Medicine,1,4,0,0
+2026-11,HF002,Pediatrics,1,5,0,1
+2026-11,HF002,Pharmacy,1,1,1,0
+2026-11,HF002,Radiology,2,5,1,0
+2026-11,HF003,Cardiology,1,1,1,0
+2026-11,HF003,Emergency,3,12,0,1
+2026-11,HF003,Internal Medicine,2,7,0,0
+2026-11,HF003,Laboratory,1,5,0,1
+2026-11,HF003,Obstetrics & Gynecology,2,4,1,0
+2026-11,HF003,Pediatrics,1,2,1,0
+2026-11,HF003,Surgery,1,1,1,0
+2026-11,HF004,Cardiology,1,5,0,1
+2026-11,HF004,Emergency,1,2,1,0
+2026-11,HF004,ICU,3,7,1,0
+2026-11,HF004,Internal Medicine,3,11,0,0
+2026-11,HF004,Laboratory,1,4,0,0
+2026-11,HF004,Pharmacy,2,6,0,0
+2026-11,HF004,Radiology,1,1,1,0
+2026-11,HF005,Cardiology,1,5,0,1
+2026-11,HF005,Emergency,1,3,0,0
+2026-11,HF005,Internal Medicine,1,3,0,0
+2026-11,HF005,Laboratory,2,3,2,0
+2026-11,HF005,Obstetrics & Gynecology,1,2,1,0
+2026-11,HF005,Radiology,1,4,0,0
+2026-11,HF005,Surgery,1,3,0,0
+2026-11,HF006,Pediatrics,1,5,0,1
+2026-11,HF006,Pharmacy,1,2,1,0
+2026-11,HF006,Surgery,1,5,0,1
+2026-11,HF007,Cardiology,1,2,1,0
+2026-11,HF007,Emergency,1,4,0,0
+2026-11,HF007,Internal Medicine,1,2,1,0
+2026-11,HF007,Laboratory,1,2,1,0
+2026-11,HF007,Obstetrics & Gynecology,1,1,1,0
+2026-11,HF007,Radiology,1,3,0,0
+2026-11,HF007,Surgery,1,2,1,0
+2026-11,HF008,Emergency,3,10,1,1
+2026-11,HF008,ICU,2,7,1,1
+2026-11,HF008,Obstetrics & Gynecology,2,7,0,0
+2026-11,HF008,Pediatrics,1,5,0,1
+2026-11,HF008,Pharmacy,1,5,0,1
+2026-11,HF008,Radiology,2,7,0,0
+2026-11,HF008,Surgery,1,3,0,0
+2026-11,HF009,Cardiology,1,1,1,0
+2026-11,HF009,Emergency,1,4,0,0
+2026-11,HF009,Internal Medicine,2,8,0,1
+2026-11,HF009,Obstetrics & Gynecology,1,4,0,0
+2026-11,HF009,Pediatrics,1,4,0,0
+2026-11,HF010,Internal Medicine,1,1,1,0
+2026-11,HF010,Obstetrics & Gynecology,1,4,0,0
+2026-11,HF010,Pharmacy,1,5,0,1
+2026-11,HF010,Radiology,2,6,1,1
+2026-11,HF011,Cardiology,3,9,1,0
+2026-11,HF011,ICU,1,5,0,1
+2026-11,HF011,Internal Medicine,2,9,0,1
+2026-11,HF011,Laboratory,1,4,0,0
+2026-11,HF011,Pediatrics,2,6,1,0
+2026-11,HF011,Radiology,1,2,1,0
+2026-11,HF012,Cardiology,3,12,0,1
+2026-11,HF012,Obstetrics & Gynecology,1,2,1,0
+2026-11,HF012,Pediatrics,1,1,1,0
+2026-11,HF012,Radiology,2,2,2,0
+2026-11,HF013,Emergency,1,1,1,0
+2026-11,HF013,ICU,1,5,0,1
+2026-11,HF013,Laboratory,2,5,1,0
+2026-11,HF013,Obstetrics & Gynecology,1,2,1,0
+2026-11,HF013,Pediatrics,1,3,0,0
+2026-11,HF013,Pharmacy,3,8,1,0
+2026-11,HF013,Radiology,1,1,1,0
+2026-11,HF013,Surgery,3,9,1,1
+2026-11,HF014,Cardiology,1,2,1,0
+2026-11,HF014,ICU,4,13,1,1
+2026-11,HF014,Internal Medicine,1,3,0,0
+2026-11,HF014,Laboratory,1,2,1,0
+2026-11,HF014,Pediatrics,1,2,1,0
+2026-11,HF014,Pharmacy,1,3,0,0
+2026-11,HF014,Radiology,2,5,1,0
+2026-11,HF015,Emergency,4,6,4,0
+2026-11,HF015,ICU,1,3,0,0
+2026-11,HF015,Pediatrics,1,2,1,0
+2026-11,HF016,Cardiology,2,6,1,1
+2026-11,HF016,Emergency,2,4,1,0
+2026-11,HF016,Laboratory,1,3,0,0
+2026-11,HF016,Obstetrics & Gynecology,1,4,0,0
+2026-11,HF016,Pharmacy,2,9,0,1
+2026-11,HF017,Cardiology,2,6,1,0
+2026-11,HF017,ICU,1,1,1,0
+2026-11,HF017,Internal Medicine,2,7,0,0
+2026-11,HF017,Laboratory,1,1,1,0
+2026-11,HF018,Internal Medicine,1,1,1,0
+2026-11,HF018,Pharmacy,1,5,0,1
+2026-11,HF018,Radiology,1,3,0,0
+2026-11,HF019,Cardiology,2,3,2,0
+2026-11,HF019,Internal Medicine,1,4,0,0
+2026-11,HF019,Pediatrics,1,1,1,0
+2026-11,HF019,Surgery,2,2,2,0
+2026-11,HF020,ICU,1,2,1,0
+2026-11,HF020,Pediatrics,1,4,0,0
+2026-12,HF001,ICU,1,2,1,0
+2026-12,HF001,Laboratory,2,7,1,1
+2026-12,HF001,Radiology,1,1,1,0
+2026-12,HF002,Cardiology,3,11,1,1
+2026-12,HF002,Emergency,1,4,0,0
+2026-12,HF002,ICU,1,4,0,0
+2026-12,HF002,Internal Medicine,1,3,0,0
+2026-12,HF002,Laboratory,1,1,1,0
+2026-12,HF003,Emergency,1,4,0,0
+2026-12,HF003,ICU,2,7,0,0
+2026-12,HF003,Laboratory,1,3,0,0
+2026-12,HF003,Radiology,2,5,1,0
+2026-12,HF003,Surgery,1,4,0,0
+2026-12,HF004,ICU,1,1,1,0
+2026-12,HF004,Laboratory,1,2,1,0
+2026-12,HF004,Obstetrics & Gynecology,1,5,0,1
+2026-12,HF004,Pediatrics,1,4,0,0
+2026-12,HF004,Radiology,1,1,1,0
+2026-12,HF004,Surgery,1,1,1,0
+2026-12,HF005,Emergency,2,3,2,0
+2026-12,HF005,Laboratory,1,1,1,0
+2026-12,HF005,Obstetrics & Gynecology,1,1,1,0
+2026-12,HF005,Radiology,1,4,0,0
+2026-12,HF005,Surgery,1,1,1,0
+2026-12,HF006,Cardiology,2,3,2,0
+2026-12,HF006,Laboratory,2,5,1,0
+2026-12,HF006,Surgery,2,8,0,1
+2026-12,HF007,Cardiology,2,6,0,0
+2026-12,HF007,Emergency,1,3,0,0
+2026-12,HF007,Pharmacy,2,7,0,0
+2026-12,HF008,Emergency,1,2,1,0
+2026-12,HF008,Laboratory,1,5,0,1
+2026-12,HF008,Obstetrics & Gynecology,1,4,0,0
+2026-12,HF009,ICU,2,8,0,0
+2026-12,HF009,Internal Medicine,1,2,1,0
+2026-12,HF009,Obstetrics & Gynecology,2,5,1,0
+2026-12,HF009,Pediatrics,1,2,1,0
+2026-12,HF009,Pharmacy,1,4,0,0
+2026-12,HF010,Emergency,1,5,0,1
+2026-12,HF010,Laboratory,1,2,1,0
+2026-12,HF010,Obstetrics & Gynecology,1,5,0,1
+2026-12,HF010,Radiology,1,5,0,1
+2026-12,HF010,Surgery,1,2,1,0
+2026-12,HF011,Emergency,1,4,0,0
+2026-12,HF011,Obstetrics & Gynecology,1,3,0,0
+2026-12,HF011,Pediatrics,2,9,0,1
+2026-12,HF011,Pharmacy,1,2,1,0
+2026-12,HF011,Radiology,1,3,0,0
+2026-12,HF012,Emergency,2,9,0,1
+2026-12,HF012,ICU,3,8,1,0
+2026-12,HF012,Laboratory,1,4,0,0
+2026-12,HF012,Pediatrics,1,5,0,1
+2026-12,HF012,Pharmacy,2,6,1,1
+2026-12,HF013,Cardiology,2,7,0,0
+2026-12,HF013,Emergency,2,5,1,0
+2026-12,HF013,ICU,1,1,1,0
+2026-12,HF013,Internal Medicine,1,3,0,0
+2026-12,HF013,Laboratory,1,3,0,0
+2026-12,HF013,Obstetrics & Gynecology,1,4,0,0
+2026-12,HF013,Pediatrics,1,1,1,0
+2026-12,HF014,Emergency,1,2,1,0
+2026-12,HF014,ICU,1,5,0,1
+2026-12,HF014,Internal Medicine,3,8,1,0
+2026-12,HF014,Obstetrics & Gynecology,2,3,2,0
+2026-12,HF014,Radiology,1,1,1,0
+2026-12,HF015,Cardiology,2,4,2,0
+2026-12,HF015,Emergency,1,3,0,0
+2026-12,HF015,Internal Medicine,2,9,0,1
+2026-12,HF015,Laboratory,1,3,0,0
+2026-12,HF015,Obstetrics & Gynecology,1,3,0,0
+2026-12,HF015,Pediatrics,2,6,1,0
+2026-12,HF015,Radiology,2,4,2,0
+2026-12,HF015,Surgery,1,3,0,0
+2026-12,HF016,Cardiology,1,5,0,1
+2026-12,HF016,Emergency,1,1,1,0
+2026-12,HF016,ICU,1,2,1,0
+2026-12,HF016,Internal Medicine,1,1,1,0
+2026-12,HF016,Obstetrics & Gynecology,2,6,1,1
+2026-12,HF016,Pediatrics,1,2,1,0
+2026-12,HF016,Pharmacy,1,4,0,0
+2026-12,HF016,Radiology,1,3,0,0
+2026-12,HF017,Cardiology,1,3,0,0
+2026-12,HF017,Emergency,2,8,0,0
+2026-12,HF017,Laboratory,1,1,1,0
+2026-12,HF017,Pharmacy,1,2,1,0
+2026-12,HF017,Surgery,1,3,0,0
+2026-12,HF018,Cardiology,2,7,1,1
+2026-12,HF018,Internal Medicine,1,4,0,0
+2026-12,HF018,Laboratory,1,1,1,0
+2026-12,HF018,Surgery,1,2,1,0
+2026-12,HF019,Pharmacy,1,1,1,0
+2026-12,HF019,Surgery,3,9,1,0
+2026-12,HF020,Cardiology,2,4,1,0
+2026-12,HF020,Emergency,2,7,1,1
+2026-12,HF020,ICU,1,5,0,1
+2026-12,HF020,Internal Medicine,1,4,0,0
+2026-12,HF020,Pediatrics,1,2,1,0
+2026-12,HF020,Radiology,1,1,1,0
+2026-12,HF020,Surgery,2,6,0,0
