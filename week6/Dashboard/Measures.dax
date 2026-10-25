@@ -1,0 +1,182 @@
+// Supplied patient register; independent of encounter dates.
+Registered Patients = COUNTROWS(Patients)
+
+// Distinct patients represented in selected available appointments.
+Observed Patients = DISTINCTCOUNT(Appointments[PatientID])
+
+// Available encounter extract; not the RevenueSummary annual count.
+Available Appointments = COUNTROWS(Appointments)
+
+// Patients with at least two appointments in the selected extract.
+Repeat Visit Patients = COUNTROWS(FILTER(VALUES(Appointments[PatientID]),CALCULATE(COUNTROWS(Appointments))>=2))
+
+// First encounter in supplied history, not new registration.
+First Observed Patients = CALCULATE(DISTINCTCOUNT(Appointments[PatientID]),Appointments[IsFirstObserved]=1)
+
+// Source age retained; not recalculated against the execution date.
+Mean Recorded Age = AVERAGE(Patients[Age])
+
+// Nonblank insurance code, not verified insurance validity.
+Insurance Code Presence = DIVIDE(COUNTROWS(FILTER(Patients,NOT(ISBLANK(Patients[InsuranceID])))),[Registered Patients])
+
+// Recorded register category prevalence.
+Chronic Condition Share = DIVIDE(COUNTROWS(FILTER(Patients,Patients[ChronicCondition]<>"None")),[Registered Patients])
+
+// Emergency-labelled available appointments.
+Emergency Share = DIVIDE(CALCULATE([Available Appointments],KEEPFILTERS(Appointments[VisitType]="Emergency")),[Available Appointments])
+
+// Full 60,000-row CSV at diagnosis grain.
+Diagnosis Records = COUNTROWS(Diagnoses)
+
+// Test records; unmatched appointment IDs remain global.
+Laboratory Tests = COUNTROWS(LaboratoryTests)
+
+// Prescription records, not medication consumption.
+Prescriptions = COUNTROWS(Prescriptions)
+
+// Admission records; episode dates absent.
+Admission Records = COUNTROWS(Admissions)
+
+// Mean supplied length-of-stay field in days.
+Mean Length of Stay = AVERAGE(Admissions[LengthOfStayDays])
+
+// Supplied referral rows.
+Referral Records = COUNTROWS(Referrals)
+
+// Available appointments with at least one linked admission; not population incidence.
+Admission Association = DIVIDE(CALCULATE(DISTINCTCOUNT(Admissions[AppointmentID]),KEEPFILTERS(Admissions[HasAppointment]=1)),[Available Appointments])
+
+// Available appointments with a linked referral.
+Referral Association = DIVIDE(CALCULATE(DISTINCTCOUNT(Referrals[AppointmentID]),KEEPFILTERS(Referrals[HasAppointment]=1)),[Available Appointments])
+
+// One row per bill, preserving unlinked source records.
+Bills = COUNTROWS(Billing)
+
+// Supplied billed amounts; invoice dates absent.
+Billed Amount = SUM(Billing[Amount])
+
+// Payments preaggregated by BillingID to avoid join multiplication; receipt dates absent.
+Recorded Payments = SUM(Billing[AmountPaid])
+
+// SUM(MAX(0,billed-paid)) at bill grain.
+Positive Balances = SUM(Billing[Outstanding])
+
+// SUM(MAX(0,paid-billed)) at bill grain.
+Credit Balances = SUM(Billing[Credit])
+
+// Recorded amounts ratio; not dated collection performance.
+Payment to Bill Ratio = DIVIDE([Recorded Payments],[Billed Amount])
+
+// Mean across supplied bills.
+Average Bill = DIVIDE([Billed Amount],[Bills])
+
+// Payment fact measure for payment-method segmentation.
+Payment Records Amount = SUM(Payments[AmountPaid])
+
+// Supplied claim records.
+Claim Records = COUNTROWS(Claims)
+
+// Pending status; aging cannot be computed without dates.
+Pending Claims = CALCULATE([Claim Records],KEEPFILTERS(Claims[Status]="Pending"))
+
+// Approved divided by all supplied claims, including pending.
+Approved Claim Share = DIVIDE(CALCULATE([Claim Records],KEEPFILTERS(Claims[Status]="Approved")),[Claim Records])
+
+// Supplied claim amounts, not receipts.
+Claim Amount = SUM(Claims[ClaimAmount])
+
+// Separate unreconciled RevenueSummary series.
+Summary Revenue = SUM(RevenueSummary[Revenue])
+
+// Staff register count; no working-hour or shift denominator.
+Staff Records = COUNTROWS(Staff)
+
+// Recorded years of experience.
+Mean Staff Experience = AVERAGE(Staff[YearsExperience])
+
+// Registered doctor count.
+Doctor Records = CALCULATE([Staff Records],KEEPFILTERS(Staff[Role]="Doctor"))
+
+// Registered nurse count.
+Nurse Records = CALCULATE([Staff Records],KEEPFILTERS(Staff[Role]="Nurse"))
+
+// Available appointment workload per registered doctor; not productivity.
+Appointments per Doctor = DIVIDE([Available Appointments],[Doctor Records])
+
+// Distinct identifiers observed across source tables, not a verified facility directory.
+Observed Facility IDs = COUNTROWS(Facilities)
+
+// Inventory records; source status is not occupancy.
+Bed Register = COUNTROWS(Beds)
+
+// Room inventory records.
+Room Register = COUNTROWS(Rooms)
+
+// Equipment inventory records; no usage/availability observations.
+Equipment Register = COUNTROWS(Equipment)
+
+// Response records; source submission dates absent.
+Feedback Responses = COUNTROWS(Feedback)
+
+// Mean rating on the supplied 1-5 scale.
+Mean Feedback Rating = AVERAGE(Feedback[Rating])
+
+// Share rated 1-2; comment categories reported separately.
+Low Rating Share = DIVIDE(CALCULATE([Feedback Responses],KEEPFILTERS(Feedback[Rating]<=2)),[Feedback Responses])
+
+// Share rated 5.
+Excellent Rating Share = DIVIDE(CALCULATE([Feedback Responses],KEEPFILTERS(Feedback[Rating]=5)),[Feedback Responses])
+
+// Bills attributable to available appointments.
+Linked Bills = CALCULATE([Bills],KEEPFILTERS(Billing[HasAppointment]=1))
+
+// Linkage within selected bill context; unfiltered baseline 8.33%.
+Billing Link Coverage = DIVIDE([Linked Bills],[Bills])
+
+// Feedback with a matching available appointment.
+Linked Feedback Responses = CALCULATE([Feedback Responses],KEEPFILTERS(Feedback[HasAppointment]=1))
+
+// Linkage within selected feedback context; unfiltered baseline 8.34%.
+Feedback Link Coverage = DIVIDE([Linked Feedback Responses],[Feedback Responses])
+
+// Prior calendar month in the supplied scenario.
+Previous Month Appointments = CALCULATE([Available Appointments],DATEADD(Dates[Date],-1,MONTH))
+
+// Month-on-month change in available appointments, not full network demand.
+Appointment Month Growth = DIVIDE([Available Appointments]-[Previous Month Appointments],[Previous Month Appointments])
+
+// Cumulative supplied scenario appointments.
+YTD Available Appointments = TOTALYTD([Available Appointments],Dates[Date])
+
+// Selection-aware report heading.
+Dynamic Title = "HealthConnect | "&COALESCE(SELECTEDVALUE(Dates[Month]),"All scenario months")&" | "&COALESCE(SELECTEDVALUE(Facilities[FacilityID]),"All observed facilities")
+
+// Distinguishes full totals from linked attribution.
+Financial Scope = IF(ISCROSSFILTERED(Appointments),"Appointment-linked financial subset","All supplied financial records; undated")
+
+// Province is patient residence, not facility geography.
+Patient Residence Label = "Patient residence: "&COALESCE(SELECTEDVALUE(Patients[ProvinceName]),"All provinces")
+
+// Rating midpoint used for descriptive conditional colour, not a clinical threshold.
+Rating Colour = IF(ISBLANK([Mean Feedback Rating]),"#526774",IF([Mean Feedback Rating]<3,"#AC493F","#147D83"))
+
+// Unavailable: dated occupancy and bed assignments absent.
+Bed Utilization = BLANK()
+
+// Unavailable: room usage and capacity logs absent.
+Room Utilization = BLANK()
+
+// Unavailable: operating/maintenance status absent.
+Equipment Availability = BLANK()
+
+// Unavailable: dated admission and discharge episodes absent.
+Clinical Readmission Rate = BLANK()
+
+// Unavailable: registration dates absent.
+New Registrations = BLANK()
+
+// Unavailable: appointment status absent.
+Cancellation Rate = BLANK()
+
+// Unavailable: ServiceID absent from transactions.
+Revenue by Service = BLANK()

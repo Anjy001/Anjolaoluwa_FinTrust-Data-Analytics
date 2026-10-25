@@ -1,0 +1,62 @@
+Measure,DAX,Format,Definition
+Registered Patients,COUNTROWS(Patients),"#,0",Supplied patient register; independent of encounter dates.
+Observed Patients,DISTINCTCOUNT(Appointments[PatientID]),"#,0",Distinct patients represented in selected available appointments.
+Available Appointments,COUNTROWS(Appointments),"#,0",Available encounter extract; not the RevenueSummary annual count.
+Repeat Visit Patients,"COUNTROWS(FILTER(VALUES(Appointments[PatientID]),CALCULATE(COUNTROWS(Appointments))>=2))","#,0",Patients with at least two appointments in the selected extract.
+First Observed Patients,"CALCULATE(DISTINCTCOUNT(Appointments[PatientID]),Appointments[IsFirstObserved]=1)","#,0","First encounter in supplied history, not new registration."
+Mean Recorded Age,AVERAGE(Patients[Age]),0.00,Source age retained; not recalculated against the execution date.
+Insurance Code Presence,"DIVIDE(COUNTROWS(FILTER(Patients,NOT(ISBLANK(Patients[InsuranceID])))),[Registered Patients])",0.00%,"Nonblank insurance code, not verified insurance validity."
+Chronic Condition Share,"DIVIDE(COUNTROWS(FILTER(Patients,Patients[ChronicCondition]<>""None"")),[Registered Patients])",0.00%,Recorded register category prevalence.
+Emergency Share,"DIVIDE(CALCULATE([Available Appointments],KEEPFILTERS(Appointments[VisitType]=""Emergency"")),[Available Appointments])",0.00%,Emergency-labelled available appointments.
+Diagnosis Records,COUNTROWS(Diagnoses),"#,0","Full 60,000-row CSV at diagnosis grain."
+Laboratory Tests,COUNTROWS(LaboratoryTests),"#,0",Test records; unmatched appointment IDs remain global.
+Prescriptions,COUNTROWS(Prescriptions),"#,0","Prescription records, not medication consumption."
+Admission Records,COUNTROWS(Admissions),"#,0",Admission records; episode dates absent.
+Mean Length of Stay,AVERAGE(Admissions[LengthOfStayDays]),0.00,Mean supplied length-of-stay field in days.
+Referral Records,COUNTROWS(Referrals),"#,0",Supplied referral rows.
+Admission Association,"DIVIDE(CALCULATE(DISTINCTCOUNT(Admissions[AppointmentID]),KEEPFILTERS(Admissions[HasAppointment]=1)),[Available Appointments])",0.00%,Available appointments with at least one linked admission; not population incidence.
+Referral Association,"DIVIDE(CALCULATE(DISTINCTCOUNT(Referrals[AppointmentID]),KEEPFILTERS(Referrals[HasAppointment]=1)),[Available Appointments])",0.00%,Available appointments with a linked referral.
+Bills,COUNTROWS(Billing),"#,0","One row per bill, preserving unlinked source records."
+Billed Amount,SUM(Billing[Amount]),"""RWF ""#,0",Supplied billed amounts; invoice dates absent.
+Recorded Payments,SUM(Billing[AmountPaid]),"""RWF ""#,0",Payments preaggregated by BillingID to avoid join multiplication; receipt dates absent.
+Positive Balances,SUM(Billing[Outstanding]),"""RWF ""#,0","SUM(MAX(0,billed-paid)) at bill grain."
+Credit Balances,SUM(Billing[Credit]),"""RWF ""#,0","SUM(MAX(0,paid-billed)) at bill grain."
+Payment to Bill Ratio,"DIVIDE([Recorded Payments],[Billed Amount])",0.00%,Recorded amounts ratio; not dated collection performance.
+Average Bill,"DIVIDE([Billed Amount],[Bills])","""RWF ""#,0.00",Mean across supplied bills.
+Payment Records Amount,SUM(Payments[AmountPaid]),"""RWF ""#,0",Payment fact measure for payment-method segmentation.
+Claim Records,COUNTROWS(Claims),"#,0",Supplied claim records.
+Pending Claims,"CALCULATE([Claim Records],KEEPFILTERS(Claims[Status]=""Pending""))","#,0",Pending status; aging cannot be computed without dates.
+Approved Claim Share,"DIVIDE(CALCULATE([Claim Records],KEEPFILTERS(Claims[Status]=""Approved"")),[Claim Records])",0.00%,"Approved divided by all supplied claims, including pending."
+Claim Amount,SUM(Claims[ClaimAmount]),"""RWF ""#,0.00","Supplied claim amounts, not receipts."
+Summary Revenue,SUM(RevenueSummary[Revenue]),"""RWF ""#,0",Separate unreconciled RevenueSummary series.
+Staff Records,COUNTROWS(Staff),"#,0",Staff register count; no working-hour or shift denominator.
+Mean Staff Experience,AVERAGE(Staff[YearsExperience]),0.00,Recorded years of experience.
+Doctor Records,"CALCULATE([Staff Records],KEEPFILTERS(Staff[Role]=""Doctor""))","#,0",Registered doctor count.
+Nurse Records,"CALCULATE([Staff Records],KEEPFILTERS(Staff[Role]=""Nurse""))","#,0",Registered nurse count.
+Appointments per Doctor,"DIVIDE([Available Appointments],[Doctor Records])",0.00,Available appointment workload per registered doctor; not productivity.
+Observed Facility IDs,COUNTROWS(Facilities),"#,0","Distinct identifiers observed across source tables, not a verified facility directory."
+Bed Register,COUNTROWS(Beds),"#,0",Inventory records; source status is not occupancy.
+Room Register,COUNTROWS(Rooms),"#,0",Room inventory records.
+Equipment Register,COUNTROWS(Equipment),"#,0",Equipment inventory records; no usage/availability observations.
+Feedback Responses,COUNTROWS(Feedback),"#,0",Response records; source submission dates absent.
+Mean Feedback Rating,AVERAGE(Feedback[Rating]),0.00,Mean rating on the supplied 1-5 scale.
+Low Rating Share,"DIVIDE(CALCULATE([Feedback Responses],KEEPFILTERS(Feedback[Rating]<=2)),[Feedback Responses])",0.00%,Share rated 1-2; comment categories reported separately.
+Excellent Rating Share,"DIVIDE(CALCULATE([Feedback Responses],KEEPFILTERS(Feedback[Rating]=5)),[Feedback Responses])",0.00%,Share rated 5.
+Linked Bills,"CALCULATE([Bills],KEEPFILTERS(Billing[HasAppointment]=1))","#,0",Bills attributable to available appointments.
+Billing Link Coverage,"DIVIDE([Linked Bills],[Bills])",0.00%,Linkage within selected bill context; unfiltered baseline 8.33%.
+Linked Feedback Responses,"CALCULATE([Feedback Responses],KEEPFILTERS(Feedback[HasAppointment]=1))","#,0",Feedback with a matching available appointment.
+Feedback Link Coverage,"DIVIDE([Linked Feedback Responses],[Feedback Responses])",0.00%,Linkage within selected feedback context; unfiltered baseline 8.34%.
+Previous Month Appointments,"CALCULATE([Available Appointments],DATEADD(Dates[Date],-1,MONTH))","#,0",Prior calendar month in the supplied scenario.
+Appointment Month Growth,"DIVIDE([Available Appointments]-[Previous Month Appointments],[Previous Month Appointments])",0.00%,"Month-on-month change in available appointments, not full network demand."
+YTD Available Appointments,"TOTALYTD([Available Appointments],Dates[Date])","#,0",Cumulative supplied scenario appointments.
+Dynamic Title,"""HealthConnect | ""&COALESCE(SELECTEDVALUE(Dates[Month]),""All scenario months"")&"" | ""&COALESCE(SELECTEDVALUE(Facilities[FacilityID]),""All observed facilities"")",,Selection-aware report heading.
+Financial Scope,"IF(ISCROSSFILTERED(Appointments),""Appointment-linked financial subset"",""All supplied financial records; undated"")",,Distinguishes full totals from linked attribution.
+Patient Residence Label,"""Patient residence: ""&COALESCE(SELECTEDVALUE(Patients[ProvinceName]),""All provinces"")",,"Province is patient residence, not facility geography."
+Rating Colour,"IF(ISBLANK([Mean Feedback Rating]),""#526774"",IF([Mean Feedback Rating]<3,""#AC493F"",""#147D83""))",,"Rating midpoint used for descriptive conditional colour, not a clinical threshold."
+Bed Utilization,BLANK(),0.00%,Unavailable: dated occupancy and bed assignments absent.
+Room Utilization,BLANK(),0.00%,Unavailable: room usage and capacity logs absent.
+Equipment Availability,BLANK(),0.00%,Unavailable: operating/maintenance status absent.
+Clinical Readmission Rate,BLANK(),0.00%,Unavailable: dated admission and discharge episodes absent.
+New Registrations,BLANK(),"#,0",Unavailable: registration dates absent.
+Cancellation Rate,BLANK(),0.00%,Unavailable: appointment status absent.
+Revenue by Service,BLANK(),"""RWF ""#,0",Unavailable: ServiceID absent from transactions.
