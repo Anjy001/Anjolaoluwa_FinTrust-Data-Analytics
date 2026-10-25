@@ -6,6 +6,7 @@ Project: FinTrust Financial Intelligence & Digital Banking Support Solution
 
 - [Week 4: FinTrust analysis](week4/)
 - [Week 5: SwiftLog logistics analytics](week5/) — logistics performance analysis, dashboards, executive report and presentation.
+- [Week 6: HealthConnect Rwanda healthcare analytics](week6/) — patient, clinical, financial, operational and experience analysis.
 
 ## Overview
 Week 1 deliverable: business understanding, resource/data review, track objectives,
