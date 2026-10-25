@@ -1,0 +1,41 @@
+Question,BusinessQuestion,Rows,Output
+1,Retrieve all registered patients,20000,Q01.csv
+2,Count patients by gender,2,Q02.csv
+3,Count patients by province of residence,5,Q03.csv
+4,Identify patients above 65 years,5487,Q04.csv
+5,Find patients with recorded chronic conditions,14929,Q05.csv
+6,Retrieve patients with recorded insurance codes,20000,Q06.csv
+7,Count patients by blood group,7,Q07.csv
+8,List all patients at the youngest and oldest recorded ages,469,Q08.csv
+9,Identify duplicate phone numbers,10,Q09.csv
+10,Calculate average recorded patient age,1,Q10.csv
+11,Count available appointments by month,12,Q11.csv
+12,Rank observed facility IDs by available appointment volume,20,Q12.csv
+13,Find busiest department types,10,Q13.csv
+14,Find doctors with the highest recorded appointment workload,350,Q14.csv
+15,Identify referral patterns with explicit appointment-link coverage,263,Q15.csv
+16,Count emergency appointments,1,Q16.csv
+17,"Calculate appointments per registered doctor, including doctors with no linked appointments",1,Q17.csv
+18,Retrieve appointments by patient-residence province,5,Q18.csv
+19,Identify observed facilities with the highest unique patient volume,20,Q19.csv
+20,Find peak consultation dates and weekdays; hours are unavailable,334,Q20.csv
+21,Top 20 recorded diagnoses in the full diagnosis extract,5,Q21.csv
+22,Most requested laboratory tests,4,Q22.csv
+23,Most prescribed medications,5,Q23.csv
+24,Average supplied admission duration,1,Q24.csv
+25,Disease severity distribution,3,Q25.csv
+26,Laboratory test mix and volume; capacity utilization is unavailable,4,Q26.csv
+27,Prescription trends in appointment-linked records,60,Q27.csv
+28,Referral destinations in the full supplied referral extract,20,Q28.csv
+29,Admission associations among distinct diagnosed encounters,5,Q29.csv
+30,Clinical record workload by department type for linked appointments,50,Q30.csv
+31,Reported payment amounts by appointment-linked facility,20,Q31.csv
+32,Reported payment amounts by appointment-linked department type,10,Q32.csv
+33,Revenue attribution to healthcare services is not supported by the supplied billing schema,1,Q33.csv
+34,Insurance claims by provider,4,Q34.csv
+35,Outstanding balances after payments aggregated once per bill,1,Q35.csv
+36,Average billing amount,1,Q36.csv
+37,Monthly revenue as supplied separately in Revenue Summary,12,Q37.csv
+38,Payment methods in the full payment extract,4,Q38.csv
+39,Highest payment totals among facilities in the linked appointment subset,10,Q39.csv
+40,Financial ranking of linked facilities by payment amount and collection ratio,20,Q40.csv
