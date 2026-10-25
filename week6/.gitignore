@@ -1,0 +1,8 @@
+Data/Original/
+Data/Processed/
+SQL/HealthConnect.sqlite
+SQL/Healthcare_Database.sql
+SQL/Results/
+Dashboard/HealthConnect.SemanticModel/
+__pycache__/
+*.pyc
